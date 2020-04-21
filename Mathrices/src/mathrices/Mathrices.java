@@ -16,7 +16,9 @@ public class Mathrices {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("PRIMER CÓDIGO BBS");
+        System.out.println("PRIMER CÓDIGO BB");
+        Inicio c=new Inicio();
+        c.setVisible(true);
     }
     
 }
