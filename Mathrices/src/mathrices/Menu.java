@@ -29,6 +29,7 @@ public class Menu extends javax.swing.JFrame {
     private void initComponents() {
 
         jButton1 = new javax.swing.JButton();
+        btn_tema4 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -39,13 +40,23 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        btn_tema4.setText("TEMA 4");
+        btn_tema4.setFocusPainted(false);
+        btn_tema4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_tema4ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(439, 439, 439)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btn_tema4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 93, Short.MAX_VALUE))
                 .addContainerGap(408, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -53,7 +64,9 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(174, 174, 174)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(256, Short.MAX_VALUE))
+                .addGap(37, 37, 37)
+                .addComponent(btn_tema4, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(185, Short.MAX_VALUE))
         );
 
         pack();
@@ -64,6 +77,15 @@ public class Menu extends javax.swing.JFrame {
         T2_1Actividad c=new T2_1Actividad();
         c.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void btn_tema4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tema4ActionPerformed
+        // TODO add your handling code here:
+        T2_4MENU a = new T2_4MENU();
+        a.setVisible(true);
+        this.dispose();
+       
+         
+    }//GEN-LAST:event_btn_tema4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -101,6 +123,7 @@ public class Menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btn_tema4;
     private javax.swing.JButton jButton1;
     // End of variables declaration//GEN-END:variables
 }

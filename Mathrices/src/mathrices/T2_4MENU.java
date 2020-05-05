@@ -16,6 +16,7 @@ public class T2_4MENU extends javax.swing.JFrame {
      */
     public T2_4MENU() {
         initComponents();
+        
     }
 
     /**
@@ -27,21 +28,81 @@ public class T2_4MENU extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jPanel1 = new javax.swing.JPanel();
+        btn_T4Actividades = new javax.swing.JButton();
+        btn_T4Teoria = new javax.swing.JButton();
+        labelFondo = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1400, Short.MAX_VALUE)
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel1.setOpaque(false);
+
+        btn_T4Actividades.setText("ACTIVIDADES");
+        btn_T4Actividades.setFocusPainted(false);
+        btn_T4Actividades.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_T4ActividadesActionPerformed(evt);
+            }
+        });
+
+        btn_T4Teoria.setText("TEORIA");
+        btn_T4Teoria.setFocusPainted(false);
+        btn_T4Teoria.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_T4TeoriaActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(80, 80, 80)
+                .addComponent(btn_T4Actividades, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(207, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGap(82, 82, 82)
+                    .addComponent(btn_T4Teoria, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(205, Short.MAX_VALUE)))
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 800, Short.MAX_VALUE)
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(288, Short.MAX_VALUE)
+                .addComponent(btn_T4Actividades, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(163, 163, 163))
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGap(130, 130, 130)
+                    .addComponent(btn_T4Teoria, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(321, Short.MAX_VALUE)))
         );
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 480, 560));
+
+        labelFondo.setBackground(new java.awt.Color(204, 204, 255));
+        labelFondo.setOpaque(true);
+        getContentPane().add(labelFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1400, 800));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btn_T4ActividadesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_T4ActividadesActionPerformed
+        // TODO add your handling code here:
+        T2_4Actividad a = new T2_4Actividad();
+        a.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btn_T4ActividadesActionPerformed
+
+    private void btn_T4TeoriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_T4TeoriaActionPerformed
+        // TODO add your handling code here:
+        T2_4TEORIA a = new T2_4TEORIA();
+        a.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btn_T4TeoriaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -80,5 +141,9 @@ public class T2_4MENU extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btn_T4Actividades;
+    private javax.swing.JButton btn_T4Teoria;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel labelFondo;
     // End of variables declaration//GEN-END:variables
 }
