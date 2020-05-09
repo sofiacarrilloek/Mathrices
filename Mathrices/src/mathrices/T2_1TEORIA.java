@@ -7,16 +7,16 @@ package mathrices;
 
 /**
  *
- * @author AAMC
+ * @author Adrián Piedra
  */
-public class Menu extends javax.swing.JFrame {
+public class T2_1TEORIA extends javax.swing.JFrame {
 
     /**
-     * Creates new form Menu
+     * Creates new form T2_1TEORIA
      */
-    public Menu() {
+    public T2_1TEORIA() {
         initComponents();
-        this.setExtendedState(MAXIMIZED_BOTH);
+         this.setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**
@@ -28,76 +28,67 @@ public class Menu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
-        btn_tema4 = new javax.swing.JButton();
-        btn_tema6 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jLabel5 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setText("TEMA 1");
+        jPanel1.setBackground(new java.awt.Color(102, 102, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jButton1.setText("Siguiente");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(439, 107, 93, 37));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1270, 650, -1, -1));
 
-        btn_tema4.setText("TEMA 4");
-        btn_tema4.setFocusPainted(false);
-        btn_tema4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_tema4ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btn_tema4, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 160, 93, 34));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_1/Matriz1.png"))); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 150, 520, 230));
 
-        btn_tema6.setText("TEMA 6");
-        btn_tema6.setFocusable(false);
-        btn_tema6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_tema6ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btn_tema6, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 210, 93, 35));
+        jTextArea1.setColumns(20);
+        jTextArea1.setLineWrap(true);
+        jTextArea1.setRows(5);
+        jTextArea1.setText("\nUna matriz A de m x n es un arreglo rectangular de mn números dispuestos en m renglones y n columnas.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ndonde cada elemento aij se conoce como entrada o componente de la matriz A.");
+        jTextArea1.setWrapStyleWord(true);
+        jScrollPane1.setViewportView(jTextArea1);
 
-        jButton2.setText("TEMA 8");
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 80, 1040, 520));
+
+        jLabel5.setFont(new java.awt.Font("Yu Gothic Medium", 1, 24)); // NOI18N
+        jLabel5.setText("Definición de matriz, notación y orden");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 10, 550, 44));
+
+        jButton2.setText("Regresar");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 260, 90, 37));
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, -1, -1));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1410, 790));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        T2_1TEORIA c=new T2_1TEORIA();
+        T2_1TEORIA_2 c=new T2_1TEORIA_2();
         c.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void btn_tema4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tema4ActionPerformed
-        // TODO add your handling code here:
-        T2_4MENU a = new T2_4MENU();
-        a.setVisible(true);
-        this.dispose();
-       
-         
-    }//GEN-LAST:event_btn_tema4ActionPerformed
-
-    private void btn_tema6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tema6ActionPerformed
-        // TODO add your handling code here:ç
-        T2_6TEORIA a = new T2_6TEORIA();
-        a.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_btn_tema6ActionPerformed
-
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        T2_8TEORIA c=new T2_8TEORIA();
+         Menu c=new Menu();
         c.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -118,28 +109,31 @@ public class Menu extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(T2_1TEORIA.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(T2_1TEORIA.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(T2_1TEORIA.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(T2_1TEORIA.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Menu().setVisible(true);
+                new T2_1TEORIA().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btn_tema4;
-    private javax.swing.JButton btn_tema6;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
     // End of variables declaration//GEN-END:variables
 }

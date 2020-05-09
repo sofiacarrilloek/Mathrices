@@ -38,15 +38,17 @@ public class T2_1Actividad extends javax.swing.JFrame {
         Largo = new javax.swing.JTextField();
         Ancho = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 102, 102));
+        setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setText("Largo");
+        jLabel1.setText("Filas");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 200, 68, 26));
 
-        jLabel2.setText("Ancho");
+        jLabel2.setText("Columnas");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 240, -1, -1));
 
         jButton1.setText("Mostrar");
@@ -80,6 +82,14 @@ public class T2_1Actividad extends javax.swing.JFrame {
         jLabel3.setText("Ejemplo matrices");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 40, 410, 60));
 
+        jButton2.setText("Regresar");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, 100, 60));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -112,6 +122,12 @@ public class T2_1Actividad extends javax.swing.JFrame {
 		
         Panel.setText(respuesta);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        T2_1TEORIA_2 c=new T2_1TEORIA_2();
+        c.setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -154,6 +170,7 @@ public class T2_1Actividad extends javax.swing.JFrame {
     private javax.swing.JTextField Largo;
     private javax.swing.JTextArea Panel;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
