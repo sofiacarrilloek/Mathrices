@@ -77,6 +77,7 @@ public class Menu extends javax.swing.JFrame {
         // TODO add your handling code here:
         T2_1TEORIA c=new T2_1TEORIA();
         c.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void btn_tema4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tema4ActionPerformed
@@ -99,6 +100,7 @@ public class Menu extends javax.swing.JFrame {
         // TODO add your handling code here:
         T2_8TEORIA c=new T2_8TEORIA();
         c.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**

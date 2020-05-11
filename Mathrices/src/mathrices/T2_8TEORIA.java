@@ -89,12 +89,14 @@ public class T2_8TEORIA extends javax.swing.JFrame {
         // TODO add your handling code here:
         Menu c=new Menu();
         c.setVisible(true);
+         this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         T2_8TEORIA_2 c=new T2_8TEORIA_2();
         c.setVisible(true);
+         this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**

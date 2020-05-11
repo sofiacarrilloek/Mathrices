@@ -99,6 +99,7 @@ public class T2_8TEORIA_3 extends javax.swing.JFrame {
         // TODO add your handling code here:
         T2_8TEORIA_2 c=new T2_8TEORIA_2();
         c.setVisible(true);
+         this.dispose();
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
