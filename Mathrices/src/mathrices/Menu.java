@@ -100,7 +100,7 @@ public class Menu extends javax.swing.JFrame {
 
     private void btn_tema6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tema6ActionPerformed
         // TODO add your handling code here:ç
-        T2_6TEORIA a = new T2_6TEORIA();
+        T2_6MENU a = new T2_6MENU();
         a.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btn_tema6ActionPerformed
