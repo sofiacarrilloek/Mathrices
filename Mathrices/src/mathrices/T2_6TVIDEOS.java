@@ -41,6 +41,9 @@ public class T2_6TVIDEOS extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jButton4 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -54,7 +57,7 @@ public class T2_6TVIDEOS extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 380, 200, 100));
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 560, 200, 100));
 
         jButton3.setText("Ver Video 1 aquí");
         jButton3.setFocusPainted(false);
@@ -66,7 +69,7 @@ public class T2_6TVIDEOS extends javax.swing.JFrame {
         jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 200, 100));
 
         jLabel1.setText("<html>Explicación de la forma de encontrar el determinante de una matriz de 3x3 usando la Regla de Sarrus, dentro del curso de Matrices.</html>");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 380, 300, 100));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 560, 300, 100));
 
         jLabel2.setText("<html>LA DEFINICIÓN FORMAL DE DETERMINANTE DE UNA MATRIZ CUADRADA EN LA FORMA DE RECURRENCIA Y EJEMPLO DE COMO CALCULAR UNA MARTRIZ DE ORDEN 2 USANDO DICHA DEFINICIÓN.</html>");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 160, 300, 100));
@@ -78,10 +81,19 @@ public class T2_6TVIDEOS extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, 200, 100));
+        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 360, 200, 100));
 
         jLabel3.setText("<html>Explicación del concepto de determinante y ejemplos de al forma de encontrar el determinante de una matriz de 2x2, dentro del curso de Matrices.</html>");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 270, 300, 100));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 360, 300, 100));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_6/tres_p.png"))); // NOI18N
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 530, 200, 150));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_6/definicion_p.png"))); // NOI18N
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 150, 200, 150));
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_6/dos_p.png"))); // NOI18N
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 340, 200, 150));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -91,7 +103,7 @@ public class T2_6TVIDEOS extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 616, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -142,6 +154,24 @@ public class T2_6TVIDEOS extends javax.swing.JFrame {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
+        //
+        if(java.awt.Desktop.isDesktopSupported()){
+            java.awt.Desktop  desktop = java.awt.Desktop.getDesktop();
+            if(desktop.isSupported(java.awt.Desktop.Action.BROWSE)){
+               try{ 
+                java.net.URI uri = new java.net.URI("https://www.youtube.com/watch?v=8OnOZvc5rFQ");
+                desktop.browse(uri);
+                
+                } catch (URISyntaxException ex) {
+                    Logger.getLogger(T2_6TVIDEOS.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (IOException ex) {
+                    Logger.getLogger(T2_6TVIDEOS.class.getName()).log(Level.SEVERE, null, ex);
+                }
+               
+                
+            }
+            
+        }
     }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
@@ -201,6 +231,9 @@ public class T2_6TVIDEOS extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
