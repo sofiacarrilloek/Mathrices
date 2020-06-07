@@ -32,55 +32,33 @@ public class T2_1Actividad extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         Panel = new javax.swing.JTextArea();
-        Largo = new javax.swing.JTextField();
-        Ancho = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        Ancho = new javax.swing.JTextField();
+        Largo = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 102, 102));
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel1.setFont(new java.awt.Font("Yu Gothic Medium", 1, 24)); // NOI18N
         jLabel1.setText("Filas");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 200, 68, 26));
 
+        jLabel2.setFont(new java.awt.Font("Yu Gothic Medium", 1, 24)); // NOI18N
         jLabel2.setText("Columnas");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 240, -1, -1));
-
-        jButton1.setText("Mostrar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 360, 80, 40));
 
         Panel.setColumns(20);
         Panel.setRows(5);
         jScrollPane1.setViewportView(Panel);
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 180, 370, 200));
-
-        Largo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                LargoActionPerformed(evt);
-            }
-        });
-        getContentPane().add(Largo, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 210, 82, -1));
-
-        Ancho.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AnchoActionPerformed(evt);
-            }
-        });
-        getContentPane().add(Ancho, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 240, 82, -1));
-
-        jLabel3.setText("Ejemplo matrices");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 40, 410, 60));
 
         jButton2.setText("Regresar");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -89,6 +67,37 @@ public class T2_1Actividad extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, 100, 60));
+
+        jPanel1.setBackground(new java.awt.Color(153, 153, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel3.setFont(new java.awt.Font("Yu Gothic Medium", 1, 24)); // NOI18N
+        jLabel3.setText("Ejemplo matrices");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 20, 410, 60));
+
+        Ancho.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AnchoActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Ancho, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 250, 90, 30));
+
+        Largo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LargoActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Largo, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 200, 90, 30));
+
+        jButton1.setText("Mostrar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 410, 80, 40));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1400, 840));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -125,7 +134,7 @@ public class T2_1Actividad extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        T2_1TEORIA_2 c=new T2_1TEORIA_2();
+        T2_1MENU c=new T2_1MENU();
         c.setVisible(true);
          this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
@@ -175,6 +184,7 @@ public class T2_1Actividad extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 }

@@ -76,7 +76,7 @@ public class T2_8TEORIA_3 extends javax.swing.JFrame {
         jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 270, 310, 150));
 
         jLabel5.setFont(new java.awt.Font("Yu Gothic Medium", 1, 24)); // NOI18N
-        jLabel5.setText("Pasos para calculara la inversa de una matriz por el método adjunto");
+        jLabel5.setText("Pasos para calcular la inversa de una matriz por el método adjunto");
         jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 20, -1, 44));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_8/Ejemplo_inversa_Matriz.png"))); // NOI18N
