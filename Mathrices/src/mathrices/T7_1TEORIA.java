@@ -99,9 +99,9 @@ public class T7_1TEORIA extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-               Menu c=new Menu();
-        c.setVisible(true);
-         this.dispose();        // TODO add your handling code here:
+               T7_7MENU c=new T7_7MENU();
+                      c.setVisible(true);
+                         this.dispose();        // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
  
        
