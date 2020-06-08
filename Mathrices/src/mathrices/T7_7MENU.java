@@ -7,16 +7,16 @@ package mathrices;
 
 /**
  *
- * @author AAMC
+ * @author ariat
  */
-public class Menu extends javax.swing.JFrame {
+public class T7_7MENU extends javax.swing.JFrame {
 
     /**
-     * Creates new form Menu
+     * Creates new form T7_7MENU
      */
-    public Menu() {
+    public T7_7MENU() {
         initComponents();
-        this.setExtendedState(MAXIMIZED_BOTH);
+         this.setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**
@@ -29,94 +29,81 @@ public class Menu extends javax.swing.JFrame {
     private void initComponents() {
 
         jButton1 = new javax.swing.JButton();
-        btn_tema4 = new javax.swing.JButton();
-        btn_tema6 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setText("TEMA 1");
+        jButton1.setText("TEORIA");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(439, 107, 93, 37));
 
-        btn_tema4.setText("TEMA 4");
-        btn_tema4.setFocusPainted(false);
-        btn_tema4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_tema4ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btn_tema4, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 160, 93, 34));
-
-        btn_tema6.setText("TEMA 6");
-        btn_tema6.setFocusable(false);
-        btn_tema6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_tema6ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btn_tema6, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 210, 93, 35));
-
-        jButton2.setText("TEMA 8");
+        jButton2.setText("VIDEOS");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 310, 90, 37));
 
-        jButton3.setText("TEMA 7");
+        jButton3.setText("REGRESAR");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 260, 90, 40));
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(69, 69, 69)
+                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(272, 272, 272)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 181, Short.MAX_VALUE)
+                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(484, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(117, 117, 117)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(68, 68, 68)
+                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(83, 83, 83)
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(277, Short.MAX_VALUE))
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        T2_1MENU c=new T2_1MENU();
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+  Menu c=new Menu();
         c.setVisible(true);
-        this.dispose();
+        this.dispose();        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+  T7_1TEORIA c=new  T7_1TEORIA();
+        c.setVisible(true);
+        this.dispose();        // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void btn_tema4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tema4ActionPerformed
-        // TODO add your handling code here:
-        T2_4MENU a = new T2_4MENU();
-        a.setVisible(true);
-        this.dispose();
-       
-         
-    }//GEN-LAST:event_btn_tema4ActionPerformed
-
-    private void btn_tema6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tema6ActionPerformed
-        // TODO add your handling code here:ç
-        T2_6MENU a = new T2_6MENU();
-        a.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_btn_tema6ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        T2_8MENU c=new T2_8MENU();
+        T7_1VIDEOS c=new  T7_1VIDEOS();
         c.setVisible(true);
-        this.dispose();
+        this.dispose();    
     }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-                    T7_7MENU c=new T7_7MENU();
-                      c.setVisible(true);
-                         this.dispose();        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -135,28 +122,25 @@ public class Menu extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(T7_7MENU.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(T7_7MENU.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(T7_7MENU.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(T7_7MENU.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Menu().setVisible(true);
-               
+                new T7_7MENU().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btn_tema4;
-    private javax.swing.JButton btn_tema6;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
