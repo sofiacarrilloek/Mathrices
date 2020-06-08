@@ -33,7 +33,7 @@ public class T2_2TEORIA_2 extends javax.swing.JPanel {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
 
-        setBackground(new java.awt.Color(30, 144, 250));
+        setBackground(new java.awt.Color(30, 144, 255));
         setMaximumSize(new java.awt.Dimension(2147483647, 2147483647));
         setMinimumSize(new java.awt.Dimension(1347, 673));
 
