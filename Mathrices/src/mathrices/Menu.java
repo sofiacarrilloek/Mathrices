@@ -121,12 +121,16 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+      T2_1MENU c=new T2_1MENU();
+      c.setVisible(true);
+      this.dispose();
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-                          T2_2MENU c=new T2_2MENU();
+                          T2_2MENU_1 c=new T2_2MENU_1();
                           c.setVisible(true);
+                          this.dispose();
                           
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
