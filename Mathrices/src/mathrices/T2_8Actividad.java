@@ -5,6 +5,8 @@
  */
 package mathrices;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author AAMC
@@ -14,6 +16,7 @@ public class T2_8Actividad extends javax.swing.JFrame {
     /**
      * Creates new form T2_8Actividad
      */
+    int contador=0;
     public T2_8Actividad() {
         initComponents();
         this.setExtendedState(MAXIMIZED_BOTH);
@@ -29,6 +32,17 @@ public class T2_8Actividad extends javax.swing.JFrame {
     private void initComponents() {
 
         jButton3 = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        cuadro3 = new javax.swing.JLabel();
+        cuadro1 = new javax.swing.JLabel();
+        cuadro2 = new javax.swing.JLabel();
+        op3 = new javax.swing.JLabel();
+        op2 = new javax.swing.JLabel();
+        op1 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -44,6 +58,76 @@ public class T2_8Actividad extends javax.swing.JFrame {
         });
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 140, 40));
 
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_8/T8_M1.png"))); // NOI18N
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 160, -1, -1));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_8/T8_M2.png"))); // NOI18N
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 160, 200, -1));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_8/T8_M3.png"))); // NOI18N
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 160, 200, -1));
+
+        cuadro3.setBackground(new java.awt.Color(0, 102, 255));
+        cuadro3.setForeground(new java.awt.Color(0, 0, 153));
+        cuadro3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 0, 255), 10));
+        getContentPane().add(cuadro3, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 340, 300, 170));
+
+        cuadro1.setBackground(new java.awt.Color(255, 255, 255));
+        cuadro1.setForeground(new java.awt.Color(102, 153, 255));
+        cuadro1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 0, 255), 10));
+        getContentPane().add(cuadro1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 340, 300, 170));
+
+        cuadro2.setBackground(new java.awt.Color(0, 102, 255));
+        cuadro2.setForeground(new java.awt.Color(0, 0, 153));
+        cuadro2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 0, 255), 10));
+        getContentPane().add(cuadro2, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 340, 300, 170));
+
+        op3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_8/T8_D3.png"))); // NOI18N
+        op3.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                op3MouseDragged(evt);
+            }
+        });
+        op3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                op3MouseReleased(evt);
+            }
+        });
+        getContentPane().add(op3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 590, -1, -1));
+
+        op2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_8/T8_D2.png"))); // NOI18N
+        op2.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                op2MouseDragged(evt);
+            }
+        });
+        op2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                op2MouseReleased(evt);
+            }
+        });
+        getContentPane().add(op2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 590, -1, -1));
+
+        op1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_8/T8_D1.png"))); // NOI18N
+        op1.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                op1MouseDragged(evt);
+            }
+        });
+        op1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                op1MouseReleased(evt);
+            }
+        });
+        getContentPane().add(op1, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 590, -1, -1));
+
+        jLabel1.setFont(new java.awt.Font("Yu Gothic Medium", 1, 24)); // NOI18N
+        jLabel1.setText("Actividad 8");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 20, -1, 44));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_8/FondoAzul.jpg"))); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 1440, 810));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -53,6 +137,121 @@ public class T2_8Actividad extends javax.swing.JFrame {
         c.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void op3MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_op3MouseReleased
+        // mediante condiciones especificamos el lugar  donde tiene que ir la imagen
+        int x1,x2,x3,x4;
+        x1=cuadro3.getX();
+        x2=cuadro3.getY();
+        x3=cuadro3.getX()+100;
+        x4=cuadro3.getY()+200;
+        int xx = op3.getX();
+        int yy = op3.getY();
+
+        if (xx>x1&&yy>x2&&xx<x3&&yy<x4)
+        {
+            cuadro1.setVisible(true);
+            op3.setVisible(true);
+            cuadro2.setVisible(true);
+            cuadro3.setVisible(true);
+
+            JOptionPane.showMessageDialog(null,"CORRECTO :)");
+            contador++;
+        }
+        else
+        {
+            op3.setLocation(600,600);
+            JOptionPane.showMessageDialog(null,"INCORRECTO :(");
+        }
+        if(contador==3)
+        {
+            JOptionPane.showMessageDialog(null,"FELICIDADES, Juego completado!!!!!!");
+        }
+    }//GEN-LAST:event_op3MouseReleased
+
+    private void op3MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_op3MouseDragged
+        // con esto se mueve la imagen
+        op3.setLocation( op3.getLocation().x+ evt.getX()- op3.getWidth()/2, op3.getLocation().y+ evt.getY()- op3.getHeight()/2);
+        int xx = op3.getX();
+        int yy = op3.getY();
+    }//GEN-LAST:event_op3MouseDragged
+
+    private void op2MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_op2MouseReleased
+        // TODO add your handling code here:
+        // mediante condiciones especificamos el lugar  donde tiene que ir la imagen
+        int x1,x2,x3,x4;
+        x1=cuadro2.getX();
+        x2=cuadro2.getY();
+        x3=cuadro2.getX()+100;
+        x4=cuadro2.getY()+200;
+        int xx = op2.getX();
+        int yy = op2.getY();
+
+        if (xx>x1&&yy>x2&&xx<x3&&yy<x4)
+        {
+            cuadro1.setVisible(true);
+            op2.setVisible(true);
+            cuadro2.setVisible(true);
+            cuadro3.setVisible(true);
+
+            JOptionPane.showMessageDialog(null,"CORRECTO :)");
+            contador++;
+        }
+        else
+        {
+            op2.setLocation(200,600);
+            JOptionPane.showMessageDialog(null,"INCORRECTO :(");
+        }
+        if(contador==3)
+        {
+            JOptionPane.showMessageDialog(null,"FELICIDADES, Juego completado!!!!!!");
+        }
+    }//GEN-LAST:event_op2MouseReleased
+
+    private void op2MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_op2MouseDragged
+        // con esto se mueve la imagen
+        op2.setLocation( op2.getLocation().x+ evt.getX()- op2.getWidth()/2, op2.getLocation().y+ evt.getY()- op2.getHeight()/2);
+        int xx = op2.getX();
+        int yy = op2.getY();
+    }//GEN-LAST:event_op2MouseDragged
+
+    private void op1MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_op1MouseReleased
+        // mediante condiciones especificamos el lugar  donde tiene que ir la imagen
+        int x1,x2,x3,x4;
+        x1=cuadro1.getX();
+        x2=cuadro1.getY();
+        x3=cuadro1.getX()+100;
+        x4=cuadro1.getY()+200;
+        int xx = op1.getX();
+        int yy = op1.getY();
+
+        if (xx>x1&&yy>x2&&xx<x3&&yy<x4)
+        {
+            cuadro1.setVisible(true);
+            op1.setVisible(true);
+            cuadro2.setVisible(true);
+            cuadro3.setVisible(true);
+
+            JOptionPane.showMessageDialog(null,"CORRECTO :)");
+            contador++;
+        }
+        else
+        {
+            op1.setLocation(1000,600);
+            JOptionPane.showMessageDialog(null,"INCORRECTO :(");
+        }
+        if(contador==3)
+        {
+            JOptionPane.showMessageDialog(null,"FELICIDADES, Juego completado!!!!!!");
+        }
+    }//GEN-LAST:event_op1MouseReleased
+
+    private void op1MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_op1MouseDragged
+        // con esto se mueve la imagen
+        op1.setLocation( op1.getLocation().x+ evt.getX()- op1.getWidth()/2, op1.getLocation().y+ evt.getY()- op1.getHeight()/2);
+        int xx = op1.getX();
+        int yy = op1.getY();
+    }//GEN-LAST:event_op1MouseDragged
 
     /**
      * @param args the command line arguments
@@ -90,6 +289,17 @@ public class T2_8Actividad extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel cuadro1;
+    private javax.swing.JLabel cuadro2;
+    private javax.swing.JLabel cuadro3;
     private javax.swing.JButton jButton3;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel op1;
+    private javax.swing.JLabel op2;
+    private javax.swing.JLabel op3;
     // End of variables declaration//GEN-END:variables
 }
