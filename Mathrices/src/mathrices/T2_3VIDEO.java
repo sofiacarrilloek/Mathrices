@@ -14,12 +14,12 @@ import java.util.logging.Logger;
  *
  * @author arman
  */
-public class T2_2VIDEO extends javax.swing.JFrame {
+public class T2_3VIDEO extends javax.swing.JFrame {
 
     /**
-     * Creates new form T2_2VIDEO
+     * Creates new form T2_3VIDEO
      */
-    public T2_2VIDEO() {
+    public T2_3VIDEO() {
         initComponents();
     }
 
@@ -33,77 +33,77 @@ public class T2_2VIDEO extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
         jScrollPane3 = new javax.swing.JScrollPane();
         jTextArea3 = new javax.swing.JTextArea();
-        jLabel1 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
         jScrollPane4 = new javax.swing.JScrollPane();
         jTextArea4 = new javax.swing.JTextArea();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(30, 144, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setFont(new java.awt.Font("Yu Gothic Medium", 1, 18)); // NOI18N
-        jButton1.setText("VÍDEO 1");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, 180, 70));
-
         jTextArea3.setEditable(false);
         jTextArea3.setColumns(20);
         jTextArea3.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jTextArea3.setLineWrap(true);
         jTextArea3.setRows(5);
-        jTextArea3.setText("En este video vamos a realizar operaciones combinadas de matrices con suma, resta y multiplicación por un escalar. Le pertenece\nal grupo VIRTUAL");
+        jTextArea3.setText("Este video elaborado por el Profesor de Matemáticas Gerardo \nSeguel Figueroa, en el cuál, explica más  a detalle los tipos de matrices que hay.");
         jTextArea3.setWrapStyleWord(true);
         jScrollPane3.setViewportView(jTextArea3);
 
         jPanel1.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 300, 510, 130));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_2/Ope_video.jpg"))); // NOI18N
-        jLabel1.setText("jLabel1");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 150, 200, -1));
-
-        jButton2.setFont(new java.awt.Font("Yu Gothic Medium", 1, 18)); // NOI18N
-        jButton2.setText("VÍDEO 2");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 330, 180, 70));
 
         jTextArea4.setEditable(false);
         jTextArea4.setColumns(20);
         jTextArea4.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jTextArea4.setLineWrap(true);
         jTextArea4.setRows(5);
-        jTextArea4.setText("En este video veremos cómo realizar operaciones con matrices de 2x2, las operaciones de suma y resta, multiplicación, y multiplicación por un escalar. Todas las operaciones hechas paso a paso, de forma muy didáctiva y sencilla. Le pertenece al grupo MateFacil.");
+        jTextArea4.setText("Explicación y ejemplos de algunos tipos de matrices, como la matriz fila o vector fila, la matriz o vector columna, la matriz nula, dentro del curso de Matrices. El video pertenece al canal Matemáticas profe Alex\n");
         jTextArea4.setWrapStyleWord(true);
         jScrollPane4.setViewportView(jTextArea4);
 
         jPanel1.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 140, 510, 130));
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_2/Ope_video2.jpg"))); // NOI18N
-        jButton3.setText("jButton3");
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 310, 190, -1));
-
-        jButton4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton4.setText("Regresar");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        jButton5.setFont(new java.awt.Font("Yu Gothic Medium", 1, 18)); // NOI18N
+        jButton5.setText("VIDEO 1");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                jButton5ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
+        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 170, 180, 70));
+
+        jButton1.setFont(new java.awt.Font("Yu Gothic Medium", 1, 18)); // NOI18N
+        jButton1.setText("VIDEO 2");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 330, 180, 70));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_3/Oper_8.jpg"))); // NOI18N
+        jLabel2.setText("jLabel2");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 310, 200, -1));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_3/Oper_9.jpg"))); // NOI18N
+        jLabel3.setText("jLabel3");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 150, 200, -1));
+
+        jButton2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jButton2.setText("Regresar");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -129,12 +129,12 @@ public class T2_2VIDEO extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-   if(java.awt.Desktop.isDesktopSupported()){
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    if(java.awt.Desktop.isDesktopSupported()){
             java.awt.Desktop  desktop = java.awt.Desktop.getDesktop();
             if(desktop.isSupported(java.awt.Desktop.Action.BROWSE)){
                 try{
-                    java.net.URI uri = new java.net.URI("https://www.youtube.com/watch?v=aE2Tn52RYMs&t=33s");
+                    java.net.URI uri = new java.net.URI("https://youtu.be/GyrQmbxk7ds");
                     desktop.browse(uri);
 
                 } catch (URISyntaxException ex) {
@@ -146,38 +146,38 @@ public class T2_2VIDEO extends javax.swing.JFrame {
             }
 
         }
-                       
+        
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+if(java.awt.Desktop.isDesktopSupported()){
+            java.awt.Desktop  desktop = java.awt.Desktop.getDesktop();
+            if(desktop.isSupported(java.awt.Desktop.Action.BROWSE)){
+                try{
+                    java.net.URI uri = new java.net.URI("https://youtu.be/6VbgHLuPxgA");
+                    desktop.browse(uri);
+
+                } catch (URISyntaxException ex) {
+                    Logger.getLogger(T2_1VIDEOS.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (IOException ex) {
+                    Logger.getLogger(T2_1VIDEOS.class.getName()).log(Level.SEVERE, null, ex);
+                }
+
+            }
+
+        }
+        
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-       if(java.awt.Desktop.isDesktopSupported()){
-            java.awt.Desktop  desktop = java.awt.Desktop.getDesktop();
-            if(desktop.isSupported(java.awt.Desktop.Action.BROWSE)){
-                try{
-                    java.net.URI uri = new java.net.URI("https://www.youtube.com/watch?v=F15zETgBt30&t=44s");
-                    desktop.browse(uri);
-
-                } catch (URISyntaxException ex) {
-                    Logger.getLogger(T2_1VIDEOS.class.getName()).log(Level.SEVERE, null, ex);
-                } catch (IOException ex) {
-                    Logger.getLogger(T2_1VIDEOS.class.getName()).log(Level.SEVERE, null, ex);
-                }
-
-            }
-
-        }
+    T2_3MENU c=new T2_3MENU();
+    c.setVisible(true);
+    this.dispose();
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-              T2_2MENU_1 c=new T2_2MENU_1();
-              c.setVisible(true);
-              this.dispose();
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
-
-    
     /**
      * @param args the command line arguments
      */
@@ -195,20 +195,20 @@ public class T2_2VIDEO extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(T2_2VIDEO.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(T2_3VIDEO.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(T2_2VIDEO.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(T2_3VIDEO.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(T2_2VIDEO.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(T2_3VIDEO.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(T2_2VIDEO.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(T2_3VIDEO.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new T2_2VIDEO().setVisible(true);
+                new T2_3VIDEO().setVisible(true);
             }
         });
     }
@@ -216,9 +216,9 @@ public class T2_2VIDEO extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
