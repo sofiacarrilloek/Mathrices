@@ -17,6 +17,8 @@ public class T2_8Actividad extends javax.swing.JFrame {
      * Creates new form T2_8Actividad
      */
     int contador=0;
+    int puntuacion;
+    int malas=0;
     public T2_8Actividad() {
         initComponents();
         this.setExtendedState(MAXIMIZED_BOTH);
@@ -35,13 +37,16 @@ public class T2_8Actividad extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        cuadro3 = new javax.swing.JLabel();
-        cuadro1 = new javax.swing.JLabel();
-        cuadro2 = new javax.swing.JLabel();
         op3 = new javax.swing.JLabel();
         op2 = new javax.swing.JLabel();
         op1 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        cuadro3 = new javax.swing.JLabel();
+        cuadro1 = new javax.swing.JLabel();
+        cuadro2 = new javax.swing.JLabel();
+        cortina1 = new javax.swing.JLabel();
+        cortina3 = new javax.swing.JLabel();
+        cortina4 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -67,21 +72,6 @@ public class T2_8Actividad extends javax.swing.JFrame {
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_8/T8_M3.png"))); // NOI18N
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 160, 200, -1));
 
-        cuadro3.setBackground(new java.awt.Color(0, 102, 255));
-        cuadro3.setForeground(new java.awt.Color(0, 0, 153));
-        cuadro3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 0, 255), 10));
-        getContentPane().add(cuadro3, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 340, 300, 170));
-
-        cuadro1.setBackground(new java.awt.Color(255, 255, 255));
-        cuadro1.setForeground(new java.awt.Color(102, 153, 255));
-        cuadro1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 0, 255), 10));
-        getContentPane().add(cuadro1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 340, 300, 170));
-
-        cuadro2.setBackground(new java.awt.Color(0, 102, 255));
-        cuadro2.setForeground(new java.awt.Color(0, 0, 153));
-        cuadro2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 0, 255), 10));
-        getContentPane().add(cuadro2, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 340, 300, 170));
-
         op3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_8/T8_D3.png"))); // NOI18N
         op3.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
@@ -93,7 +83,7 @@ public class T2_8Actividad extends javax.swing.JFrame {
                 op3MouseReleased(evt);
             }
         });
-        getContentPane().add(op3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 590, -1, -1));
+        getContentPane().add(op3, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 600, -1, -1));
 
         op2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_8/T8_D2.png"))); // NOI18N
         op2.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
@@ -106,7 +96,7 @@ public class T2_8Actividad extends javax.swing.JFrame {
                 op2MouseReleased(evt);
             }
         });
-        getContentPane().add(op2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 590, -1, -1));
+        getContentPane().add(op2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 600, -1, -1));
 
         op1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_8/T8_D1.png"))); // NOI18N
         op1.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
@@ -119,11 +109,38 @@ public class T2_8Actividad extends javax.swing.JFrame {
                 op1MouseReleased(evt);
             }
         });
-        getContentPane().add(op1, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 590, -1, -1));
+        getContentPane().add(op1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 600, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Yu Gothic Medium", 1, 24)); // NOI18N
         jLabel1.setText("Actividad 8");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 20, -1, 44));
+
+        cuadro3.setBackground(new java.awt.Color(255, 255, 255));
+        cuadro3.setForeground(new java.awt.Color(102, 153, 255));
+        cuadro3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_8/FondoAzul.jpg"))); // NOI18N
+        cuadro3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 0, 255), 10));
+        getContentPane().add(cuadro3, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 340, 300, 170));
+
+        cuadro1.setBackground(new java.awt.Color(255, 255, 255));
+        cuadro1.setForeground(new java.awt.Color(102, 153, 255));
+        cuadro1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_8/FondoAzul.jpg"))); // NOI18N
+        cuadro1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 0, 255), 10));
+        getContentPane().add(cuadro1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 340, 300, 170));
+
+        cuadro2.setBackground(new java.awt.Color(255, 255, 255));
+        cuadro2.setForeground(new java.awt.Color(102, 153, 255));
+        cuadro2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_8/FondoAzul.jpg"))); // NOI18N
+        cuadro2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 0, 255), 10));
+        getContentPane().add(cuadro2, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 340, 300, 170));
+
+        cortina1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_8/T8_Buena.png"))); // NOI18N
+        getContentPane().add(cortina1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 340, 170, -1));
+
+        cortina3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_8/T8_Buena.png"))); // NOI18N
+        getContentPane().add(cortina3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 340, 170, -1));
+
+        cortina4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_8/T8_Buena.png"))); // NOI18N
+        getContentPane().add(cortina4, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 340, 170, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_8/FondoAzul.jpg"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 1440, 810));
@@ -133,7 +150,7 @@ public class T2_8Actividad extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        T2_8MENU c=new T2_8MENU();
+        T2_8Instrucciones c=new T2_8Instrucciones();
         c.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
@@ -150,22 +167,25 @@ public class T2_8Actividad extends javax.swing.JFrame {
 
         if (xx>x1&&yy>x2&&xx<x3&&yy<x4)
         {
-            cuadro1.setVisible(true);
-            op3.setVisible(true);
-            cuadro2.setVisible(true);
-            cuadro3.setVisible(true);
+            cuadro3.setVisible(false);
+            op3.setVisible(false);
+            cuadro3.setEnabled(false);
+            op3.setEnabled(false);
 
             JOptionPane.showMessageDialog(null,"CORRECTO :)");
             contador++;
         }
         else
         {
+            malas++;
             op3.setLocation(600,600);
             JOptionPane.showMessageDialog(null,"INCORRECTO :(");
         }
         if(contador==3)
         {
-            JOptionPane.showMessageDialog(null,"FELICIDADES, Juego completado!!!!!!");
+            puntuacion=10-malas;
+            JOptionPane.showMessageDialog(null,"FELICIDADES, Juego completado, tu puntuación es: "+puntuacion+" de 10");
+            
         }
     }//GEN-LAST:event_op3MouseReleased
 
@@ -183,28 +203,31 @@ public class T2_8Actividad extends javax.swing.JFrame {
         x1=cuadro2.getX();
         x2=cuadro2.getY();
         x3=cuadro2.getX()+100;
-        x4=cuadro2.getY()+200;
+        x4=cuadro2.getY()+60;
         int xx = op2.getX();
         int yy = op2.getY();
 
         if (xx>x1&&yy>x2&&xx<x3&&yy<x4)
         {
-            cuadro1.setVisible(true);
-            op2.setVisible(true);
-            cuadro2.setVisible(true);
-            cuadro3.setVisible(true);
+            cuadro2.setVisible(false);
+            op2.setVisible(false);    
+            cuadro2.setEnabled(false);
+            op2.setEnabled(false);
 
             JOptionPane.showMessageDialog(null,"CORRECTO :)");
             contador++;
         }
         else
         {
+            malas++;
             op2.setLocation(200,600);
             JOptionPane.showMessageDialog(null,"INCORRECTO :(");
         }
         if(contador==3)
         {
-            JOptionPane.showMessageDialog(null,"FELICIDADES, Juego completado!!!!!!");
+            puntuacion=10-malas;
+            JOptionPane.showMessageDialog(null,"FELICIDADES, Juego completado, tu puntuación es: "+puntuacion+" de 10");
+            
         }
     }//GEN-LAST:event_op2MouseReleased
 
@@ -227,22 +250,25 @@ public class T2_8Actividad extends javax.swing.JFrame {
 
         if (xx>x1&&yy>x2&&xx<x3&&yy<x4)
         {
-            cuadro1.setVisible(true);
-            op1.setVisible(true);
-            cuadro2.setVisible(true);
-            cuadro3.setVisible(true);
+            cuadro1.setVisible(false);
+            op1.setVisible(false);
+            cuadro1.setEnabled(false);
+            op1.setEnabled(false);
 
             JOptionPane.showMessageDialog(null,"CORRECTO :)");
             contador++;
         }
         else
         {
+            malas++;
             op1.setLocation(1000,600);
             JOptionPane.showMessageDialog(null,"INCORRECTO :(");
         }
         if(contador==3)
         {
-            JOptionPane.showMessageDialog(null,"FELICIDADES, Juego completado!!!!!!");
+            puntuacion=10-malas;
+            JOptionPane.showMessageDialog(null,"FELICIDADES, Juego completado, tu puntuación es: "+puntuacion+" de 10");
+            
         }
     }//GEN-LAST:event_op1MouseReleased
 
@@ -289,6 +315,9 @@ public class T2_8Actividad extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel cortina1;
+    private javax.swing.JLabel cortina3;
+    private javax.swing.JLabel cortina4;
     private javax.swing.JLabel cuadro1;
     private javax.swing.JLabel cuadro2;
     private javax.swing.JLabel cuadro3;
