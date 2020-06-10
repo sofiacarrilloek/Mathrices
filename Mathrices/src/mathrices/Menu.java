@@ -28,17 +28,54 @@ public class Menu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        btn_tema1 = new javax.swing.JButton();
+        btn_tema2 = new javax.swing.JButton();
+        btn_tema3 = new javax.swing.JButton();
         btn_tema4 = new javax.swing.JButton();
+        btn_tema5 = new javax.swing.JButton();
         btn_tema6 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        btn_tema7 = new javax.swing.JButton();
+        btn_tema8 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        setMinimumSize(new java.awt.Dimension(1400, 800));
+        setPreferredSize(new java.awt.Dimension(1400, 800));
+        setSize(new java.awt.Dimension(1400, 800));
+
+        jPanel1.setMinimumSize(new java.awt.Dimension(1400, 800));
+        jPanel1.setPreferredSize(new java.awt.Dimension(1400, 800));
+
+        btn_tema1.setText("TEMA 1");
+        btn_tema1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btn_tema1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_tema1ActionPerformed(evt);
+            }
+        });
+
+        btn_tema2.setText("TEMA 2");
+        btn_tema2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_tema2ActionPerformed(evt);
+            }
+        });
+
+        btn_tema3.setText("TEMA 3");
+        btn_tema3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_tema3ActionPerformed(evt);
+            }
+        });
 
         btn_tema4.setText("TEMA 4");
         btn_tema4.setFocusPainted(false);
@@ -47,7 +84,13 @@ public class Menu extends javax.swing.JFrame {
                 btn_tema4ActionPerformed(evt);
             }
         });
-        getContentPane().add(btn_tema4, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 180, 93, 34));
+
+        btn_tema5.setText("TEMA 5");
+        btn_tema5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_tema5ActionPerformed(evt);
+            }
+        });
 
         btn_tema6.setText("TEMA 6");
         btn_tema6.setFocusable(false);
@@ -56,55 +99,121 @@ public class Menu extends javax.swing.JFrame {
                 btn_tema6ActionPerformed(evt);
             }
         });
-        getContentPane().add(btn_tema6, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 270, 93, 35));
 
-        jButton2.setText("TEMA 8");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btn_tema7.setText("TEMA 7");
+        btn_tema7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btn_tema7ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 370, 90, 37));
 
-        jButton3.setText("TEMA 7");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btn_tema8.setText("TEMA 8");
+        btn_tema8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btn_tema8ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 320, 90, 40));
 
-        jButton4.setText("TEMA 1");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 30, 90, 37));
+        jLabel1.setText("2.1 Definición de matriz, notación y orden.");
 
-        jButton1.setText("TEMA 2");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 80, 90, 40));
+        jLabel2.setText("2.2 Operaciones con matrices.");
 
-        jButton5.setText("TEMA 3");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 130, 90, 40));
+        jLabel3.setText("2.3 Clasificación de las matrices.");
 
-        jButton6.setText("TEMA 5");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 220, 90, 40));
+        jLabel4.setText("2.4 Transformaciones elementales por reglón.");
+
+        jLabel5.setText("2.5 Cálculo de la inversa de una matriz.");
+
+        jLabel6.setText("2.6 Definición de determinantes de una matriz.");
+
+        jLabel7.setText("2.7 Propiedades de los determinantes.");
+
+        jLabel8.setText("2.8 Inversa de una matriz cuadrada a través de la adjunta.");
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImgFondos/Escritorio1X.png"))); // NOI18N
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(241, 241, 241)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btn_tema8)
+                            .addComponent(btn_tema2)
+                            .addComponent(btn_tema1)
+                            .addComponent(btn_tema3)
+                            .addComponent(btn_tema4)
+                            .addComponent(btn_tema5)
+                            .addComponent(btn_tema7)
+                            .addComponent(btn_tema6)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(312, 312, 312)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1)
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel7)
+                            .addComponent(jLabel8)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel6))))
+                .addGap(762, 762, 762))
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addComponent(btn_tema1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel1)
+                .addGap(38, 38, 38)
+                .addComponent(btn_tema2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel2)
+                .addGap(38, 38, 38)
+                .addComponent(btn_tema3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel3)
+                .addGap(38, 38, 38)
+                .addComponent(btn_tema4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel4)
+                .addGap(38, 38, 38)
+                .addComponent(btn_tema5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel5)
+                .addGap(38, 38, 38)
+                .addComponent(btn_tema6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel6)
+                .addGap(38, 38, 38)
+                .addComponent(btn_tema7, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel7)
+                .addGap(38, 38, 38)
+                .addComponent(btn_tema8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel8)
+                .addContainerGap(70, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -125,47 +234,47 @@ public class Menu extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_btn_tema6ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btn_tema8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tema8ActionPerformed
         // TODO add your handling code here:
         T2_8MENU c=new T2_8MENU();
         c.setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btn_tema8ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void btn_tema7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tema7ActionPerformed
                     T7_7MENU c=new T7_7MENU();
                       c.setVisible(true);
                          this.dispose();        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_btn_tema7ActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void btn_tema1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tema1ActionPerformed
       T2_1MENU c=new T2_1MENU();
       c.setVisible(true);
       this.dispose();
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_btn_tema1ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btn_tema2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tema2ActionPerformed
                           T2_2MENU_1 c=new T2_2MENU_1();
                           c.setVisible(true);
                           this.dispose();
                           
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btn_tema2ActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void btn_tema3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tema3ActionPerformed
       T2_3MENU c=new T2_3MENU();
       c.setVisible(true);
       this.dispose();
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_btn_tema3ActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void btn_tema5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tema5ActionPerformed
         // TODO add your handling code here:
         T2_5Menu y = new T2_5Menu();
         y.setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_btn_tema5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -204,13 +313,23 @@ public class Menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btn_tema1;
+    private javax.swing.JButton btn_tema2;
+    private javax.swing.JButton btn_tema3;
     private javax.swing.JButton btn_tema4;
+    private javax.swing.JButton btn_tema5;
     private javax.swing.JButton btn_tema6;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
+    private javax.swing.JButton btn_tema7;
+    private javax.swing.JButton btn_tema8;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
