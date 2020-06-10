@@ -35,6 +35,7 @@ public class Menu extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -55,7 +56,7 @@ public class Menu extends javax.swing.JFrame {
                 btn_tema6ActionPerformed(evt);
             }
         });
-        getContentPane().add(btn_tema6, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 230, 93, 35));
+        getContentPane().add(btn_tema6, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 270, 93, 35));
 
         jButton2.setText("TEMA 8");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -63,7 +64,7 @@ public class Menu extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 330, 90, 37));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 370, 90, 37));
 
         jButton3.setText("TEMA 7");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -71,7 +72,7 @@ public class Menu extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 280, 90, 40));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 320, 90, 40));
 
         jButton4.setText("TEMA 1");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -96,6 +97,14 @@ public class Menu extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 130, 90, 40));
+
+        jButton6.setText("TEMA 5");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 220, 90, 40));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -151,6 +160,13 @@ public class Menu extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton5ActionPerformed
 
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+        T2_5Menu y = new T2_5Menu();
+        y.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton6ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -195,5 +211,6 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
     // End of variables declaration//GEN-END:variables
 }
