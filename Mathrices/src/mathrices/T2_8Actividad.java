@@ -53,15 +53,18 @@ public class T2_8Actividad extends javax.swing.JFrame {
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jButton3.setBackground(new java.awt.Color(0, 0, 153));
         jButton3.setFont(new java.awt.Font("Yu Gothic Medium", 1, 24)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("<--");
+        jButton3.setFocusPainted(false);
         jButton3.setFocusable(false);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 140, 40));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 90, 40));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_8/T8_M1.png"))); // NOI18N
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 160, -1, -1));
@@ -142,7 +145,7 @@ public class T2_8Actividad extends javax.swing.JFrame {
         cortina4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_8/T8_Buena.png"))); // NOI18N
         getContentPane().add(cortina4, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 340, 170, -1));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_8/FondoAzul.jpg"))); // NOI18N
+        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 1440, 810));
 
         pack();
