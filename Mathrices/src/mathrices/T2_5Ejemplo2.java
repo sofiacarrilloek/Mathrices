@@ -65,7 +65,7 @@ public class T2_5Ejemplo2 extends javax.swing.JFrame {
 
         jLabel6.setText("Con esto, hemos terminado nuestro ejercicio y hemos encontrado la solución a nuestra actividad.");
 
-        jButton2.setBackground(new java.awt.Color(153, 153, 255));
+        jButton2.setBackground(new java.awt.Color(51, 102, 255));
         jButton2.setText("Atras");
         jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -79,7 +79,7 @@ public class T2_5Ejemplo2 extends javax.swing.JFrame {
         jTextArea1.setText("Presione el simbolo de YouTube para \nreproducir un video en donde reforzará \nlo visto en este tema.");
         jScrollPane1.setViewportView(jTextArea1);
 
-        jButton1.setBackground(new java.awt.Color(153, 153, 255));
+        jButton1.setBackground(new java.awt.Color(51, 102, 255));
         jButton1.setText("Video");
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -96,10 +96,6 @@ public class T2_5Ejemplo2 extends javax.swing.JFrame {
                 .addContainerGap(107, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(36, 36, 36)
-                        .addComponent(jLabel2)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(96, 96, 96)
                         .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 344, Short.MAX_VALUE)
@@ -107,6 +103,9 @@ public class T2_5Ejemplo2 extends javax.swing.JFrame {
                         .addGap(62, 62, 62))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addGap(36, 36, 36)
+                                .addComponent(jLabel2))
                             .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addGap(96, 96, 96)

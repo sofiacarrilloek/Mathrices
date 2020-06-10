@@ -41,7 +41,6 @@ public class T2_5Teoria extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1410, 790));
-        setPreferredSize(new java.awt.Dimension(1410, 790));
         setSize(new java.awt.Dimension(1410, 790));
 
         jPanel1.setBackground(new java.awt.Color(153, 153, 255));
@@ -64,7 +63,7 @@ public class T2_5Teoria extends javax.swing.JFrame {
         jLabel2.setText("Calculo de la inversa de una matriz ");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 59, -1, -1));
 
-        jButton2.setBackground(new java.awt.Color(153, 153, 255));
+        jButton2.setBackground(new java.awt.Color(51, 102, 255));
         jButton2.setForeground(new java.awt.Color(0, 0, 0));
         jButton2.setText("Siguiente");
         jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -75,7 +74,7 @@ public class T2_5Teoria extends javax.swing.JFrame {
         });
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1167, 643, 90, 40));
 
-        jButton3.setBackground(new java.awt.Color(153, 153, 255));
+        jButton3.setBackground(new java.awt.Color(51, 102, 255));
         jButton3.setForeground(new java.awt.Color(0, 0, 0));
         jButton3.setText("Regresar al menu");
         jButton3.setToolTipText("");

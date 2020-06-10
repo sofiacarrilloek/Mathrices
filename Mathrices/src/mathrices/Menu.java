@@ -28,6 +28,7 @@ public class Menu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
         btn_tema1 = new javax.swing.JButton();
         btn_tema2 = new javax.swing.JButton();
         btn_tema3 = new javax.swing.JButton();
@@ -50,114 +51,217 @@ public class Menu extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(1400, 800));
         setPreferredSize(new java.awt.Dimension(1400, 800));
         setSize(new java.awt.Dimension(1400, 800));
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btn_tema1.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setMinimumSize(new java.awt.Dimension(1400, 800));
+        jPanel1.setPreferredSize(new java.awt.Dimension(1400, 800));
+
+        btn_tema1.setBackground(new java.awt.Color(0, 0, 153));
+        btn_tema1.setForeground(new java.awt.Color(255, 255, 255));
         btn_tema1.setText("TEMA 1");
-        btn_tema1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btn_tema1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btn_tema1.setFocusPainted(false);
         btn_tema1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_tema1ActionPerformed(evt);
             }
         });
-        getContentPane().add(btn_tema1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 40, 90, 37));
 
-        btn_tema2.setForeground(new java.awt.Color(0, 0, 0));
+        btn_tema2.setBackground(new java.awt.Color(0, 0, 153));
+        btn_tema2.setForeground(new java.awt.Color(255, 255, 255));
         btn_tema2.setText("TEMA 2");
+        btn_tema2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btn_tema2.setFocusPainted(false);
         btn_tema2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_tema2ActionPerformed(evt);
             }
         });
-        getContentPane().add(btn_tema2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 130, 90, 40));
 
-        btn_tema3.setForeground(new java.awt.Color(0, 0, 0));
+        btn_tema3.setBackground(new java.awt.Color(0, 0, 153));
+        btn_tema3.setForeground(new java.awt.Color(255, 255, 255));
         btn_tema3.setText("TEMA 3");
+        btn_tema3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btn_tema3.setFocusPainted(false);
         btn_tema3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_tema3ActionPerformed(evt);
             }
         });
-        getContentPane().add(btn_tema3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 220, 90, 40));
 
-        btn_tema4.setForeground(new java.awt.Color(0, 0, 0));
+        btn_tema4.setBackground(new java.awt.Color(0, 0, 153));
+        btn_tema4.setForeground(new java.awt.Color(255, 255, 255));
         btn_tema4.setText("TEMA 4");
+        btn_tema4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_tema4.setFocusPainted(false);
         btn_tema4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_tema4ActionPerformed(evt);
             }
         });
-        getContentPane().add(btn_tema4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 320, 93, 34));
 
-        btn_tema5.setForeground(new java.awt.Color(0, 0, 0));
+        btn_tema5.setBackground(new java.awt.Color(0, 0, 153));
+        btn_tema5.setForeground(new java.awt.Color(255, 255, 255));
         btn_tema5.setText("TEMA 5");
+        btn_tema5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btn_tema5.setFocusPainted(false);
         btn_tema5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_tema5ActionPerformed(evt);
             }
         });
-        getContentPane().add(btn_tema5, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 400, 90, 40));
 
-        btn_tema6.setForeground(new java.awt.Color(0, 0, 0));
+        btn_tema6.setBackground(new java.awt.Color(0, 0, 153));
+        btn_tema6.setForeground(new java.awt.Color(255, 255, 255));
         btn_tema6.setText("TEMA 6");
+        btn_tema6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btn_tema6.setFocusPainted(false);
         btn_tema6.setFocusable(false);
         btn_tema6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_tema6ActionPerformed(evt);
             }
         });
-        getContentPane().add(btn_tema6, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 500, 93, 35));
 
-        btn_tema7.setForeground(new java.awt.Color(0, 0, 0));
+        btn_tema7.setBackground(new java.awt.Color(0, 0, 153));
+        btn_tema7.setForeground(new java.awt.Color(255, 255, 255));
         btn_tema7.setText("TEMA 7");
+        btn_tema7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btn_tema7.setFocusPainted(false);
         btn_tema7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_tema7ActionPerformed(evt);
             }
         });
-        getContentPane().add(btn_tema7, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 580, 90, 40));
 
-        btn_tema8.setForeground(new java.awt.Color(0, 0, 0));
+        btn_tema8.setBackground(new java.awt.Color(0, 0, 153));
+        btn_tema8.setForeground(new java.awt.Color(255, 255, 255));
         btn_tema8.setText("TEMA 8");
+        btn_tema8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btn_tema8.setFocusPainted(false);
         btn_tema8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_tema8ActionPerformed(evt);
             }
         });
-        getContentPane().add(btn_tema8, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 670, 90, 37));
 
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("2.1 Definición de matriz, notación y orden.");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(312, 78, -1, -1));
 
         jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("2.2 Operaciones con matrices.");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(312, 170, -1, -1));
 
         jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("2.3 Clasificación de las matrices.");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(312, 262, -1, -1));
 
         jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("2.4 Transformaciones elementales por reglón.");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(312, 354, -1, -1));
 
         jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("2.5 Cálculo de la inversa de una matriz.");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(312, 446, -1, -1));
 
         jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("2.6 Definición de determinantes de una matriz.");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(312, 538, -1, -1));
 
         jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("2.7 Propiedades de los determinantes.");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(312, 622, -1, -1));
 
         jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setText("2.8 Inversa de una matriz cuadrada a través de la adjunta.");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(312, 714, -1, -1));
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(309, 309, 309)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btn_tema1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn_tema2, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn_tema3, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(56, 56, 56)
+                        .addComponent(jLabel2))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(56, 56, 56)
+                        .addComponent(jLabel3))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(56, 56, 56)
+                        .addComponent(jLabel4))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(52, 52, 52)
+                        .addComponent(jLabel1))
+                    .addComponent(btn_tema6, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn_tema7, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(56, 56, 56)
+                        .addComponent(jLabel5))
+                    .addComponent(btn_tema8, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn_tema5, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn_tema4, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(56, 56, 56)
+                        .addComponent(jLabel6))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(56, 56, 56)
+                        .addComponent(jLabel7))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(56, 56, 56)
+                        .addComponent(jLabel8)))
+                .addContainerGap(709, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addComponent(btn_tema1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel1)
+                .addGap(30, 30, 30)
+                .addComponent(btn_tema2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel2)
+                .addGap(30, 30, 30)
+                .addComponent(btn_tema3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel3)
+                .addGap(30, 30, 30)
+                .addComponent(btn_tema4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel4)
+                .addGap(30, 30, 30)
+                .addComponent(btn_tema5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel5)
+                .addGap(30, 30, 30)
+                .addComponent(btn_tema6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel6)
+                .addGap(30, 30, 30)
+                .addComponent(btn_tema7, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel7)
+                .addGap(30, 30, 30)
+                .addComponent(btn_tema8, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel8)
+                .addContainerGap(79, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -273,5 +377,6 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

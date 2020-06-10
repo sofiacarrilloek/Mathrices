@@ -47,7 +47,7 @@ public class T2_5Teoria2 extends javax.swing.JFrame {
         jPanel1.setMinimumSize(new java.awt.Dimension(1350, 780));
         jPanel1.setName(""); // NOI18N
 
-        jButton1.setBackground(new java.awt.Color(153, 153, 255));
+        jButton1.setBackground(new java.awt.Color(51, 102, 255));
         jButton1.setForeground(new java.awt.Color(0, 0, 0));
         jButton1.setText("Atras");
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -81,7 +81,7 @@ public class T2_5Teoria2 extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel7.setText("Para entender el procedimiento, comenzaremos con un ejemplo:");
 
-        jButton3.setBackground(new java.awt.Color(153, 153, 255));
+        jButton3.setBackground(new java.awt.Color(51, 102, 255));
         jButton3.setForeground(new java.awt.Color(0, 0, 0));
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_5/Ejemplo1.PNG"))); // NOI18N
         jButton3.setText("(Clic here)");
