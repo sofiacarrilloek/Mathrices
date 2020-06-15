@@ -30,30 +30,31 @@ public class T2_6MENU extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        btn_T4Actividades = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(204, 204, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton3.setText("Teoria");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 100, 200, 100));
-
-        jButton4.setText("Videos");
+        jButton4.setText("VIDEOS");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
             }
         });
         jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 250, 200, 100));
+
+        jButton3.setText("TEORIA");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 100, 200, 100));
 
         jButton2.setText("IR AL MENÚ");
         jButton2.setFocusPainted(false);
@@ -63,6 +64,15 @@ public class T2_6MENU extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 100, 50));
+
+        btn_T4Actividades.setText("ACTIVIDADES");
+        btn_T4Actividades.setFocusPainted(false);
+        btn_T4Actividades.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_T4ActividadesActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btn_T4Actividades, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 400, 200, 100));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -101,6 +111,13 @@ public class T2_6MENU extends javax.swing.JFrame {
         this.dispose();
 
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void btn_T4ActividadesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_T4ActividadesActionPerformed
+        // TODO add your handling code here:
+        T2_6ACTIVIDAD a = new T2_6ACTIVIDAD();
+        a.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btn_T4ActividadesActionPerformed
 
     /**
      * @param args the command line arguments
@@ -141,6 +158,7 @@ public class T2_6MENU extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btn_T4Actividades;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
