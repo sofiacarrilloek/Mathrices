@@ -16,7 +16,7 @@ public class T2_4MENU extends javax.swing.JFrame {
      */
     public T2_4MENU() {
         initComponents();
-        
+        this.setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**

@@ -16,6 +16,7 @@ public class T2_4TEORIA extends javax.swing.JFrame {
      */
     public T2_4TEORIA() {
         initComponents();
+        this.setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**
