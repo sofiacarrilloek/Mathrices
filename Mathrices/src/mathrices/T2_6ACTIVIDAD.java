@@ -45,6 +45,7 @@ public class T2_6ACTIVIDAD extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -63,7 +64,7 @@ public class T2_6ACTIVIDAD extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 90, 60));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 90, 60));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_6/Determinante_21.png"))); // NOI18N
         jLabel3.setText("jLabel1");

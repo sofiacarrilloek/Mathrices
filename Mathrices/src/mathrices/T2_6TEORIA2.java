@@ -36,6 +36,7 @@ public class T2_6TEORIA2 extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -56,7 +57,7 @@ public class T2_6TEORIA2 extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 90, 60));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 90, 60));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jLabel3.setText("<html>El concepto de determinante o de volumen orientado fue introducido para estudiar el número de soluciones de los sistemas lineales de ecuaciones.</html>");
@@ -84,7 +85,7 @@ public class T2_6TEORIA2 extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 616, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -92,7 +93,7 @@ public class T2_6TEORIA2 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        T2_6TEORIA3 c=new T2_6TEORIA3();
+        T2_6TEORIA c=new T2_6TEORIA();
         c.setVisible(true);
         this.dispose();
                 
@@ -100,7 +101,7 @@ public class T2_6TEORIA2 extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        T2_6TEORIA c=new T2_6TEORIA();
+        T2_6TEORIA3 c=new T2_6TEORIA3();
         c.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
