@@ -44,18 +44,22 @@ public class T2_2VIDEO extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
-        jPanel1.setBackground(new java.awt.Color(30, 144, 255));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setFont(new java.awt.Font("Yu Gothic Medium", 1, 18)); // NOI18N
+        jButton1.setBackground(new java.awt.Color(0, 0, 153));
+        jButton1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("VÍDEO 1");
+        jButton1.setFocusable(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, 180, 70));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 160, 200, 100));
 
         jTextArea3.setEditable(false);
         jTextArea3.setColumns(20);
@@ -64,6 +68,7 @@ public class T2_2VIDEO extends javax.swing.JFrame {
         jTextArea3.setRows(5);
         jTextArea3.setText("En este video vamos a realizar operaciones combinadas de matrices con suma, resta y multiplicación por un escalar. Le pertenece\nal grupo VIRTUAL");
         jTextArea3.setWrapStyleWord(true);
+        jTextArea3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jScrollPane3.setViewportView(jTextArea3);
 
         jPanel1.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 300, 510, 130));
@@ -72,14 +77,17 @@ public class T2_2VIDEO extends javax.swing.JFrame {
         jLabel1.setText("jLabel1");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 150, 200, -1));
 
-        jButton2.setFont(new java.awt.Font("Yu Gothic Medium", 1, 18)); // NOI18N
+        jButton2.setBackground(new java.awt.Color(0, 0, 153));
+        jButton2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("VÍDEO 2");
+        jButton2.setFocusable(false);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 330, 180, 70));
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 320, 200, 100));
 
         jTextArea4.setEditable(false);
         jTextArea4.setColumns(20);
@@ -88,6 +96,7 @@ public class T2_2VIDEO extends javax.swing.JFrame {
         jTextArea4.setRows(5);
         jTextArea4.setText("En este video veremos cómo realizar operaciones con matrices de 2x2, las operaciones de suma y resta, multiplicación, y multiplicación por un escalar. Todas las operaciones hechas paso a paso, de forma muy didáctiva y sencilla. Le pertenece al grupo MateFacil.");
         jTextArea4.setWrapStyleWord(true);
+        jTextArea4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jScrollPane4.setViewportView(jTextArea4);
 
         jPanel1.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 140, 510, 130));
@@ -96,14 +105,17 @@ public class T2_2VIDEO extends javax.swing.JFrame {
         jButton3.setText("jButton3");
         jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 310, 190, -1));
 
-        jButton4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jButton4.setBackground(new java.awt.Color(0, 0, 153));
+        jButton4.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jButton4.setForeground(new java.awt.Color(255, 255, 255));
         jButton4.setText("Regresar");
+        jButton4.setFocusable(false);
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
+        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 90, 60));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
