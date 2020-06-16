@@ -23,6 +23,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 import java.awt.image.BufferedImage;
+import mathrices.T7_7MENU;
 import vista.Sonido;
 import vista.audio;
 
@@ -114,7 +115,6 @@ public final class JuegoAltoss extends javax.swing.JFrame {
         jLabelPuntos = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabelGanador = new javax.swing.JLabel();
-        btnPreguntas = new javax.swing.JButton();
         btnRegresar = new javax.swing.JButton();
         btnSalir = new javax.swing.JButton();
         btnReiniciar = new javax.swing.JButton();
@@ -184,17 +184,6 @@ public final class JuegoAltoss extends javax.swing.JFrame {
             .addComponent(jLabelGanador, javax.swing.GroupLayout.DEFAULT_SIZE, 274, Short.MAX_VALUE)
         );
 
-        btnPreguntas.setBackground(new java.awt.Color(255, 255, 51));
-        btnPreguntas.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        btnPreguntas.setForeground(new java.awt.Color(255, 0, 0));
-        btnPreguntas.setText("PREGUNTAS");
-        btnPreguntas.setAutoscrolls(true);
-        btnPreguntas.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnPreguntasActionPerformed(evt);
-            }
-        });
-
         btnRegresar.setBackground(new java.awt.Color(255, 255, 51));
         btnRegresar.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         btnRegresar.setForeground(new java.awt.Color(255, 0, 51));
@@ -233,14 +222,8 @@ public final class JuegoAltoss extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(240, 240, 240)
-                .addComponent(btnReiniciar, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createSequentialGroup()
                 .addGap(1090, 1090, 1090)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(660, 660, 660)
-                .addComponent(btnRegresar, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(1, 1, 1)
                 .addComponent(jPanelPiezas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -248,12 +231,16 @@ public final class JuegoAltoss extends javax.swing.JFrame {
                 .addGap(1090, 1090, 1090)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(layout.createSequentialGroup()
-                .addGap(870, 870, 870)
-                .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(450, 450, 450)
-                .addComponent(btnPreguntas, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addComponent(jLabelFondo, javax.swing.GroupLayout.PREFERRED_SIZE, 1392, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(240, 240, 240)
+                .addComponent(btnReiniciar, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(119, 119, 119)
+                .addComponent(btnRegresar, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(111, 111, 111)
+                        .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelFondo, javax.swing.GroupLayout.PREFERRED_SIZE, 1392, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -262,18 +249,15 @@ public final class JuegoAltoss extends javax.swing.JFrame {
                 .addComponent(btnReiniciar, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addGroup(layout.createSequentialGroup()
-                .addGap(640, 640, 640)
+                .addComponent(jPanelPiezas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(btnRegresar, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addComponent(jPanelPiezas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addGroup(layout.createSequentialGroup()
                 .addGap(320, 320, 320)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(640, 640, 640)
                 .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(640, 640, 640)
-                .addComponent(btnPreguntas, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addComponent(jLabelFondo, javax.swing.GroupLayout.PREFERRED_SIZE, 747, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
@@ -293,27 +277,10 @@ public final class JuegoAltoss extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jPanelPiezasMousePressed
 
-    private void btnPreguntasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPreguntasActionPerformed
-        switch (contador) {
-            case 1:
-                audio.comoSeSiente();
-                contador++;
-                break;
-            case 2:
-                audio.quienEs();
-                contador++;
-                break;
-            case 3:
-                audio.queHaces();
-                contador = 1;
-                break;
-            default:
-                break;
-        }
-    }//GEN-LAST:event_btnPreguntasActionPerformed
-
     private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
-        System.exit(0);
+        T7_7MENU c=new  T7_7MENU();
+        c.setVisible(true);
+        this.dispose(); 
     }//GEN-LAST:event_btnSalirActionPerformed
 
     private void btnReiniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReiniciarActionPerformed
@@ -321,7 +288,6 @@ public final class JuegoAltoss extends javax.swing.JFrame {
     }//GEN-LAST:event_btnReiniciarActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnPreguntas;
     private javax.swing.JButton btnRegresar;
     private javax.swing.JButton btnReiniciar;
     private javax.swing.JButton btnSalir;

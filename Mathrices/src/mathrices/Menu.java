@@ -49,6 +49,7 @@ public class Menu extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(153, 255, 153));
         setMinimumSize(new java.awt.Dimension(1400, 800));
+        setUndecorated(true);
         setPreferredSize(new java.awt.Dimension(1400, 800));
         setSize(new java.awt.Dimension(1400, 800));
 
@@ -252,7 +253,7 @@ public class Menu extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addGap(0, 11, Short.MAX_VALUE))
         );
 
         pack();

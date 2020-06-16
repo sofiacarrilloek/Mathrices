@@ -36,31 +36,34 @@ public class T2_6MENU extends javax.swing.JFrame {
         btn_T4Actividades = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton4.setBackground(new java.awt.Color(0, 0, 153));
-        jButton4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jButton4.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton4.setForeground(new java.awt.Color(255, 255, 255));
         jButton4.setText("VIDEOS");
+        jButton4.setFocusPainted(false);
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 250, 200, 100));
+        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 250, 200, 80));
 
         jButton3.setBackground(new java.awt.Color(0, 0, 153));
-        jButton3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jButton3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("TEORIA");
+        jButton3.setFocusPainted(false);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 100, 200, 100));
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 100, 200, 80));
 
         jButton2.setBackground(new java.awt.Color(0, 0, 153));
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
@@ -71,10 +74,10 @@ public class T2_6MENU extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 100, 50));
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 100, 50));
 
         btn_T4Actividades.setBackground(new java.awt.Color(0, 0, 153));
-        btn_T4Actividades.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        btn_T4Actividades.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         btn_T4Actividades.setForeground(new java.awt.Color(255, 255, 255));
         btn_T4Actividades.setText("ACTIVIDADES");
         btn_T4Actividades.setFocusPainted(false);
@@ -83,13 +86,13 @@ public class T2_6MENU extends javax.swing.JFrame {
                 btn_T4ActividadesActionPerformed(evt);
             }
         });
-        jPanel1.add(btn_T4Actividades, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 400, 200, 100));
+        jPanel1.add(btn_T4Actividades, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 400, 200, 80));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1484, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
@@ -103,7 +106,7 @@ public class T2_6MENU extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        T2_6TEORIA2 c=new T2_6TEORIA2();
+        T2_6TEORIA c=new T2_6TEORIA();
         c.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton3ActionPerformed

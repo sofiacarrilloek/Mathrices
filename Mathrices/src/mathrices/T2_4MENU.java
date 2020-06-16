@@ -36,12 +36,13 @@ public class T2_4MENU extends javax.swing.JFrame {
         labelFondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setOpaque(false);
 
         btn_T4Actividades.setBackground(new java.awt.Color(0, 0, 153));
-        btn_T4Actividades.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        btn_T4Actividades.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         btn_T4Actividades.setForeground(new java.awt.Color(240, 240, 240));
         btn_T4Actividades.setText("ACTIVIDADES");
         btn_T4Actividades.setFocusPainted(false);
@@ -52,7 +53,7 @@ public class T2_4MENU extends javax.swing.JFrame {
         });
 
         btn_T4Teoria.setBackground(new java.awt.Color(0, 0, 153));
-        btn_T4Teoria.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        btn_T4Teoria.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         btn_T4Teoria.setForeground(new java.awt.Color(240, 240, 240));
         btn_T4Teoria.setText("TEORIA");
         btn_T4Teoria.setFocusPainted(false);
@@ -63,8 +64,9 @@ public class T2_4MENU extends javax.swing.JFrame {
         });
 
         jButton1.setBackground(new java.awt.Color(0, 0, 153));
+        jButton1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(240, 240, 240));
-        jButton1.setText("IR AL MENÚ");
+        jButton1.setText("MENÚ");
         jButton1.setFocusPainted(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -73,7 +75,7 @@ public class T2_4MENU extends javax.swing.JFrame {
         });
 
         btn_T4Actividades1.setBackground(new java.awt.Color(0, 0, 153));
-        btn_T4Actividades1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        btn_T4Actividades1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         btn_T4Actividades1.setForeground(new java.awt.Color(240, 240, 240));
         btn_T4Actividades1.setText("VIDEOS");
         btn_T4Actividades1.setFocusPainted(false);
@@ -88,33 +90,34 @@ public class T2_4MENU extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(82, 82, 82)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btn_T4Actividades1, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btn_T4Actividades, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(205, Short.MAX_VALUE))
+                    .addComponent(btn_T4Actividades1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn_T4Actividades, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(198, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addGap(82, 82, 82)
-                    .addComponent(btn_T4Teoria, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(205, Short.MAX_VALUE)))
+                    .addComponent(btn_T4Teoria, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(198, Short.MAX_VALUE)))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 239, Short.MAX_VALUE)
-                .addComponent(btn_T4Actividades1, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(53, 53, 53)
-                .addComponent(btn_T4Actividades, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 222, Short.MAX_VALUE)
+                .addComponent(btn_T4Actividades1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(63, 63, 63)
+                .addComponent(btn_T4Actividades, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(55, 55, 55))
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addGap(130, 130, 130)
-                    .addComponent(btn_T4Teoria, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(321, Short.MAX_VALUE)))
+                    .addComponent(btn_T4Teoria, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(350, Short.MAX_VALUE)))
         );
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 480, 560));
