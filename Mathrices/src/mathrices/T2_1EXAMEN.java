@@ -121,7 +121,7 @@ public class T2_1EXAMEN extends javax.swing.JFrame {
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 320, 90, 60));
 
-        jButton2.setText("Regresar");
+        jButton2.setText("Siguiente");
         jButton2.setFocusable(false);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
