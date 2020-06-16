@@ -127,7 +127,7 @@ public class T2_3TEORIA_2 extends javax.swing.JFrame {
                             .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(300, 300, 300)
+                        .addGap(291, 291, 291)
                         .addComponent(jLabel3)))
                 .addContainerGap(511, Short.MAX_VALUE))
         );
