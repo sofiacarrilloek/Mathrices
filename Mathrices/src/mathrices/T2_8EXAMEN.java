@@ -18,6 +18,7 @@ public class T2_8EXAMEN extends javax.swing.JFrame {
      */
     public T2_8EXAMEN() {
         initComponents();
+        this.setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**
