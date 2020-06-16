@@ -40,6 +40,9 @@ public class T2_4MENU extends javax.swing.JFrame {
 
         jPanel1.setOpaque(false);
 
+        btn_T4Actividades.setBackground(new java.awt.Color(0, 0, 153));
+        btn_T4Actividades.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        btn_T4Actividades.setForeground(new java.awt.Color(240, 240, 240));
         btn_T4Actividades.setText("ACTIVIDADES");
         btn_T4Actividades.setFocusPainted(false);
         btn_T4Actividades.addActionListener(new java.awt.event.ActionListener() {
@@ -48,6 +51,9 @@ public class T2_4MENU extends javax.swing.JFrame {
             }
         });
 
+        btn_T4Teoria.setBackground(new java.awt.Color(0, 0, 153));
+        btn_T4Teoria.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        btn_T4Teoria.setForeground(new java.awt.Color(240, 240, 240));
         btn_T4Teoria.setText("TEORIA");
         btn_T4Teoria.setFocusPainted(false);
         btn_T4Teoria.addActionListener(new java.awt.event.ActionListener() {
@@ -56,6 +62,8 @@ public class T2_4MENU extends javax.swing.JFrame {
             }
         });
 
+        jButton1.setBackground(new java.awt.Color(0, 0, 153));
+        jButton1.setForeground(new java.awt.Color(240, 240, 240));
         jButton1.setText("IR AL MENÚ");
         jButton1.setFocusPainted(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -64,6 +72,9 @@ public class T2_4MENU extends javax.swing.JFrame {
             }
         });
 
+        btn_T4Actividades1.setBackground(new java.awt.Color(0, 0, 153));
+        btn_T4Actividades1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        btn_T4Actividades1.setForeground(new java.awt.Color(240, 240, 240));
         btn_T4Actividades1.setText("VIDEOS");
         btn_T4Actividades1.setFocusPainted(false);
         btn_T4Actividades1.addActionListener(new java.awt.event.ActionListener() {
@@ -108,7 +119,8 @@ public class T2_4MENU extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 480, 560));
 
-        labelFondo.setBackground(new java.awt.Color(204, 204, 255));
+        labelFondo.setBackground(new java.awt.Color(255, 255, 255));
+        labelFondo.setForeground(new java.awt.Color(255, 255, 255));
         labelFondo.setOpaque(true);
         getContentPane().add(labelFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1400, 800));
 
