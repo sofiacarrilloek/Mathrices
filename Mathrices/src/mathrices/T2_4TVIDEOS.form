@@ -29,7 +29,7 @@
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+          <Component id="jPanel1" alignment="0" pref="747" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
@@ -97,12 +97,12 @@
               <Font name="Times New Roman" size="18" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-              <Connection code="&quot;&lt;html&gt;Definici&#xf3;n del rango de una matriz y explicaci&#xf3;n de dicho concepto, adem&#xe1;s algunos ejemplos de la forma de encontrar el rango de una matriz por simple inspecci&#xf3;n de la matriz. Dentro del curso de Matrices.&lt;/html&gt;&quot;" type="code"/>
+              <Connection code="&quot;&lt;html&gt;Definici&#xf3;n del rango de una matriz y explicaci&#xf3;n de dicho concepto, adem&#xe1;s algunos ejemplos de la forma de encontrar el rango de una matriz por simple inspecci&#xf3;n de la matriz. Dentro del curso de matrices.&lt;/html&gt;&quot;" type="code"/>
             </Property>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="260" y="560" width="300" height="100"/>
+              <AbsoluteConstraints x="260" y="560" width="300" height="180"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -112,7 +112,7 @@
               <Font name="Times New Roman" size="18" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-              <Connection code="&quot;&lt;html&gt;DEFINICI&#xd3;N DE UNA MATRIZ ESCALONADA&lt;/html&gt;&quot;" type="code"/>
+              <Connection code="&quot;&lt;html&gt;Definici&#xf3;n de una matriz escalonada&lt;/html&gt;&quot;" type="code"/>
             </Property>
           </Properties>
           <Constraints>
@@ -150,7 +150,7 @@
               <Font name="Times New Roman" size="18" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-              <Connection code="&quot;&lt;html&gt;C&#xf3;mo hallar el N&#xda;CLEO y NULIDAD de una MATRIZ&lt;/html&gt;&quot;" type="code"/>
+              <Connection code="&quot;&lt;html&gt;C&#xf3;mo hallar el n&#xfa;cleo y nulidad de una matriz&lt;/html&gt;&quot;" type="code"/>
             </Property>
           </Properties>
           <Constraints>

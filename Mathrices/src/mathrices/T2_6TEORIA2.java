@@ -41,13 +41,14 @@ public class T2_6TEORIA2 extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         jLabel1.setText("<html>Para el cálculo de determinantes de matrices de cualquier orden, existe una regla recursiva (teorema de Laplace) que reduce el cálculo a sumas y restas de varios determinantes de un orden inferior</html>");
         jLabel1.setToolTipText("");
         jLabel1.setFocusable(false);
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 370, 1290, 230));
 
         jButton1.setBackground(new java.awt.Color(0, 0, 153));
+        jButton1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Regresar");
         jButton1.setFocusPainted(false);
@@ -59,13 +60,14 @@ public class T2_6TEORIA2 extends javax.swing.JFrame {
         });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 90, 60));
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         jLabel3.setText("<html>El concepto de determinante o de volumen orientado fue introducido para estudiar el número de soluciones de los sistemas lineales de ecuaciones.</html>");
         jLabel3.setToolTipText("");
         jLabel3.setFocusable(false);
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 110, 1290, 230));
 
         jButton2.setBackground(new java.awt.Color(0, 0, 153));
+        jButton2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Siguiente");
         jButton2.setFocusPainted(false);

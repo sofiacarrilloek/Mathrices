@@ -75,7 +75,7 @@ public class T2_4MENU extends javax.swing.JFrame {
         });
 
         btn_T4Actividades1.setBackground(new java.awt.Color(0, 0, 153));
-        btn_T4Actividades1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        btn_T4Actividades1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         btn_T4Actividades1.setForeground(new java.awt.Color(240, 240, 240));
         btn_T4Actividades1.setText("VIDEOS");
         btn_T4Actividades1.setFocusPainted(false);

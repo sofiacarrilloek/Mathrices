@@ -77,11 +77,11 @@ public class T2_4TVIDEOS extends javax.swing.JFrame {
         jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 200, 100));
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        jLabel1.setText("<html>Definición del rango de una matriz y explicación de dicho concepto, además algunos ejemplos de la forma de encontrar el rango de una matriz por simple inspección de la matriz. Dentro del curso de Matrices.</html>");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 560, 300, 100));
+        jLabel1.setText("<html>Definición del rango de una matriz y explicación de dicho concepto, además algunos ejemplos de la forma de encontrar el rango de una matriz por simple inspección de la matriz. Dentro del curso de matrices.</html>");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 560, 300, 180));
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        jLabel2.setText("<html>DEFINICIÓN DE UNA MATRIZ ESCALONADA</html>");
+        jLabel2.setText("<html>Definición de una matriz escalonada</html>");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 160, 300, 100));
 
         jButton4.setBackground(new java.awt.Color(0, 0, 153));
@@ -97,7 +97,7 @@ public class T2_4TVIDEOS extends javax.swing.JFrame {
         jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 360, 200, 100));
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        jLabel3.setText("<html>Cómo hallar el NÚCLEO y NULIDAD de una MATRIZ</html>");
+        jLabel3.setText("<html>Cómo hallar el núcleo y nulidad de una matriz</html>");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 360, 300, 100));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_4/3.png"))); // NOI18N
@@ -130,7 +130,7 @@ public class T2_4TVIDEOS extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 747, Short.MAX_VALUE)
         );
 
         pack();

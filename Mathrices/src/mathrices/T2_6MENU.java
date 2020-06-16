@@ -42,7 +42,7 @@ public class T2_6MENU extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton4.setBackground(new java.awt.Color(0, 0, 153));
-        jButton4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jButton4.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton4.setForeground(new java.awt.Color(255, 255, 255));
         jButton4.setText("VIDEOS");
         jButton4.setFocusPainted(false);
@@ -51,10 +51,10 @@ public class T2_6MENU extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 250, 200, 100));
+        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 250, 200, 80));
 
         jButton3.setBackground(new java.awt.Color(0, 0, 153));
-        jButton3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jButton3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("TEORIA");
         jButton3.setFocusPainted(false);
@@ -63,7 +63,7 @@ public class T2_6MENU extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 100, 200, 100));
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 100, 200, 80));
 
         jButton2.setBackground(new java.awt.Color(0, 0, 153));
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
@@ -77,7 +77,7 @@ public class T2_6MENU extends javax.swing.JFrame {
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 100, 50));
 
         btn_T4Actividades.setBackground(new java.awt.Color(0, 0, 153));
-        btn_T4Actividades.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        btn_T4Actividades.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         btn_T4Actividades.setForeground(new java.awt.Color(255, 255, 255));
         btn_T4Actividades.setText("ACTIVIDADES");
         btn_T4Actividades.setFocusPainted(false);
@@ -86,7 +86,7 @@ public class T2_6MENU extends javax.swing.JFrame {
                 btn_T4ActividadesActionPerformed(evt);
             }
         });
-        jPanel1.add(btn_T4Actividades, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 400, 200, 100));
+        jPanel1.add(btn_T4Actividades, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 400, 200, 80));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
