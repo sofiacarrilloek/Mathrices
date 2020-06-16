@@ -46,14 +46,16 @@ public class T2_6ACTIVIDAD extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(204, 204, 255));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
         jLabel4.setText("ACTIVIDAD 6");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 40, 750, 70));
 
-        jButton1.setText("Atras");
+        jButton1.setBackground(new java.awt.Color(0, 0, 153));
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setText("Regresar");
         jButton1.setFocusPainted(false);
         jButton1.setFocusable(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -99,7 +101,9 @@ public class T2_6ACTIVIDAD extends javax.swing.JFrame {
 
         jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 180, 240, 160));
 
+        btn_p2.setBackground(new java.awt.Color(0, 0, 153));
         btn_p2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        btn_p2.setForeground(new java.awt.Color(255, 255, 255));
         btn_p2.setText("Verificar");
         btn_p2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -108,14 +112,16 @@ public class T2_6ACTIVIDAD extends javax.swing.JFrame {
         });
         jPanel1.add(btn_p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 490, 140, 50));
 
+        btn_p1.setBackground(new java.awt.Color(0, 0, 153));
         btn_p1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        btn_p1.setForeground(new java.awt.Color(255, 255, 255));
         btn_p1.setText("Verificar");
         btn_p1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_p1ActionPerformed(evt);
             }
         });
-        jPanel1.add(btn_p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 180, 140, 50));
+        jPanel1.add(btn_p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 180, 140, 50));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_4/matriz_ no_escalonada.png"))); // NOI18N
         jLabel2.setText("jLabel1");
