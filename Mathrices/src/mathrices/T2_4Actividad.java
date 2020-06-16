@@ -49,11 +49,12 @@ public class T2_4Actividad extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         jLabel4.setText("ACTIVIDAD 4");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 30, 330, 70));
 
         btn_reiniciar.setBackground(new java.awt.Color(0, 0, 153));
+        btn_reiniciar.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         btn_reiniciar.setForeground(new java.awt.Color(255, 255, 255));
         btn_reiniciar.setText("Reiniciar");
         btn_reiniciar.setFocusPainted(false);
@@ -103,11 +104,12 @@ public class T2_4Actividad extends javax.swing.JFrame {
         });
         jPanel1.add(jl4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 270, 300, 300));
 
-        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         jLabel7.setText("Selecciona cuales son matrices escalonadas. Solo tienes dos intentos");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 120, 1180, 60));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 1180, 60));
 
         btn_regresar.setBackground(new java.awt.Color(0, 0, 153));
+        btn_regresar.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         btn_regresar.setForeground(new java.awt.Color(255, 255, 255));
         btn_regresar.setText("Regresar");
         btn_regresar.setFocusPainted(false);

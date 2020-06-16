@@ -48,11 +48,11 @@ public class T2_4EXAMEN extends javax.swing.JFrame {
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         jLabel4.setText("EXAMEN");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 10, 190, 70));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         jLabel1.setText("Selecciona todas las matrices que son escalonadas.");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 70, 850, 50));
 
@@ -87,6 +87,7 @@ public class T2_4EXAMEN extends javax.swing.JFrame {
         getContentPane().add(jl3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 190, 300, 300));
 
         btn_6.setBackground(new java.awt.Color(0, 0, 153));
+        btn_6.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         btn_6.setForeground(new java.awt.Color(255, 255, 255));
         btn_6.setText("NINGUNA");
         btn_6.setFocusPainted(false);
@@ -99,6 +100,7 @@ public class T2_4EXAMEN extends javax.swing.JFrame {
         getContentPane().add(btn_6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 510, 140, 60));
 
         btn_1.setBackground(new java.awt.Color(0, 0, 153));
+        btn_1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         btn_1.setForeground(new java.awt.Color(255, 255, 255));
         btn_1.setText("A. B Y C ");
         btn_1.setFocusPainted(false);
@@ -111,6 +113,7 @@ public class T2_4EXAMEN extends javax.swing.JFrame {
         getContentPane().add(btn_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 110, 140, 60));
 
         btn_2.setBackground(new java.awt.Color(0, 0, 153));
+        btn_2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         btn_2.setForeground(new java.awt.Color(255, 255, 255));
         btn_2.setText("A Y C");
         btn_2.setFocusPainted(false);
@@ -123,6 +126,7 @@ public class T2_4EXAMEN extends javax.swing.JFrame {
         getContentPane().add(btn_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 190, 140, 60));
 
         btn_3.setBackground(new java.awt.Color(0, 0, 153));
+        btn_3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         btn_3.setForeground(new java.awt.Color(255, 255, 255));
         btn_3.setText("A Y B");
         btn_3.setFocusPainted(false);
@@ -135,6 +139,7 @@ public class T2_4EXAMEN extends javax.swing.JFrame {
         getContentPane().add(btn_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 270, 140, 60));
 
         btn_4.setBackground(new java.awt.Color(0, 0, 153));
+        btn_4.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         btn_4.setForeground(new java.awt.Color(255, 255, 255));
         btn_4.setText("B Y C");
         btn_4.setFocusPainted(false);
@@ -147,6 +152,7 @@ public class T2_4EXAMEN extends javax.swing.JFrame {
         getContentPane().add(btn_4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 350, 140, 60));
 
         btn_5.setBackground(new java.awt.Color(0, 0, 153));
+        btn_5.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         btn_5.setForeground(new java.awt.Color(255, 255, 255));
         btn_5.setText("B Y A");
         btn_5.setFocusPainted(false);
@@ -159,6 +165,7 @@ public class T2_4EXAMEN extends javax.swing.JFrame {
         getContentPane().add(btn_5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 430, 140, 60));
 
         jButton1.setBackground(new java.awt.Color(0, 0, 153));
+        jButton1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Siguiente");
         jButton1.setFocusPainted(false);
