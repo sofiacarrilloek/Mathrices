@@ -50,7 +50,7 @@ public class T2_6EXAMEN extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         jLabel4.setText("EXAMEN");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 10, 190, 70));
 
@@ -86,7 +86,7 @@ public class T2_6EXAMEN extends javax.swing.JFrame {
         });
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, 300, 300));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         jLabel1.setText("Encuentra la determinante de ambas matrices.");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 70, 850, 50));
 
@@ -105,7 +105,7 @@ public class T2_6EXAMEN extends javax.swing.JFrame {
         jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 120, 240, 160));
 
         btn_p2.setBackground(new java.awt.Color(0, 0, 153));
-        btn_p2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        btn_p2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         btn_p2.setForeground(new java.awt.Color(255, 255, 255));
         btn_p2.setText("Verificar");
         btn_p2.addActionListener(new java.awt.event.ActionListener() {
@@ -113,10 +113,10 @@ public class T2_6EXAMEN extends javax.swing.JFrame {
                 btn_p2ActionPerformed(evt);
             }
         });
-        jPanel1.add(btn_p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 440, 140, 50));
+        jPanel1.add(btn_p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 440, 140, 50));
 
         btn_p1.setBackground(new java.awt.Color(0, 0, 153));
-        btn_p1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        btn_p1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         btn_p1.setForeground(new java.awt.Color(255, 255, 255));
         btn_p1.setText("Verificar");
         btn_p1.addActionListener(new java.awt.event.ActionListener() {
