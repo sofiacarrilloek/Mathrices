@@ -35,12 +35,13 @@ public class T2_4Actividad extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        btn_reiniciar = new javax.swing.JButton();
         jl1 = new javax.swing.JLabel();
         jl2 = new javax.swing.JLabel();
         jl3 = new javax.swing.JLabel();
         jl4 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        btn_regresar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -51,17 +52,17 @@ public class T2_4Actividad extends javax.swing.JFrame {
         jLabel4.setText("ACTIVIDAD 4");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 30, 330, 70));
 
-        jButton2.setBackground(new java.awt.Color(0, 0, 153));
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Atras");
-        jButton2.setFocusPainted(false);
-        jButton2.setFocusable(false);
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btn_reiniciar.setBackground(new java.awt.Color(0, 0, 153));
+        btn_reiniciar.setForeground(new java.awt.Color(255, 255, 255));
+        btn_reiniciar.setText("Reiniciar");
+        btn_reiniciar.setFocusPainted(false);
+        btn_reiniciar.setFocusable(false);
+        btn_reiniciar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btn_reiniciarActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 90, 60));
+        jPanel1.add(btn_reiniciar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 600, 90, 60));
 
         jl1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_4/matriz_ no_escalonada.png"))); // NOI18N
         jl1.setText("jLabel1");
@@ -105,6 +106,18 @@ public class T2_4Actividad extends javax.swing.JFrame {
         jLabel7.setText("Selecciona cuales son matrices escalonadas. Solo tienes dos intentos");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 120, 1180, 60));
 
+        btn_regresar.setBackground(new java.awt.Color(0, 0, 153));
+        btn_regresar.setForeground(new java.awt.Color(255, 255, 255));
+        btn_regresar.setText("Regresar");
+        btn_regresar.setFocusPainted(false);
+        btn_regresar.setFocusable(false);
+        btn_regresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_regresarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btn_regresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 90, 60));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -121,14 +134,14 @@ public class T2_4Actividad extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btn_reiniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_reiniciarActionPerformed
         
         // TODO add your handling code here:
        
-        T2_4MENU c=new T2_4MENU();
-        c.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_jButton2ActionPerformed
+        
+        puntos=0;
+
+    }//GEN-LAST:event_btn_reiniciarActionPerformed
 
     private void jl1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jl1MouseClicked
         // TODO add your handling code here:
@@ -175,6 +188,13 @@ public class T2_4Actividad extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jl4MouseClicked
 
+    private void btn_regresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_regresarActionPerformed
+        // TODO add your handling code here:
+        T2_4MENU c=new T2_4MENU();
+        c.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btn_regresarActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -212,7 +232,8 @@ public class T2_4Actividad extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton btn_regresar;
+    private javax.swing.JButton btn_reiniciar;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
