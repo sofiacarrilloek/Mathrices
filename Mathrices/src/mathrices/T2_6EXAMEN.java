@@ -10,12 +10,12 @@ package mathrices;
  * @author Sofia Carrillo
  */
 import javax.swing.JOptionPane;
-public class T2_6ACTIVIDAD extends javax.swing.JFrame {
+public class T2_6EXAMEN extends javax.swing.JFrame {
 
     /**
      * Creates new form T2_4TEORIA
      */
-    public T2_6ACTIVIDAD() {
+    public T2_6EXAMEN() {
         initComponents();
         this.setExtendedState(MAXIMIZED_BOTH);
         
@@ -50,12 +50,12 @@ public class T2_6ACTIVIDAD extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
-        jLabel4.setText("ACTIVIDAD 6");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 40, 750, 70));
+        jLabel4.setText("EXAMEN");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 10, 190, 70));
 
         jButton1.setBackground(new java.awt.Color(0, 0, 153));
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Regresar");
+        jButton1.setText("Siguiente");
         jButton1.setFocusPainted(false);
         jButton1.setFocusable(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -63,9 +63,9 @@ public class T2_6ACTIVIDAD extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 90, 60));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 10, 90, 60));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_6/Determinante_21.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_6/Examen_2.png"))); // NOI18N
         jLabel3.setText("jLabel1");
         jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -73,9 +73,9 @@ public class T2_6ACTIVIDAD extends javax.swing.JFrame {
                 jLabel3MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 490, 300, 300));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 440, 300, 300));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_6/Determinante_1.png"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_6/Examen_1.png"))); // NOI18N
         jLabel5.setText("jLabel1");
         jLabel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -83,25 +83,25 @@ public class T2_6ACTIVIDAD extends javax.swing.JFrame {
                 jLabel5MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 180, 300, 300));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, 300, 300));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jLabel1.setText("Encuentra la determinante de ambas matrices.");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 110, 850, 50));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 70, 850, 50));
 
         pregunta2.setColumns(20);
         pregunta2.setFont(new java.awt.Font("Monospaced", 0, 48)); // NOI18N
         pregunta2.setRows(5);
         jScrollPane1.setViewportView(pregunta2);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 490, 240, 160));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 440, 240, 160));
 
         pregunta1.setColumns(20);
         pregunta1.setFont(new java.awt.Font("Monospaced", 0, 48)); // NOI18N
         pregunta1.setRows(5);
         jScrollPane2.setViewportView(pregunta1);
 
-        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 180, 240, 160));
+        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 120, 240, 160));
 
         btn_p2.setBackground(new java.awt.Color(0, 0, 153));
         btn_p2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
@@ -112,7 +112,7 @@ public class T2_6ACTIVIDAD extends javax.swing.JFrame {
                 btn_p2ActionPerformed(evt);
             }
         });
-        jPanel1.add(btn_p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 490, 140, 50));
+        jPanel1.add(btn_p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 440, 140, 50));
 
         btn_p1.setBackground(new java.awt.Color(0, 0, 153));
         btn_p1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
@@ -123,7 +123,7 @@ public class T2_6ACTIVIDAD extends javax.swing.JFrame {
                 btn_p1ActionPerformed(evt);
             }
         });
-        jPanel1.add(btn_p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 180, 140, 50));
+        jPanel1.add(btn_p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 120, 140, 50));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_4/matriz_ no_escalonada.png"))); // NOI18N
         jLabel2.setText("jLabel1");
@@ -157,13 +157,6 @@ public class T2_6ACTIVIDAD extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        T2_6MENU c=new T2_6MENU();
-        c.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
-
     private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_jLabel2MouseClicked
@@ -180,7 +173,7 @@ public class T2_6ACTIVIDAD extends javax.swing.JFrame {
     private void btn_p1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_p1ActionPerformed
         // TODO add your handling code here:
         String respuesta = pregunta1.getText();
-        if(respuesta.equals("6"))
+        if(respuesta.equals("13"))
         {
             JOptionPane.showMessageDialog(null, "RESPUESTA CORRECTA");
         }else
@@ -188,7 +181,6 @@ public class T2_6ACTIVIDAD extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "RESPUESTA INCORRECTA");
         }
         btn_p1.setEnabled(false);
-
         
     }//GEN-LAST:event_btn_p1ActionPerformed
 
@@ -196,7 +188,7 @@ public class T2_6ACTIVIDAD extends javax.swing.JFrame {
         // TODO add your handling code here:
        
         String respuesta = pregunta2.getText();
-        if(respuesta.equals("-7"))
+        if(respuesta.equals("-146"))
         {
             JOptionPane.showMessageDialog(null, "RESPUESTA CORRECTA");
         }else
@@ -204,8 +196,15 @@ public class T2_6ACTIVIDAD extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "RESPUESTA INCORRECTA");
         }
         btn_p2.setEnabled(false);
-        
+
     }//GEN-LAST:event_btn_p2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+       /* T2_6MENU c=new T2_6MENU();
+        c.setVisible(true);
+        this.dispose();*/
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -224,14 +223,18 @@ public class T2_6ACTIVIDAD extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(T2_6ACTIVIDAD.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(T2_6EXAMEN.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(T2_6ACTIVIDAD.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(T2_6EXAMEN.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(T2_6ACTIVIDAD.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(T2_6EXAMEN.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(T2_6ACTIVIDAD.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(T2_6EXAMEN.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -240,7 +243,7 @@ public class T2_6ACTIVIDAD extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new T2_6ACTIVIDAD().setVisible(true);
+                new T2_6EXAMEN().setVisible(true);
             }
         });
     }

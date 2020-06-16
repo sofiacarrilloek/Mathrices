@@ -140,6 +140,10 @@ public class T2_4Actividad extends javax.swing.JFrame {
        
         
         puntos=0;
+        jl1.setEnabled(true);
+        jl2.setEnabled(true);
+        jl3.setEnabled(true);
+        jl4.setEnabled(true);
 
     }//GEN-LAST:event_btn_reiniciarActionPerformed
 
@@ -151,7 +155,7 @@ public class T2_4Actividad extends javax.swing.JFrame {
         }else{
             JOptionPane.showMessageDialog(null, "Haz excedido tu número de intentos");
         }
-        
+        jl1.setEnabled(false);
 
     }//GEN-LAST:event_jl1MouseClicked
 
@@ -163,7 +167,8 @@ public class T2_4Actividad extends javax.swing.JFrame {
         }else{
             JOptionPane.showMessageDialog(null, "Haz excedido tu número de intentos");
         }
-        
+        jl2.setEnabled(false);
+
     }//GEN-LAST:event_jl2MouseClicked
 
     private void jl3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jl3MouseClicked
@@ -174,7 +179,7 @@ public class T2_4Actividad extends javax.swing.JFrame {
         }else{
             JOptionPane.showMessageDialog(null, "Haz excedido tu número de intentos");
         }
-        
+        jl3.setEnabled(false);
     }//GEN-LAST:event_jl3MouseClicked
 
     private void jl4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jl4MouseClicked
@@ -185,7 +190,7 @@ public class T2_4Actividad extends javax.swing.JFrame {
         }else{
             JOptionPane.showMessageDialog(null, "Haz excedido tu número de intentos");
         }
-        
+        jl4.setEnabled(false);
     }//GEN-LAST:event_jl4MouseClicked
 
     private void btn_regresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_regresarActionPerformed
