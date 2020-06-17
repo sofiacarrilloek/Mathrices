@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author AAMC
+ * @author Adrián Muñoz
  */
 public class T2_8Actividad extends javax.swing.JFrame {
 

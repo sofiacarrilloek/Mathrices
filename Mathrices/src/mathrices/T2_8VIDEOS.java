@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author AAMC
+ * @author Adrián Muñoz
  */
 public class T2_8VIDEOS extends javax.swing.JFrame {
 

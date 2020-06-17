@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author AAMC
+ * @author Adrián Muñoz
  */
 public class T2_8EXAMEN2 extends javax.swing.JFrame {
 
@@ -40,9 +40,9 @@ public class T2_8EXAMEN2 extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
+        v1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -91,18 +91,6 @@ public class T2_8EXAMEN2 extends javax.swing.JFrame {
         jLabel6.setText("¿Cuál es la determinante de la siguiente matriz?");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 180, -1, 44));
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 153));
-        jButton1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Verificar");
-        jButton1.setFocusable(false);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 410, 90, 60));
-
         jButton3.setBackground(new java.awt.Color(0, 0, 153));
         jButton3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
@@ -116,17 +104,19 @@ public class T2_8EXAMEN2 extends javax.swing.JFrame {
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 90, 60));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1410, Short.MAX_VALUE)
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 800, Short.MAX_VALUE)
-        );
+        v1.setBackground(new java.awt.Color(0, 0, 153));
+        v1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        v1.setForeground(new java.awt.Color(255, 255, 255));
+        v1.setText("Verificar");
+        v1.setFocusable(false);
+        v1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                v1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(v1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 200, 90, 60));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 1410, 800));
 
@@ -137,19 +127,32 @@ public class T2_8EXAMEN2 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_rb2ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void v1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_v1ActionPerformed
         // Verifica si las respuestas son correctas
         if(rb1.isSelected()){
             JOptionPane.showMessageDialog(null, "CORRECTO");
+            rb1.setEnabled(false);
+            rb2.setEnabled(false);
+            rb3.setEnabled(false);
+            v1.setEnabled(false);
         }
         if(rb2.isSelected()){
             JOptionPane.showMessageDialog(null, "INCORRECTO");
+            rb1.setEnabled(false);
+            rb2.setEnabled(false);
+            rb3.setEnabled(false);
+            v1.setEnabled(false);
         }
         if(rb3.isSelected()){
             JOptionPane.showMessageDialog(null, "INCORRECTO");
+            rb1.setEnabled(false);
+            rb2.setEnabled(false);
+            rb3.setEnabled(false);
+            v1.setEnabled(false);
         }
+        
 
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_v1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
@@ -195,7 +198,6 @@ public class T2_8EXAMEN2 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -207,5 +209,6 @@ public class T2_8EXAMEN2 extends javax.swing.JFrame {
     private javax.swing.JRadioButton rb1;
     private javax.swing.JRadioButton rb2;
     private javax.swing.JRadioButton rb3;
+    private javax.swing.JButton v1;
     // End of variables declaration//GEN-END:variables
 }

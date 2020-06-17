@@ -7,7 +7,7 @@ package mathrices;
 
 /**
  *
- * @author AAMC
+ * @author Adrián Muñoz
  */
 public class T2_1MENU extends javax.swing.JFrame {
 

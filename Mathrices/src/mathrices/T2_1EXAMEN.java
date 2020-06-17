@@ -41,10 +41,11 @@ public class T2_1EXAMEN extends javax.swing.JFrame {
         rb5 = new javax.swing.JRadioButton();
         rb6 = new javax.swing.JRadioButton();
         jLabel4 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        s1 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
+        v1 = new javax.swing.JButton();
+        v2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -55,13 +56,13 @@ public class T2_1EXAMEN extends javax.swing.JFrame {
 
         buttonGroup1.add(rb1);
         rb1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        rb1.setText("   4 x 3");
+        rb1.setText("   a) 3 x 3");
         rb1.setFocusable(false);
         getContentPane().add(rb1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 250, -1, -1));
 
         buttonGroup1.add(rb2);
         rb2.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        rb2.setText("   3 x 3");
+        rb2.setText("   b) 2 x 3");
         rb2.setFocusable(false);
         rb2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -72,17 +73,17 @@ public class T2_1EXAMEN extends javax.swing.JFrame {
 
         buttonGroup1.add(rb3);
         rb3.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        rb3.setText("   3 x 4");
+        rb3.setText("   c) 3 x 2");
         rb3.setFocusable(false);
         getContentPane().add(rb3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 370, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        jLabel3.setText("¿De que orden es la matriz B?");
+        jLabel3.setText("¿De que orden es la matriz A?");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 200, -1, 44));
 
         buttonGroup2.add(rb4);
         rb4.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        rb4.setText("   a21= 2, b33= 9, c31= 3 ");
+        rb4.setText("   a) a12= 4, b23= 6, c22= 3 ");
         rb4.setFocusable(false);
         rb4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -93,7 +94,7 @@ public class T2_1EXAMEN extends javax.swing.JFrame {
 
         buttonGroup2.add(rb5);
         rb5.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        rb5.setText("   a21= 4, b33= 6, c31= 2 ");
+        rb5.setText("   b) a12= 2, b23= 8, c22= 3 ");
         rb5.setFocusable(false);
         rb5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -104,34 +105,31 @@ public class T2_1EXAMEN extends javax.swing.JFrame {
 
         buttonGroup2.add(rb6);
         rb6.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        rb6.setText("   a21= 4, b33= 9, c31= 2 ");
+        rb6.setText("   c) a12= 2, b23= 6, c22= 3 ");
         rb6.setFocusable(false);
+        rb6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rb6ActionPerformed(evt);
+            }
+        });
         getContentPane().add(rb6, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 630, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        jLabel4.setText("¿De que orden es la matriz B?");
+        jLabel4.setText("¿Selecciona la respuesta correcta?");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 460, -1, 44));
 
-        jButton1.setText("Verificar");
-        jButton1.setFocusable(false);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        s1.setBackground(new java.awt.Color(0, 0, 153));
+        s1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        s1.setForeground(new java.awt.Color(255, 255, 255));
+        s1.setText("Siguiente");
+        s1.setEnabled(false);
+        s1.setFocusable(false);
+        s1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                s1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 320, 90, 60));
-
-        jButton2.setBackground(new java.awt.Color(0, 0, 153));
-        jButton2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Siguiente");
-        jButton2.setFocusable(false);
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 600, 90, 60));
+        getContentPane().add(s1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 590, 90, 60));
 
         jButton3.setBackground(new java.awt.Color(0, 0, 153));
         jButton3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -146,17 +144,32 @@ public class T2_1EXAMEN extends javax.swing.JFrame {
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 90, 60));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1410, Short.MAX_VALUE)
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 800, Short.MAX_VALUE)
-        );
+        v1.setBackground(new java.awt.Color(0, 0, 153));
+        v1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        v1.setForeground(new java.awt.Color(255, 255, 255));
+        v1.setText("Verificar");
+        v1.setFocusable(false);
+        v1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                v1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(v1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 200, 90, 60));
+
+        v2.setBackground(new java.awt.Color(0, 0, 153));
+        v2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        v2.setForeground(new java.awt.Color(255, 255, 255));
+        v2.setText("Verificar");
+        v2.setEnabled(false);
+        v2.setFocusable(false);
+        v2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                v2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(v2, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 470, 90, 60));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 1410, 800));
 
@@ -175,36 +188,45 @@ public class T2_1EXAMEN extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_rb4ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void v1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_v1ActionPerformed
         // Verifica si las respuestas son correctas
         if(rb1.isSelected()){
             JOptionPane.showMessageDialog(null, "INCORRECTO");
+            rb1.setEnabled(false);
+            rb2.setEnabled(false);
+            rb3.setEnabled(false);
+            v1.setEnabled(false);
+            v2.setEnabled(true);
         }
         if(rb2.isSelected()){
-            JOptionPane.showMessageDialog(null, "INCORRECTO");
+            JOptionPane.showMessageDialog(null, "CORRECTO");
+            rb1.setEnabled(false);
+            rb2.setEnabled(false);
+            rb3.setEnabled(false);
+            v1.setEnabled(false);
+            v2.setEnabled(true);
         }
         if(rb3.isSelected()){
-            JOptionPane.showMessageDialog(null, "CORRECTO");
-        }
-        if(rb4.isSelected()){
             JOptionPane.showMessageDialog(null, "INCORRECTO");
-        }
-        if(rb5.isSelected()){
-            JOptionPane.showMessageDialog(null, "INCORRECTO");
-        }
-        if(rb6.isSelected()){
-            JOptionPane.showMessageDialog(null, "CORRECTO");
+            rb1.setEnabled(false);
+            rb2.setEnabled(false);
+            rb3.setEnabled(false);
+            v1.setEnabled(false);
+            v2.setEnabled(true);
         }
         
         
-    }//GEN-LAST:event_jButton1ActionPerformed
+       
+        
+        
+    }//GEN-LAST:event_v1ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void s1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s1ActionPerformed
         // TODO add your handling code here:
         T2_8EXAMEN c=new T2_8EXAMEN();
         c.setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_s1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
@@ -212,6 +234,39 @@ public class T2_1EXAMEN extends javax.swing.JFrame {
         c.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void v2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_v2ActionPerformed
+        // TODO add your handling code here:
+        if(rb4.isSelected()){
+            JOptionPane.showMessageDialog(null, "INCORRECTO");
+            rb4.setEnabled(false);
+            rb5.setEnabled(false);
+            rb6.setEnabled(false);
+            v2.setEnabled(false);
+            s1.setEnabled(true);
+        }
+        if(rb5.isSelected()){
+            JOptionPane.showMessageDialog(null, "INCORRECTO");
+            rb4.setEnabled(false);
+            rb5.setEnabled(false);
+            rb6.setEnabled(false);
+            v2.setEnabled(false);
+            s1.setEnabled(true);
+        }
+        if(rb6.isSelected()){
+            JOptionPane.showMessageDialog(null, "CORRECTO");
+            rb4.setEnabled(false);
+            rb5.setEnabled(false);
+            rb6.setEnabled(false);
+            v2.setEnabled(false);
+            s1.setEnabled(true);
+        }
+        
+    }//GEN-LAST:event_v2ActionPerformed
+
+    private void rb6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rb6ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -251,8 +306,6 @@ public class T2_1EXAMEN extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
@@ -264,5 +317,8 @@ public class T2_1EXAMEN extends javax.swing.JFrame {
     private javax.swing.JRadioButton rb4;
     private javax.swing.JRadioButton rb5;
     private javax.swing.JRadioButton rb6;
+    private javax.swing.JButton s1;
+    private javax.swing.JButton v1;
+    private javax.swing.JButton v2;
     // End of variables declaration//GEN-END:variables
 }

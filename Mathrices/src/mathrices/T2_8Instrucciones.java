@@ -7,7 +7,7 @@ package mathrices;
 
 /**
  *
- * @author AAMC
+ * @author Adrián Muñoz
  */
 public class T2_8Instrucciones extends javax.swing.JFrame {
 

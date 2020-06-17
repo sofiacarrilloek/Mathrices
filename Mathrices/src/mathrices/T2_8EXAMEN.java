@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author AAMC
+ * @author Adrián Muñoz
  */
 public class T2_8EXAMEN extends javax.swing.JFrame {
 
@@ -35,14 +35,14 @@ public class T2_8EXAMEN extends javax.swing.JFrame {
         rb2 = new javax.swing.JRadioButton();
         rb3 = new javax.swing.JRadioButton();
         jLabel3 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
+        v1 = new javax.swing.JButton();
+        s1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -75,15 +75,6 @@ public class T2_8EXAMEN extends javax.swing.JFrame {
         jLabel3.setText("1.-Sustituir los adjuntos en la matriz. ");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 30, -1, 44));
 
-        jButton1.setText("Verificar");
-        jButton1.setFocusable(false);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 410, 90, 60));
-
         jButton3.setBackground(new java.awt.Color(0, 0, 153));
         jButton3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
@@ -112,30 +103,33 @@ public class T2_8EXAMEN extends javax.swing.JFrame {
         jLabel8.setText("3.- Comprobación.");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 110, -1, 44));
 
-        jButton2.setBackground(new java.awt.Color(0, 0, 153));
-        jButton2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Siguiente");
-        jButton2.setFocusable(false);
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        v1.setBackground(new java.awt.Color(0, 0, 153));
+        v1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        v1.setForeground(new java.awt.Color(255, 255, 255));
+        v1.setText("Verificar");
+        v1.setFocusable(false);
+        v1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                v1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 600, 90, 60));
+        jPanel1.add(v1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 250, 90, 60));
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1410, Short.MAX_VALUE)
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 800, Short.MAX_VALUE)
-        );
+        s1.setBackground(new java.awt.Color(0, 0, 153));
+        s1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        s1.setForeground(new java.awt.Color(255, 255, 255));
+        s1.setText("Siguiente");
+        s1.setEnabled(false);
+        s1.setFocusable(false);
+        s1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                s1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(s1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 590, 90, 60));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 1410, 800));
 
@@ -146,20 +140,37 @@ public class T2_8EXAMEN extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_rb2ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void v1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_v1ActionPerformed
         // Verifica si las respuestas son correctas
         if(rb1.isSelected()){
             JOptionPane.showMessageDialog(null, "INCORRECTO");
+            rb1.setEnabled(false);
+            rb2.setEnabled(false);
+            rb3.setEnabled(false);
+            s1.setEnabled(true);
+            v1.setEnabled(false);
         }
         if(rb2.isSelected()){
             JOptionPane.showMessageDialog(null, "CORRECTO");
+            rb1.setEnabled(false);
+            rb2.setEnabled(false);
+            rb3.setEnabled(false);
+            s1.setEnabled(true);
+            v1.setEnabled(false);
         }
         if(rb3.isSelected()){
             JOptionPane.showMessageDialog(null, "INCORRECTO");
+            rb1.setEnabled(false);
+            rb2.setEnabled(false);
+            rb3.setEnabled(false);
+            s1.setEnabled(true);
+            v1.setEnabled(false);
         }
         
+        
+        
 
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_v1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
@@ -168,12 +179,12 @@ public class T2_8EXAMEN extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void s1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s1ActionPerformed
         // TODO add your handling code here:
         T2_8EXAMEN2 c=new T2_8EXAMEN2();
         c.setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_s1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -212,8 +223,6 @@ public class T2_8EXAMEN extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
@@ -224,5 +233,7 @@ public class T2_8EXAMEN extends javax.swing.JFrame {
     private javax.swing.JRadioButton rb1;
     private javax.swing.JRadioButton rb2;
     private javax.swing.JRadioButton rb3;
+    private javax.swing.JButton s1;
+    private javax.swing.JButton v1;
     // End of variables declaration//GEN-END:variables
 }

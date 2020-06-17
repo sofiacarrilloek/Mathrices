@@ -9,7 +9,7 @@ import java.util.Random;
 
 /**
  *
- * @author AAMC
+ * @author Adrián Muñoz
  */
 public class T2_1Actividad extends javax.swing.JFrame {
 

@@ -7,7 +7,7 @@ package mathrices;
 
 /**
  *
- * @author Adrián Piedra
+ * @author Adrián Muñoz
  */
 public class T2_1TEORIA extends javax.swing.JFrame {
 

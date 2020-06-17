@@ -9,7 +9,7 @@ import static java.awt.Frame.MAXIMIZED_BOTH;
 
 /**
  *
- * @author Adrián
+ * @author Adrián Muñoz
  */
 public class T2_8TEORIA extends javax.swing.JFrame {
 
