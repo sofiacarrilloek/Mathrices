@@ -5,6 +5,9 @@
  */
 package mathrices;
 
+
+
+
 /**
  *
  * @author arman
@@ -33,6 +36,7 @@ public class T2_2MENU_1 extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -91,6 +95,14 @@ public class T2_2MENU_1 extends javax.swing.JFrame {
         });
         jPanel2.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 340, 200, 80));
 
+        jButton5.setText("ACTIVIDAD");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 480, -1, -1));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -139,6 +151,11 @@ public class T2_2MENU_1 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
 
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+           
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton5ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -179,7 +196,12 @@ public class T2_2MENU_1 extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
-}
+
+   
+        }
+    
+
