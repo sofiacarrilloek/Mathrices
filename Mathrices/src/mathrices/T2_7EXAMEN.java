@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package mathrices;
 
 import javax.swing.JOptionPane;
@@ -32,26 +28,38 @@ public class T2_7EXAMEN extends javax.swing.JFrame {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
         buttonGroup2 = new javax.swing.ButtonGroup();
+        s1 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
-        v3 = new javax.swing.JRadioButton();
+        v1 = new javax.swing.JButton();
+        v2 = new javax.swing.JButton();
         v4 = new javax.swing.JRadioButton();
+        jLabel3 = new javax.swing.JLabel();
+        rb1 = new javax.swing.JRadioButton();
+        rb2 = new javax.swing.JRadioButton();
+        jLabel4 = new javax.swing.JLabel();
         v5 = new javax.swing.JRadioButton();
-        v1 = new javax.swing.JRadioButton();
-        v2 = new javax.swing.JRadioButton();
-        jLabel1 = new javax.swing.JLabel();
         v6 = new javax.swing.JRadioButton();
-        v7 = new javax.swing.JRadioButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        s1.setBackground(new java.awt.Color(0, 0, 153));
+        s1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        s1.setForeground(new java.awt.Color(255, 255, 255));
+        s1.setText("Siguiente");
+        s1.setEnabled(false);
+        s1.setFocusable(false);
+        s1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                s1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(s1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 590, 90, 60));
+
         jButton3.setBackground(new java.awt.Color(0, 0, 153));
+        jButton3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("Regresar");
         jButton3.setFocusable(false);
@@ -63,45 +71,68 @@ public class T2_7EXAMEN extends javax.swing.JFrame {
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 90, 60));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
-        jLabel2.setText("EXAMEN ");
-
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        jLabel4.setText("|At|=");
-
-        jButton1.setBackground(new java.awt.Color(0, 0, 153));
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Verificar");
-        jButton1.setFocusable(false);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        v1.setBackground(new java.awt.Color(0, 0, 153));
+        v1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        v1.setForeground(new java.awt.Color(255, 255, 255));
+        v1.setText("Verificar");
+        v1.setFocusable(false);
+        v1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                v1ActionPerformed(evt);
             }
         });
+        jPanel1.add(v1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 200, 90, 60));
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        jLabel3.setText("EL determinante de una matriz y el de su transpuesta son ...");
-
-        buttonGroup2.add(v3);
-        v3.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        v3.setText("0 (cero)");
-        v3.setFocusable(false);
-        v3.addActionListener(new java.awt.event.ActionListener() {
+        v2.setBackground(new java.awt.Color(0, 0, 153));
+        v2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        v2.setForeground(new java.awt.Color(255, 255, 255));
+        v2.setText("Verificar");
+        v2.setEnabled(false);
+        v2.setFocusable(false);
+        v2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                v3ActionPerformed(evt);
+                v2ActionPerformed(evt);
             }
         });
+        jPanel1.add(v2, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 400, 90, 60));
 
         buttonGroup2.add(v4);
         v4.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        v4.setText("|A|");
+        v4.setText("0 (cero)");
         v4.setFocusable(false);
         v4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 v4ActionPerformed(evt);
             }
         });
+        jPanel1.add(v4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 450, -1, -1));
+
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel3.setText("El determinante de una matriz y el de su transpuesta son...");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 130, -1, 44));
+
+        buttonGroup1.add(rb1);
+        rb1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        rb1.setText("Distintos");
+        rb1.setFocusable(false);
+        jPanel1.add(rb1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 210, -1, -1));
+
+        buttonGroup1.add(rb2);
+        rb2.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        rb2.setText("Iguales");
+        rb2.setFocusable(false);
+        rb2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rb2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(rb2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 290, -1, -1));
+
+        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel4.setText("|At|=");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 390, -1, 44));
 
         buttonGroup2.add(v5);
         v5.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
@@ -112,156 +143,107 @@ public class T2_7EXAMEN extends javax.swing.JFrame {
                 v5ActionPerformed(evt);
             }
         });
+        jPanel1.add(v5, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 510, -1, -1));
 
-        buttonGroup1.add(v1);
-        v1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        v1.setText("Distintos");
-        v1.setFocusable(false);
-        v1.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup2.add(v6);
+        v6.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        v6.setText("|A|");
+        v6.setFocusable(false);
+        v6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                v1ActionPerformed(evt);
+                v6ActionPerformed(evt);
             }
         });
+        jPanel1.add(v6, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 580, -1, -1));
 
-        buttonGroup1.add(v2);
-        v2.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        v2.setText("Iguales");
-        v2.setFocusable(false);
-
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        jLabel1.setText("Si la matriz tiene dos filas o dos columnas iguales , entonces su determinante es..");
-
-        v6.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        v6.setText("0 (cero)");
-
-        v7.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        v7.setText("|A|");
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(320, 320, 320)
-                .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(512, 512, 512))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(429, 429, 429)
-                        .addComponent(jLabel2))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(302, 302, 302)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(v2)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(v1)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(v3)
-                                    .addComponent(v5)
-                                    .addComponent(v4)))))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(256, 256, 256)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel3)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(310, 310, 310)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(v7)
-                            .addComponent(v6))))
-                .addContainerGap(341, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(36, 36, 36)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(v1)
-                .addGap(18, 18, 18)
-                .addComponent(v2)
-                .addGap(37, 37, 37)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(v3)
-                        .addGap(18, 18, 18)
-                        .addComponent(v4)
-                        .addGap(18, 18, 18)
-                        .addComponent(v5)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 6, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(27, 27, 27)
-                .addComponent(v6)
-                .addGap(18, 18, 18)
-                .addComponent(v7)
-                .addGap(192, 192, 192))
-        );
-
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 1410, 800));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 1410, 800));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void v1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_v1ActionPerformed
+    private void rb2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_v1ActionPerformed
+    }//GEN-LAST:event_rb2ActionPerformed
+
+    private void v5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_v5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_v5ActionPerformed
 
     private void v4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_v4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_v4ActionPerformed
 
-    private void v3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_v3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_v3ActionPerformed
+    private void v1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_v1ActionPerformed
+        // Verifica si las respuestas son correctas
+        if(rb1.isSelected()){
+            JOptionPane.showMessageDialog(null, "INCORRECTO");
+            rb1.setEnabled(false);
+            rb2.setEnabled(false);
+           
+            v1.setEnabled(false);
+            v2.setEnabled(true);
+        }
+        if(rb2.isSelected()){
+            JOptionPane.showMessageDialog(null, "CORRECTO");
+            rb1.setEnabled(false);
+            rb2.setEnabled(false);
+          
+            v1.setEnabled(false);
+            v2.setEnabled(true);
+        }
+     
+        
+       
+        
+        
+    }//GEN-LAST:event_v1ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-  
-        if(v1.isSelected()){
-            JOptionPane.showMessageDialog(null, "INCORRECTO");
-        }
-        if(v2.isSelected()){
-            JOptionPane.showMessageDialog(null, "CORRECTO");
-        }
-        if(v3.isSelected()){
-            JOptionPane.showMessageDialog(null, "INCORRECTO");
-        }
+    private void s1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s1ActionPerformed
+        // TODO add your handling code here:
+    T2_8EXAMEN c=new T2_8EXAMEN ();
+        c.setVisible(true);
+        this.dispose(); 
+    }//GEN-LAST:event_s1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+   T2_6EXAMEN c=new T2_6EXAMEN ();
+        c.setVisible(true);
+        this.dispose();        // TODO add your handling code here:
+ 
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void v2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_v2ActionPerformed
+        // TODO add your handling code here:
         if(v4.isSelected()){
-            JOptionPane.showMessageDialog(null, "CORRECTO");
+            JOptionPane.showMessageDialog(null, "INCORRECTO");
+            v4.setEnabled(false);
+            v5.setEnabled(false);
+            v6.setEnabled(false);
+            v2.setEnabled(false);
+            s1.setEnabled(true);
         }
         if(v5.isSelected()){
             JOptionPane.showMessageDialog(null, "INCORRECTO");
+            v4.setEnabled(false);
+            v5.setEnabled(false);
+            v6.setEnabled(false);
+            v2.setEnabled(false);
+            s1.setEnabled(true);
         }
-         if(v6.isSelected()){
+        if(v6.isSelected()){
             JOptionPane.showMessageDialog(null, "CORRECTO");
+            v4.setEnabled(false);
+            v5.setEnabled(false);
+            v6.setEnabled(false);
+            v2.setEnabled(false);
+            s1.setEnabled(true);
         }
-          
-        if(v7.isSelected()){
-            JOptionPane.showMessageDialog(null, "INCORRECTO");
         
-        }
-    
-       
- 
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_v2ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void v6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_v6ActionPerformed
         // TODO add your handling code here:
-        T7_7MENU c=new T7_7MENU();
-        c.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void v5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_v5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_v5ActionPerformed
+    }//GEN-LAST:event_v6ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -302,19 +284,17 @@ public class T2_7EXAMEN extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton3;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JRadioButton v1;
-    private javax.swing.JRadioButton v2;
-    private javax.swing.JRadioButton v3;
+    private javax.swing.JRadioButton rb1;
+    private javax.swing.JRadioButton rb2;
+    private javax.swing.JButton s1;
+    private javax.swing.JButton v1;
+    private javax.swing.JButton v2;
     private javax.swing.JRadioButton v4;
     private javax.swing.JRadioButton v5;
     private javax.swing.JRadioButton v6;
-    private javax.swing.JRadioButton v7;
     // End of variables declaration//GEN-END:variables
 }
