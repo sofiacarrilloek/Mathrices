@@ -30,7 +30,6 @@ public class T2_4EXAMEN extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jl1 = new javax.swing.JLabel();
         jl2 = new javax.swing.JLabel();
@@ -47,10 +46,6 @@ public class T2_4EXAMEN extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
-        jLabel4.setText("EXAMEN");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 10, 190, 70));
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         jLabel1.setText("Selecciona todas las matrices que son escalonadas.");
@@ -315,7 +310,6 @@ public class T2_4EXAMEN extends javax.swing.JFrame {
     private javax.swing.JButton btn_6;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jl1;
     private javax.swing.JLabel jl2;
     private javax.swing.JLabel jl3;
