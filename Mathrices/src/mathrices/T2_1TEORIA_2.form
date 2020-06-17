@@ -29,7 +29,7 @@
     <Container class="javax.swing.JPanel" name="jPanel1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="99" red="66" type="rgb"/>
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
       </Properties>
       <Constraints>
@@ -45,7 +45,7 @@
         <Component class="javax.swing.JButton" name="jButton1">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="cc" green="0" red="0" type="rgb"/>
+              <Color blue="99" green="0" red="0" type="rgb"/>
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="14" style="0"/>
@@ -99,6 +99,7 @@
                 <Property name="rows" type="int" value="5"/>
                 <Property name="text" type="java.lang.String" value="&#xa;Dos matrices A y B son iguales si son del mismo tama&#xf1;o (mismo orden) y sus entradas correspondientes son iguales.&#xa;&#xa;Por ejemplo, si tenemos las matrices:&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;Con base a la notaci&#xf3;n podemos deducir lo siguiente:&#xa;&#xa;&#x2022;&#x9;El orden de la matriz A es 2 x 3, el orden la matriz B es 3 x 3 y el orden de la matriz C                             es 3 x 2.&#xa;&#x2022;&#x9;Las matrices A, B y C no son semejantes entre si, pues tienen distinto orden.&#xa;&#x2022;&#x9;Algunos elementos espec&#xed;ficos son: a21= 4,b 1 3= 3&#xa;"/>
                 <Property name="wrapStyleWord" type="boolean" value="true"/>
+                <Property name="focusable" type="boolean" value="false"/>
               </Properties>
             </Component>
           </SubComponents>

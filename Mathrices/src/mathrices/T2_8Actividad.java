@@ -47,16 +47,16 @@ public class T2_8Actividad extends javax.swing.JFrame {
         cortina1 = new javax.swing.JLabel();
         cortina3 = new javax.swing.JLabel();
         cortina4 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton3.setBackground(new java.awt.Color(0, 0, 153));
-        jButton3.setFont(new java.awt.Font("Yu Gothic Medium", 1, 24)); // NOI18N
+        jButton3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("<--");
+        jButton3.setText("Regresar");
         jButton3.setFocusPainted(false);
         jButton3.setFocusable(false);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -64,7 +64,7 @@ public class T2_8Actividad extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 90, 40));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 90, 60));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_8/T8_M1.png"))); // NOI18N
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 160, -1, -1));
@@ -114,7 +114,7 @@ public class T2_8Actividad extends javax.swing.JFrame {
         });
         getContentPane().add(op1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 600, -1, -1));
 
-        jLabel1.setFont(new java.awt.Font("Yu Gothic Medium", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         jLabel1.setText("Actividad 8");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 20, -1, 44));
 
@@ -145,8 +145,9 @@ public class T2_8Actividad extends javax.swing.JFrame {
         cortina4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_8/T8_Buena.png"))); // NOI18N
         getContentPane().add(cortina4, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 340, 170, -1));
 
-        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 1440, 810));
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, 810));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -326,10 +327,10 @@ public class T2_8Actividad extends javax.swing.JFrame {
     private javax.swing.JLabel cuadro3;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel op1;
     private javax.swing.JLabel op2;
     private javax.swing.JLabel op3;

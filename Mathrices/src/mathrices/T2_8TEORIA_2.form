@@ -50,7 +50,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="700" y="280" width="490" height="200"/>
+              <AbsoluteConstraints x="670" y="340" width="490" height="200"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -62,7 +62,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="310" y="510" width="250" height="90"/>
+              <AbsoluteConstraints x="440" y="580" width="250" height="90"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -74,7 +74,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="240" y="300" width="280" height="140"/>
+              <AbsoluteConstraints x="290" y="350" width="280" height="140"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -86,7 +86,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="480" y="110" width="480" height="120"/>
+              <AbsoluteConstraints x="490" y="140" width="480" height="120"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -106,7 +106,7 @@
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="1260" y="660" width="90" height="40"/>
+              <AbsoluteConstraints x="1270" y="660" width="90" height="60"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -126,7 +126,7 @@
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="10" y="20" width="90" height="40"/>
+              <AbsoluteConstraints x="10" y="20" width="90" height="60"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -144,11 +144,16 @@
           <SubComponents>
             <Component class="javax.swing.JTextArea" name="jTextArea1">
               <Properties>
+                <Property name="editable" type="boolean" value="false"/>
                 <Property name="columns" type="int" value="20"/>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Times New Roman" size="24" style="0"/>
+                </Property>
                 <Property name="lineWrap" type="boolean" value="true"/>
                 <Property name="rows" type="int" value="5"/>
-                <Property name="text" type="java.lang.String" value="&#xa;Para obtener la inversa de una matriz atraves de este m&#xe9;todo se debe saber obtener un menor complementario de un elemento de una matriz  este se obtiene al suprimir  tanto la columna y la fila  y es representado como M_ij &#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;De esta manera se  obtienen los dem&#xe1;s elementos complementarios de la matriz con su respectivo signo para cada M_ij  de la matriz A  que se sustituye en cada   A_ij   de la matriz adjunta. &#xa;M_ij  =A_ij&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;La inversa de la matriz  de A es: &#xa;"/>
+                <Property name="text" type="java.lang.String" value="&#xa;Para obtener la inversa de una matriz atraves de este m&#xe9;todo se debe saber obtener un menor complementario de un elemento de una matriz  este se obtiene al suprimir  tanto la columna y la fila  y es representado como M_ij &#xa;&#xa;&#xa;&#xa;&#xa;&#xa;De esta manera se  obtienen los dem&#xe1;s elementos complementarios de la matriz con su respectivo signo para cada M_ij  de la matriz A  que se sustituye en cada   A_ij   de la matriz adjunta. &#xa;M_ij  =A_ij&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;La inversa de la matriz  de A es: &#xa;"/>
                 <Property name="wrapStyleWord" type="boolean" value="true"/>
+                <Property name="focusable" type="boolean" value="false"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -156,13 +161,13 @@
         <Component class="javax.swing.JLabel" name="jLabel5">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Yu Gothic Medium" size="24" style="1"/>
+              <Font name="Times New Roman" size="36" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="M&#xe9;todo de la adjunta para obtener la inversa"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="450" y="10" width="550" height="44"/>
+              <AbsoluteConstraints x="380" y="10" width="710" height="44"/>
             </Constraint>
           </Constraints>
         </Component>

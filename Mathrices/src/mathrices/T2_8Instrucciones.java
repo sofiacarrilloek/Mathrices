@@ -44,18 +44,18 @@ public class T2_8Instrucciones extends javax.swing.JFrame {
 
         jButton1.setBackground(new java.awt.Color(0, 0, 153));
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("-->");
+        jButton1.setText("Siguiente");
         jButton1.setFocusPainted(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 630, 90, 40));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 630, 90, 60));
 
         jButton4.setBackground(new java.awt.Color(0, 0, 153));
         jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("<--");
+        jButton4.setText("Regresar");
         jButton4.setFocusPainted(false);
         jButton4.setFocusable(false);
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -63,20 +63,20 @@ public class T2_8Instrucciones extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 90, 40));
+        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 90, 60));
 
         jTextArea1.setEditable(false);
         jTextArea1.setColumns(20);
-        jTextArea1.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
+        jTextArea1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
-        jTextArea1.setText("\n En esta actividad tendrán que calcular la inversa de una matriz cuadrada de a través de la adjunta,        colocando la respuesta correcta en los cuadros preestablecidos.\n\n - Asegurarse de colocar la opción correcta dentro de los cuadros establecidos\n\n - Por cada error cometido se le restará un punto.\n\n - Al final se mostrará la puntuación final (Puntuación máxima de 10 puntos).");
+        jTextArea1.setText("\nEn esta actividad tendrán que calcular la inversa de una matriz cuadrada de a través de la adjunta, colocando la respuesta correcta en los cuadros preestablecidos.\n\n - Asegurarse de colocar la opción correcta dentro de los cuadros establecidos\n\n - Por cada error cometido se le restará un punto.\n\n - Al final se mostrará la puntuación final (Puntuación máxima de 10 puntos).");
         jTextArea1.setWrapStyleWord(true);
         jScrollPane1.setViewportView(jTextArea1);
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 180, 1170, 360));
 
-        jLabel1.setFont(new java.awt.Font("Yu Gothic Medium", 1, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         jLabel1.setText("INSTRUCCIONES");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 70, -1, 44));
 

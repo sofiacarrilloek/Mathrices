@@ -50,7 +50,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="--&gt;"/>
+            <Property name="text" type="java.lang.String" value="Siguiente"/>
             <Property name="focusPainted" type="boolean" value="false"/>
           </Properties>
           <Events>
@@ -58,7 +58,7 @@
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="1240" y="630" width="90" height="40"/>
+              <AbsoluteConstraints x="1240" y="630" width="90" height="60"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -70,7 +70,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="&lt;--"/>
+            <Property name="text" type="java.lang.String" value="Regresar"/>
             <Property name="focusPainted" type="boolean" value="false"/>
             <Property name="focusable" type="boolean" value="false"/>
           </Properties>
@@ -79,7 +79,7 @@
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="30" y="30" width="90" height="40"/>
+              <AbsoluteConstraints x="30" y="30" width="90" height="60"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -100,11 +100,11 @@
                 <Property name="editable" type="boolean" value="false"/>
                 <Property name="columns" type="int" value="20"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Monospaced" size="18" style="0"/>
+                  <Font name="Times New Roman" size="24" style="0"/>
                 </Property>
                 <Property name="lineWrap" type="boolean" value="true"/>
                 <Property name="rows" type="int" value="5"/>
-                <Property name="text" type="java.lang.String" value="&#xa; En esta actividad tendr&#xe1;n que calcular la inversa de una matriz cuadrada de a trav&#xe9;s de la adjunta,        colocando la respuesta correcta en los cuadros preestablecidos.&#xa;&#xa; - Asegurarse de colocar la opci&#xf3;n correcta dentro de los cuadros establecidos&#xa;&#xa; - Por cada error cometido se le restar&#xe1; un punto.&#xa;&#xa; - Al final se mostrar&#xe1; la puntuaci&#xf3;n final (Puntuaci&#xf3;n m&#xe1;xima de 10 puntos)."/>
+                <Property name="text" type="java.lang.String" value="&#xa;En esta actividad tendr&#xe1;n que calcular la inversa de una matriz cuadrada de a trav&#xe9;s de la adjunta, colocando la respuesta correcta en los cuadros preestablecidos.&#xa;&#xa; - Asegurarse de colocar la opci&#xf3;n correcta dentro de los cuadros establecidos&#xa;&#xa; - Por cada error cometido se le restar&#xe1; un punto.&#xa;&#xa; - Al final se mostrar&#xe1; la puntuaci&#xf3;n final (Puntuaci&#xf3;n m&#xe1;xima de 10 puntos)."/>
                 <Property name="wrapStyleWord" type="boolean" value="true"/>
               </Properties>
             </Component>
@@ -113,7 +113,7 @@
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Yu Gothic Medium" size="36" style="1"/>
+              <Font name="Times New Roman" size="36" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="INSTRUCCIONES"/>
           </Properties>

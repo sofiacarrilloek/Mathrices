@@ -40,10 +40,10 @@ public class T2_1TEORIA extends javax.swing.JFrame {
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(102, 102, 255));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 204));
+        jButton1.setBackground(new java.awt.Color(0, 0, 153));
         jButton1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Siguiente");
@@ -64,6 +64,7 @@ public class T2_1TEORIA extends javax.swing.JFrame {
         jTextArea1.setRows(5);
         jTextArea1.setText("\nUna matriz A de m x n es un arreglo rectangular de mn números dispuestos en m renglones y n columnas.\n\n\n\n\n\n\n\n\n\n\n\n\n\ndonde cada elemento aij se conoce como entrada o componente de la matriz A.");
         jTextArea1.setWrapStyleWord(true);
+        jTextArea1.setFocusable(false);
         jScrollPane1.setViewportView(jTextArea1);
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 80, 1040, 520));
@@ -72,7 +73,7 @@ public class T2_1TEORIA extends javax.swing.JFrame {
         jLabel5.setText("Definición de matriz, notación y orden");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 10, 610, 44));
 
-        jButton2.setBackground(new java.awt.Color(0, 0, 204));
+        jButton2.setBackground(new java.awt.Color(0, 0, 153));
         jButton2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Regresar");

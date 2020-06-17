@@ -64,34 +64,38 @@ public class T2_8TEORIA_3 extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 90, 40));
+        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 90, 60));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_8/Ejemplo_Paso2.png"))); // NOI18N
-        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 470, 390, 210));
+        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 420, 390, 210));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_8/Ejemplo_Paso4Opcional.png"))); // NOI18N
-        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 470, 310, 150));
+        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 420, 310, 150));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_8/Ejemplo_Paso1.png"))); // NOI18N
-        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 270, 310, 140));
+        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 220, 310, 140));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_8/Ejemplo_Paso3.png"))); // NOI18N
-        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 270, 310, 150));
+        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 220, 310, 150));
 
-        jLabel5.setFont(new java.awt.Font("Yu Gothic Medium", 1, 24)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         jLabel5.setText("Pasos para calcular la inversa de una matriz por el método adjunto");
-        jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 20, -1, 44));
+        jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 10, -1, 44));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_8/Ejemplo_inversa_Matriz.png"))); // NOI18N
         jLabel6.setText("jLabel6");
-        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 130, 260, 90));
+        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 80, 260, 90));
 
+        jTextArea1.setEditable(false);
         jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         jTextArea1.setRows(5);
-        jTextArea1.setText("\nEjemplo: Calcula la inversa de la siguiente matriz\n\n\n\n\n\n\n\n\n  1.-Obtener el determinante de la matriz.                                                                                                  3.-Sustituir los adjuntos en la matriz. \n                                      \n\n\n\n\n \n\n\n\n\n\n  2.-Calcular cada uno de los adjuntos de la matriz.                                                                                  4.- Comprobación (opcional).\n\n\n\n\n\n\n\n\n\n  \n ");
+        jTextArea1.setText("\nEjemplo: Calcula la inversa de la siguiente matriz\n\n\n\n\n  1.-Obtener el determinante de la matriz.                                        3.-Sustituir los adjuntos en la matriz. \n                                      \n\n\n\n \n\n  2.-Calcular cada uno de los adjuntos de la matriz.                         4.- Comprobación (opcional).\n\n\n\n\n\n\n\n\n\n  \n ");
+        jTextArea1.setAutoscrolls(false);
+        jTextArea1.setFocusable(false);
         jScrollPane1.setViewportView(jTextArea1);
 
-        jPanel3.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 80, 1140, 640));
+        jPanel3.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 70, 1140, 650));
 
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1380, 760));
 

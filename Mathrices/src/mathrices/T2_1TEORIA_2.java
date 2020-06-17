@@ -37,10 +37,10 @@ public class T2_1TEORIA_2 extends javax.swing.JFrame {
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(102, 153, 255));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 204));
+        jButton1.setBackground(new java.awt.Color(0, 0, 153));
         jButton1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Regresar");
@@ -61,6 +61,7 @@ public class T2_1TEORIA_2 extends javax.swing.JFrame {
         jTextArea1.setRows(5);
         jTextArea1.setText("\nDos matrices A y B son iguales si son del mismo tamaño (mismo orden) y sus entradas correspondientes son iguales.\n\nPor ejemplo, si tenemos las matrices:\n\n\n\n\n\n\n\nCon base a la notación podemos deducir lo siguiente:\n\n•\tEl orden de la matriz A es 2 x 3, el orden la matriz B es 3 x 3 y el orden de la matriz C                             es 3 x 2.\n•\tLas matrices A, B y C no son semejantes entre si, pues tienen distinto orden.\n•\tAlgunos elementos específicos son: a21= 4,b 1 3= 3\n");
         jTextArea1.setWrapStyleWord(true);
+        jTextArea1.setFocusable(false);
         jScrollPane1.setViewportView(jTextArea1);
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 90, 1000, 540));

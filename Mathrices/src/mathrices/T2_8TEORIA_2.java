@@ -47,16 +47,16 @@ public class T2_8TEORIA_2 extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_8/Método_obtener_Inversa3.png"))); // NOI18N
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 280, 490, 200));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 340, 490, 200));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_8/Formula.png"))); // NOI18N
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 510, 250, 90));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 580, 250, 90));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_8/Método_obtener_Inversa2.png"))); // NOI18N
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 300, 280, 140));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 350, 280, 140));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_8/Método_obtener_Inversa.png"))); // NOI18N
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 110, 480, 120));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 140, 480, 120));
 
         jButton1.setBackground(new java.awt.Color(0, 0, 153));
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
@@ -67,7 +67,7 @@ public class T2_8TEORIA_2 extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1260, 660, 90, 40));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1270, 660, 90, 60));
 
         jButton2.setBackground(new java.awt.Color(0, 0, 153));
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
@@ -78,20 +78,23 @@ public class T2_8TEORIA_2 extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 90, 40));
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 90, 60));
 
+        jTextArea1.setEditable(false);
         jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
-        jTextArea1.setText("\nPara obtener la inversa de una matriz atraves de este método se debe saber obtener un menor complementario de un elemento de una matriz  este se obtiene al suprimir  tanto la columna y la fila  y es representado como M_ij \n\n\n\n\n\n\n\n\nDe esta manera se  obtienen los demás elementos complementarios de la matriz con su respectivo signo para cada M_ij  de la matriz A  que se sustituye en cada   A_ij   de la matriz adjunta. \nM_ij  =A_ij\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLa inversa de la matriz  de A es: \n");
+        jTextArea1.setText("\nPara obtener la inversa de una matriz atraves de este método se debe saber obtener un menor complementario de un elemento de una matriz  este se obtiene al suprimir  tanto la columna y la fila  y es representado como M_ij \n\n\n\n\n\nDe esta manera se  obtienen los demás elementos complementarios de la matriz con su respectivo signo para cada M_ij  de la matriz A  que se sustituye en cada   A_ij   de la matriz adjunta. \nM_ij  =A_ij\n\n\n\n\n\n\n\n\nLa inversa de la matriz  de A es: \n");
         jTextArea1.setWrapStyleWord(true);
+        jTextArea1.setFocusable(false);
         jScrollPane1.setViewportView(jTextArea1);
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 60, 1140, 650));
 
-        jLabel5.setFont(new java.awt.Font("Yu Gothic Medium", 1, 24)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         jLabel5.setText("Método de la adjunta para obtener la inversa");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 10, 550, 44));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 10, 710, 44));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1410, 770));
 
