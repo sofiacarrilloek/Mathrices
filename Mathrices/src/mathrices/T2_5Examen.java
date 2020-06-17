@@ -81,7 +81,7 @@ public class T2_5Examen extends javax.swing.JFrame {
         C1.setBackground(new java.awt.Color(255, 255, 255));
         Grupo1.add(C1);
         C1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        C1.setText("A*");
+        C1.setText(" a) A*");
         C1.setFocusable(false);
         C1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -92,7 +92,7 @@ public class T2_5Examen extends javax.swing.JFrame {
         C2.setBackground(new java.awt.Color(255, 255, 255));
         Grupo1.add(C2);
         C2.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        C2.setText("A-");
+        C2.setText(" b) A-");
         C2.setFocusable(false);
         C2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -103,7 +103,7 @@ public class T2_5Examen extends javax.swing.JFrame {
         C3.setBackground(new java.awt.Color(255, 255, 255));
         Grupo1.add(C3);
         C3.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        C3.setText("A^-1");
+        C3.setText(" c) A^-1");
         C3.setFocusable(false);
         C3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -114,7 +114,7 @@ public class T2_5Examen extends javax.swing.JFrame {
         C4.setBackground(new java.awt.Color(255, 255, 255));
         Grupo2.add(C4);
         C4.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        C4.setText("A*B = B*A");
+        C4.setText(" a) A*B = B*A");
         C4.setFocusable(false);
         C4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -125,7 +125,7 @@ public class T2_5Examen extends javax.swing.JFrame {
         C5.setBackground(new java.awt.Color(255, 255, 255));
         Grupo2.add(C5);
         C5.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        C5.setText("(A^t)^-1 = (A^-1)^t");
+        C5.setText(" b) (A^t)^-1 = (A^-1)^t");
         C5.setFocusable(false);
         C5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -136,7 +136,7 @@ public class T2_5Examen extends javax.swing.JFrame {
         C6.setBackground(new java.awt.Color(255, 255, 255));
         Grupo2.add(C6);
         C6.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        C6.setText("(A*B)^-1 = B^1*A");
+        C6.setText(" c) (A*B)^-1 = B^1*A");
         C6.setFocusable(false);
         C6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

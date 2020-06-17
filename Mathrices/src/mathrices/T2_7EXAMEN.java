@@ -102,7 +102,7 @@ public class T2_7EXAMEN extends javax.swing.JFrame {
 
         buttonGroup2.add(v4);
         v4.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        v4.setText("0 (cero)");
+        v4.setText(" a) 0 (cero)");
         v4.setFocusable(false);
         v4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -113,17 +113,17 @@ public class T2_7EXAMEN extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel3.setText("El determinante de una matriz y el de su transpuesta son...");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 130, -1, 44));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 130, 610, 44));
 
         buttonGroup1.add(rb1);
         rb1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        rb1.setText("Distintos");
+        rb1.setText(" a) Distintos");
         rb1.setFocusable(false);
         jPanel1.add(rb1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 210, -1, -1));
 
         buttonGroup1.add(rb2);
         rb2.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        rb2.setText("Iguales");
+        rb2.setText(" b) Iguales");
         rb2.setFocusable(false);
         rb2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -138,7 +138,7 @@ public class T2_7EXAMEN extends javax.swing.JFrame {
 
         buttonGroup2.add(v5);
         v5.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        v5.setText("|At|");
+        v5.setText(" b) |At|");
         v5.setFocusable(false);
         v5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -149,7 +149,7 @@ public class T2_7EXAMEN extends javax.swing.JFrame {
 
         buttonGroup2.add(v6);
         v6.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        v6.setText("|A|");
+        v6.setText(" c) |A|");
         v6.setFocusable(false);
         v6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

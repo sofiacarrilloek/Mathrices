@@ -200,7 +200,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="24" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Matriz Escalar"/>
+            <Property name="text" type="java.lang.String" value=" a) Matriz Escalar"/>
             <Property name="focusable" type="boolean" value="false"/>
           </Properties>
           <Events>
@@ -215,7 +215,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="24" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Matriz Triangular"/>
+            <Property name="text" type="java.lang.String" value=" b) Matriz Triangular"/>
             <Property name="focusable" type="boolean" value="false"/>
           </Properties>
         </Component>
@@ -227,7 +227,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="24" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Matriz Cuadrada"/>
+            <Property name="text" type="java.lang.String" value=" c) Matriz Cuadrada"/>
             <Property name="focusable" type="boolean" value="false"/>
           </Properties>
         </Component>
@@ -247,7 +247,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="24" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Matriz Nula"/>
+            <Property name="text" type="java.lang.String" value=" a) Matriz Nula"/>
             <Property name="focusable" type="boolean" value="false"/>
           </Properties>
         </Component>
@@ -259,7 +259,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="24" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Matriz Cero"/>
+            <Property name="text" type="java.lang.String" value=" b) Matriz Cero"/>
             <Property name="focusable" type="boolean" value="false"/>
           </Properties>
         </Component>
@@ -271,7 +271,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="24" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Matriz Diagonal"/>
+            <Property name="text" type="java.lang.String" value=" c) Matriz Diagonal"/>
             <Property name="focusable" type="boolean" value="false"/>
           </Properties>
         </Component>
@@ -291,7 +291,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="24" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Matriz Diagonal"/>
+            <Property name="text" type="java.lang.String" value=" a) Matriz Diagonal"/>
             <Property name="focusable" type="boolean" value="false"/>
           </Properties>
         </Component>
@@ -303,7 +303,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="24" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Matriz Id&#xe9;ntica"/>
+            <Property name="text" type="java.lang.String" value=" b) Matriz Id&#xe9;ntica"/>
             <Property name="focusable" type="boolean" value="false"/>
           </Properties>
         </Component>
@@ -315,7 +315,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="24" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Matriz Escalar"/>
+            <Property name="text" type="java.lang.String" value=" c) Matriz Escalar"/>
             <Property name="focusable" type="boolean" value="false"/>
           </Properties>
         </Component>

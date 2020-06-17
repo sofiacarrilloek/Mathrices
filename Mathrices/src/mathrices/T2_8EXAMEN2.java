@@ -22,10 +22,12 @@ public class T2_8EXAMEN2 extends javax.swing.JFrame {
     }
 
     T2_8EXAMEN2(String puntosT8) {
-        JOptionPane.showMessageDialog(null, puntosT8);
+      
     }
     int puntos2;
-    //int calificacionT8=puntosT8+puntos2;
+        //int puntos1 = Integer.parseInt(puntosT8);
+       // int calificacionT8=puntos1+puntos2;
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
