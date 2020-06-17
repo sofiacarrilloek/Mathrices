@@ -28,7 +28,7 @@ public class T2_7EXAMEN extends javax.swing.JFrame {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
         buttonGroup2 = new javax.swing.ButtonGroup();
-        s1 = new javax.swing.JButton();
+        btn_siguiente = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         v1 = new javax.swing.JButton();
@@ -45,18 +45,18 @@ public class T2_7EXAMEN extends javax.swing.JFrame {
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        s1.setBackground(new java.awt.Color(0, 0, 153));
-        s1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        s1.setForeground(new java.awt.Color(255, 255, 255));
-        s1.setText("Siguiente");
-        s1.setEnabled(false);
-        s1.setFocusable(false);
-        s1.addActionListener(new java.awt.event.ActionListener() {
+        btn_siguiente.setBackground(new java.awt.Color(0, 0, 153));
+        btn_siguiente.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        btn_siguiente.setForeground(new java.awt.Color(255, 255, 255));
+        btn_siguiente.setText("Siguiente");
+        btn_siguiente.setEnabled(false);
+        btn_siguiente.setFocusable(false);
+        btn_siguiente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                s1ActionPerformed(evt);
+                btn_siguienteActionPerformed(evt);
             }
         });
-        getContentPane().add(s1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 590, 90, 60));
+        getContentPane().add(btn_siguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 590, 90, 60));
 
         jButton3.setBackground(new java.awt.Color(0, 0, 153));
         jButton3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -191,17 +191,19 @@ public class T2_7EXAMEN extends javax.swing.JFrame {
             v1.setEnabled(false);
             v2.setEnabled(true);
         }
-              
+     
+        
+       
         
         
     }//GEN-LAST:event_v1ActionPerformed
 
-    private void s1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s1ActionPerformed
+    private void btn_siguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_siguienteActionPerformed
         // TODO add your handling code here:
     T2_8EXAMEN c=new T2_8EXAMEN ();
         c.setVisible(true);
         this.dispose(); 
-    }//GEN-LAST:event_s1ActionPerformed
+    }//GEN-LAST:event_btn_siguienteActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
    T2_6EXAMEN c=new T2_6EXAMEN ();
@@ -218,7 +220,7 @@ public class T2_7EXAMEN extends javax.swing.JFrame {
             v5.setEnabled(false);
             v6.setEnabled(false);
             v2.setEnabled(false);
-            s1.setEnabled(true);
+            btn_siguiente.setEnabled(true);
         }
         if(v5.isSelected()){
             JOptionPane.showMessageDialog(null, "INCORRECTO");
@@ -226,7 +228,7 @@ public class T2_7EXAMEN extends javax.swing.JFrame {
             v5.setEnabled(false);
             v6.setEnabled(false);
             v2.setEnabled(false);
-            s1.setEnabled(true);
+            btn_siguiente.setEnabled(true);
         }
         if(v6.isSelected()){
             JOptionPane.showMessageDialog(null, "CORRECTO");
@@ -234,20 +236,15 @@ public class T2_7EXAMEN extends javax.swing.JFrame {
             v5.setEnabled(false);
             v6.setEnabled(false);
             v2.setEnabled(false);
-            s1.setEnabled(true);
-        }        
+            btn_siguiente.setEnabled(true);
+        }
+        
     }//GEN-LAST:event_v2ActionPerformed
 
     private void v6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_v6ActionPerformed
         // TODO add your handling code here:
+        
     }//GEN-LAST:event_v6ActionPerformed
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-        T2_8EXAMEN c=new T2_8EXAMEN();
-        c.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -286,6 +283,7 @@ public class T2_7EXAMEN extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btn_siguiente;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.JButton jButton3;
@@ -294,7 +292,6 @@ public class T2_7EXAMEN extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JRadioButton rb1;
     private javax.swing.JRadioButton rb2;
-    private javax.swing.JButton s1;
     private javax.swing.JButton v1;
     private javax.swing.JButton v2;
     private javax.swing.JRadioButton v4;
