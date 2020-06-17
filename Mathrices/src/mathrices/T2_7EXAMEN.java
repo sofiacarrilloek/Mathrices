@@ -40,6 +40,8 @@ public class T2_7EXAMEN extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         v5 = new javax.swing.JRadioButton();
         v6 = new javax.swing.JRadioButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -155,6 +157,12 @@ public class T2_7EXAMEN extends javax.swing.JFrame {
             }
         });
         jPanel1.add(v6, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 580, -1, -1));
+
+        jLabel1.setText("50 puntos");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 150, -1, -1));
+
+        jLabel2.setText("50 puntos");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 390, -1, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 1410, 800));
 
@@ -287,6 +295,8 @@ public class T2_7EXAMEN extends javax.swing.JFrame {
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
