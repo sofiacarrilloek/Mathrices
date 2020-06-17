@@ -43,7 +43,7 @@ public class T2_4MENU extends javax.swing.JFrame {
         jPanel1.setOpaque(false);
 
         btn_T4Actividades.setBackground(new java.awt.Color(0, 0, 153));
-        btn_T4Actividades.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btn_T4Actividades.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btn_T4Actividades.setForeground(new java.awt.Color(240, 240, 240));
         btn_T4Actividades.setText("ACTIVIDADES");
         btn_T4Actividades.setFocusPainted(false);
@@ -54,7 +54,7 @@ public class T2_4MENU extends javax.swing.JFrame {
         });
 
         btn_T4Teoria.setBackground(new java.awt.Color(0, 0, 153));
-        btn_T4Teoria.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btn_T4Teoria.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btn_T4Teoria.setForeground(new java.awt.Color(240, 240, 240));
         btn_T4Teoria.setText("TEORIA");
         btn_T4Teoria.setFocusPainted(false);
@@ -65,7 +65,7 @@ public class T2_4MENU extends javax.swing.JFrame {
         });
 
         btn_T4Actividades1.setBackground(new java.awt.Color(0, 0, 153));
-        btn_T4Actividades1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btn_T4Actividades1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btn_T4Actividades1.setForeground(new java.awt.Color(240, 240, 240));
         btn_T4Actividades1.setText("VIDEOS");
         btn_T4Actividades1.setFocusPainted(false);
