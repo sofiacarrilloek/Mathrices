@@ -5,8 +5,7 @@
  */
 package mathrices;
 
-import vista.Admistradorr;
-import vista.PuzzleInicio;
+
 
 /**
  *
@@ -130,7 +129,7 @@ public class T7_7MENU extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        PuzzleInicio c=new   PuzzleInicio();
+        T2_7Ahorcado c=new   T2_7Ahorcado();
         c.setVisible(true);
         this.dispose();  // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
