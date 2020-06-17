@@ -21,6 +21,12 @@ public class T2_8EXAMEN2 extends javax.swing.JFrame {
         this.setExtendedState(MAXIMIZED_BOTH);
     }
 
+    T2_8EXAMEN2(String puntosT8) {
+        JOptionPane.showMessageDialog(null, puntosT8);
+    }
+    int puntos2;
+    //int calificacionT8=puntosT8+puntos2;
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -135,6 +141,7 @@ public class T2_8EXAMEN2 extends javax.swing.JFrame {
             rb2.setEnabled(false);
             rb3.setEnabled(false);
             v1.setEnabled(false);
+            puntos2=60;
         }
         if(rb2.isSelected()){
             JOptionPane.showMessageDialog(null, "INCORRECTO");
@@ -142,6 +149,7 @@ public class T2_8EXAMEN2 extends javax.swing.JFrame {
             rb2.setEnabled(false);
             rb3.setEnabled(false);
             v1.setEnabled(false);
+            puntos2=0;
         }
         if(rb3.isSelected()){
             JOptionPane.showMessageDialog(null, "INCORRECTO");
@@ -149,6 +157,7 @@ public class T2_8EXAMEN2 extends javax.swing.JFrame {
             rb2.setEnabled(false);
             rb3.setEnabled(false);
             v1.setEnabled(false);
+            puntos2=0;
         }
         
 

@@ -20,6 +20,9 @@ public class T2_1EXAMEN extends javax.swing.JFrame {
         initComponents();
         this.setExtendedState(MAXIMIZED_BOTH);
     }
+    int puntos;
+    int puntos2;
+    int calificacionT1=puntos+puntos2;
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -197,6 +200,7 @@ public class T2_1EXAMEN extends javax.swing.JFrame {
             rb3.setEnabled(false);
             v1.setEnabled(false);
             v2.setEnabled(true);
+            puntos=0;
         }
         if(rb2.isSelected()){
             JOptionPane.showMessageDialog(null, "CORRECTO");
@@ -205,6 +209,7 @@ public class T2_1EXAMEN extends javax.swing.JFrame {
             rb3.setEnabled(false);
             v1.setEnabled(false);
             v2.setEnabled(true);
+            puntos=50;
         }
         if(rb3.isSelected()){
             JOptionPane.showMessageDialog(null, "INCORRECTO");
@@ -213,6 +218,7 @@ public class T2_1EXAMEN extends javax.swing.JFrame {
             rb3.setEnabled(false);
             v1.setEnabled(false);
             v2.setEnabled(true);
+            puntos=0;
         }
         
         
@@ -223,9 +229,12 @@ public class T2_1EXAMEN extends javax.swing.JFrame {
 
     private void s1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s1ActionPerformed
         // TODO add your handling code here:
-        T2_2EXAMEN c=new T2_2EXAMEN();
+        String puntosT1=""+calificacionT1;
+        T2_2EXAMEN c=new T2_2EXAMEN(puntosT1);
         c.setVisible(true);
         this.dispose();
+        
+        
     }//GEN-LAST:event_s1ActionPerformed
 
     private void v2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_v2ActionPerformed
@@ -237,6 +246,8 @@ public class T2_1EXAMEN extends javax.swing.JFrame {
             rb6.setEnabled(false);
             v2.setEnabled(false);
             s1.setEnabled(true);
+            puntos2=0;
+
         }
         if(rb5.isSelected()){
             JOptionPane.showMessageDialog(null, "INCORRECTO");
@@ -245,6 +256,8 @@ public class T2_1EXAMEN extends javax.swing.JFrame {
             rb6.setEnabled(false);
             v2.setEnabled(false);
             s1.setEnabled(true);
+            puntos2=0;
+
         }
         if(rb6.isSelected()){
             JOptionPane.showMessageDialog(null, "CORRECTO");
@@ -253,6 +266,7 @@ public class T2_1EXAMEN extends javax.swing.JFrame {
             rb6.setEnabled(false);
             v2.setEnabled(false);
             s1.setEnabled(true);
+            puntos2=50;
         }
         
     }//GEN-LAST:event_v2ActionPerformed

@@ -20,6 +20,8 @@ public class T2_8EXAMEN extends javax.swing.JFrame {
         initComponents();
         this.setExtendedState(MAXIMIZED_BOTH);
     }
+    int puntos;
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -149,6 +151,7 @@ public class T2_8EXAMEN extends javax.swing.JFrame {
             rb3.setEnabled(false);
             s1.setEnabled(true);
             v1.setEnabled(false);
+            puntos=0;
         }
         if(rb2.isSelected()){
             JOptionPane.showMessageDialog(null, "CORRECTO");
@@ -157,6 +160,7 @@ public class T2_8EXAMEN extends javax.swing.JFrame {
             rb3.setEnabled(false);
             s1.setEnabled(true);
             v1.setEnabled(false);
+            puntos=40;
         }
         if(rb3.isSelected()){
             JOptionPane.showMessageDialog(null, "INCORRECTO");
@@ -165,6 +169,7 @@ public class T2_8EXAMEN extends javax.swing.JFrame {
             rb3.setEnabled(false);
             s1.setEnabled(true);
             v1.setEnabled(false);
+            puntos=0;
         }
         
         
@@ -174,6 +179,7 @@ public class T2_8EXAMEN extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+        
         T2_1EXAMEN c=new T2_1EXAMEN();
         c.setVisible(true);
         this.dispose();
@@ -181,7 +187,8 @@ public class T2_8EXAMEN extends javax.swing.JFrame {
 
     private void s1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s1ActionPerformed
         // TODO add your handling code here:
-        T2_8EXAMEN2 c=new T2_8EXAMEN2();
+        String puntosT8=""+puntos;
+        T2_8EXAMEN2 c=new T2_8EXAMEN2(puntosT8);
         c.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_s1ActionPerformed
