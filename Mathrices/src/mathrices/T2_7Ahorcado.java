@@ -62,25 +62,25 @@ public class T2_7Ahorcado extends javax.swing.JFrame {
         btns[26] = jButton27;
 
         //palabras por advinar, para agregar una nueva palabra sera necesario declararla al inicio
-        msgs[0] = "MATRICES".toUpperCase();
+        msgs[0] = "PRODUCTO".toUpperCase();
         msgs[1] = "MATRIZ".toUpperCase();
         msgs[2] = "SARRUS".toUpperCase();
-        msgs[3] = "SUMA".toUpperCase();
-        msgs[4] = "RESTA".toUpperCase();
+        msgs[3] = "VALOR".toUpperCase();
+        msgs[4] = "ELEMENTOS".toUpperCase();
         msgs[5] = "DETERMINANTE".toUpperCase();
         msgs[6] = "COLUMNA".toUpperCase();
-        msgs[7] = "OPUESTA".toUpperCase();
+        msgs[7] = "COMBINACION".toUpperCase();
         msgs[8] = "REDUCCION".toUpperCase();
         msgs[9] = "DIFERENTES".toUpperCase();
         msgs[10] = "CERO".toUpperCase();
         msgs[11] = "COLUMNA".toUpperCase();
-        msgs[12] = "TIPO".toUpperCase();
+        msgs[12] = "INVARIANTES".toUpperCase();
         msgs[13] = "FILAS".toUpperCase();
-        msgs[14] = "IGUALDAD".toUpperCase();
+        msgs[14] = "DIAGONAL".toUpperCase();
         msgs[15] = "DESCOMPONER".toUpperCase();
         msgs[16] = "OPERACIONES".toUpperCase();
         msgs[17] = "DISTINTO".toUpperCase();
-        msgs[18] = "METODO".toUpperCase();
+        msgs[18] = "SUMADOS".toUpperCase();
         msgs[19] = "PROPIEDADES".toUpperCase();
         
 
