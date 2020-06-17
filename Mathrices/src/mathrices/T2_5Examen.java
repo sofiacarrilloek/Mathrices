@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
  * @author PERSONAL
  */
 public class T2_5Examen extends javax.swing.JFrame {
-
+       String puntos;
     
 
     /**
@@ -314,46 +314,23 @@ public class T2_5Examen extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        /*if(C1.isSelected()){
-            JOptionPane.showMessageDialog(null, "CORRECTO");
-        }
-        if(C2.isSelected()){
-            JOptionPane.showMessageDialog(null, "INCORRECTO");
-        }
-        if(C3.isSelected()){
-            JOptionPane.showMessageDialog(null, "INCORRECTO");
-        }
-        if(C4.isSelected()){
-            JOptionPane.showMessageDialog(null, "CORRECTO");
-        }
-        if(C5.isSelected()){
-            JOptionPane.showMessageDialog(null, "INCORRECTO");
-        }
-        if(C6.isSelected()){
-            JOptionPane.showMessageDialog(null, "INCORRECTO");
-        }
-        if(C7.isSelected()){
-            JOptionPane.showMessageDialog(null, "CORRECTO");
-        }
-        if(C8.isSelected()){
-            JOptionPane.showMessageDialog(null, "INCORRECTO");
-        }
-        if(C9.isSelected()){
-            JOptionPane.showMessageDialog(null, "INCORRECTO");
-        }*/
-        
+              
         
         if(C3.isSelected() && C5.isSelected() && C7.isSelected()){
+            puntos = "100";
             JOptionPane.showMessageDialog(null,"FELICITACIONES!! usted respondio correctamente ");
         }else{
         
             if((C3.isSelected() && C5.isSelected()) || (C5.isSelected() && C7.isSelected()) || (C3.isSelected() && C7.isSelected())){
                 JOptionPane.showMessageDialog(null,"2 de 3 preguntas correctas!! Felicidades");
+                puntos = "66";
             }else{
 
                 if(C3.isSelected() || C5.isSelected() || C7.isSelected()){
+                    puntos = "33";
                     JOptionPane.showMessageDialog(null,"1 de 3 preguntas correctas! Intente de nuevo");
                 }else{
+                    puntos = "0";
                     JOptionPane.showMessageDialog(null,"Incorrecto, intente de nuevo :(");
                 }}}
         // TODO add your handling code here:
