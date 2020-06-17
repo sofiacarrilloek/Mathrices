@@ -78,6 +78,7 @@ public class T2_2EXAMEN extends javax.swing.JFrame {
         buttonGroup1.add(A1);
         A1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         A1.setText("La matriz A debe ser diferente a la matriz B");
+        A1.setFocusable(false);
         A1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 A1ActionPerformed(evt);
@@ -88,6 +89,7 @@ public class T2_2EXAMEN extends javax.swing.JFrame {
         buttonGroup1.add(A2);
         A2.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         A2.setText("Las matrices tienen que tener el mismo signo");
+        A2.setFocusable(false);
         A2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 A2ActionPerformed(evt);
@@ -98,12 +100,13 @@ public class T2_2EXAMEN extends javax.swing.JFrame {
         buttonGroup1.add(A3);
         A3.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         A3.setText("La matriz A debe tener el mismo orden que la matriz B");
+        A3.setFocusable(false);
         A3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 A3ActionPerformed(evt);
             }
         });
-        jPanel1.add(A3, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 263, -1, -1));
+        jPanel1.add(A3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 250, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel1.setText("Al decir, la matriz C es el resultado de la diferencia de la matriz A y la matriz B ¿Qué operación es?");
@@ -112,6 +115,7 @@ public class T2_2EXAMEN extends javax.swing.JFrame {
         buttonGroup2.add(A4);
         A4.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         A4.setText("Multiplicación");
+        A4.setFocusable(false);
         A4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 A4ActionPerformed(evt);
@@ -122,11 +126,13 @@ public class T2_2EXAMEN extends javax.swing.JFrame {
         buttonGroup2.add(A5);
         A5.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         A5.setText("Resta");
+        A5.setFocusable(false);
         jPanel1.add(A5, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 412, -1, -1));
 
         buttonGroup2.add(A6);
         A6.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         A6.setText("Suma");
+        A6.setFocusable(false);
         A6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 A6ActionPerformed(evt);
@@ -141,16 +147,19 @@ public class T2_2EXAMEN extends javax.swing.JFrame {
         buttonGroup3.add(A7);
         A7.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         A7.setText("Cambia el orden");
+        A7.setFocusable(false);
         jPanel1.add(A7, new org.netbeans.lib.awtextra.AbsoluteConstraints(87, 553, -1, -1));
 
         buttonGroup3.add(A8);
         A8.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         A8.setText("No sucede nada");
+        A8.setFocusable(false);
         jPanel1.add(A8, new org.netbeans.lib.awtextra.AbsoluteConstraints(87, 593, -1, -1));
 
         buttonGroup3.add(A9);
         A9.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         A9.setText("Se conserva el orden");
+        A9.setFocusable(false);
         A9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 A9ActionPerformed(evt);
@@ -232,6 +241,7 @@ public class T2_2EXAMEN extends javax.swing.JFrame {
             A9.setEnabled(false);
             s1.setEnabled(true);
             v3.setEnabled(false);
+            
         }
     if(A9.isSelected()){
             JOptionPane.showMessageDialog(null, "CORRECTO");
@@ -241,7 +251,11 @@ public class T2_2EXAMEN extends javax.swing.JFrame {
             s1.setEnabled(true);
             v3.setEnabled(false);
         }
+
+           
+   
         
+    
     }//GEN-LAST:event_v3ActionPerformed
 
     private void A6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_A6ActionPerformed
@@ -273,6 +287,7 @@ public class T2_2EXAMEN extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void A9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_A9ActionPerformed
+    
         // TODO add your handling code here:
     }//GEN-LAST:event_A9ActionPerformed
 
