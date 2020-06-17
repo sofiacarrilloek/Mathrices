@@ -42,7 +42,7 @@ public class T2_1EXAMEN extends javax.swing.JFrame {
         rb6 = new javax.swing.JRadioButton();
         jLabel4 = new javax.swing.JLabel();
         s1 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         v1 = new javax.swing.JButton();
         v2 = new javax.swing.JButton();
@@ -131,17 +131,17 @@ public class T2_1EXAMEN extends javax.swing.JFrame {
         });
         getContentPane().add(s1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 590, 90, 60));
 
-        jButton3.setBackground(new java.awt.Color(0, 0, 153));
-        jButton3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("Regresar");
-        jButton3.setFocusable(false);
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        jButton4.setBackground(new java.awt.Color(0, 0, 153));
+        jButton4.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jButton4.setForeground(new java.awt.Color(255, 255, 255));
+        jButton4.setText("Regresar");
+        jButton4.setFocusable(false);
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                jButton4ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 90, 60));
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 90, 60));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -171,7 +171,7 @@ public class T2_1EXAMEN extends javax.swing.JFrame {
         });
         jPanel1.add(v2, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 470, 90, 60));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 1410, 800));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1410, 790));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -223,17 +223,10 @@ public class T2_1EXAMEN extends javax.swing.JFrame {
 
     private void s1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s1ActionPerformed
         // TODO add your handling code here:
-        T2_8EXAMEN c=new T2_8EXAMEN();
+        T2_2EXAMEN c=new T2_2EXAMEN();
         c.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_s1ActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-        T2_1MENU c=new T2_1MENU();
-        c.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_jButton3ActionPerformed
 
     private void v2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_v2ActionPerformed
         // TODO add your handling code here:
@@ -267,6 +260,10 @@ public class T2_1EXAMEN extends javax.swing.JFrame {
     private void rb6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb6ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rb6ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -306,7 +303,7 @@ public class T2_1EXAMEN extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

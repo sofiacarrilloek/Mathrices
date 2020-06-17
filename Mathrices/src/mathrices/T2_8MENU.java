@@ -83,8 +83,8 @@ public class T2_8MENU extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
-        jLabel3.setText("MENÚ 8");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 30, 180, 50));
+        jLabel3.setText("MENÚ \"CLASIFICACIÓN DE LAS MATRICES\"");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, 810, 50));
 
         jButton4.setBackground(new java.awt.Color(0, 0, 153));
         jButton4.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N

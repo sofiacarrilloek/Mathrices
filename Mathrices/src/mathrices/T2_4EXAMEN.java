@@ -263,9 +263,9 @@ public class T2_4EXAMEN extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        /* T2_6MENU c=new T2_6MENU();
+        T2_5Examen c=new T2_5Examen();
         c.setVisible(true);
-        this.dispose();*/
+        this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
