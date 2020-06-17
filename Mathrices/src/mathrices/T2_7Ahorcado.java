@@ -611,7 +611,7 @@ public class T2_7Ahorcado extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
-T7_7MENU c=new T7_7MENU();
+T2_7INSTRUCCIONES c=new T2_7INSTRUCCIONES();
 c.setVisible(true);
 this.dispose();
         // TODO add your handling code here:

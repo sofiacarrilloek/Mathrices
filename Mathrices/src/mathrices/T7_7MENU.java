@@ -129,7 +129,7 @@ public class T7_7MENU extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        T2_7Ahorcado c=new   T2_7Ahorcado();
+        T2_7INSTRUCCIONES c=new   T2_7INSTRUCCIONES();
         c.setVisible(true);
         this.dispose();  // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
