@@ -33,7 +33,7 @@ public class T2_3EXAMEN_1 extends javax.swing.JFrame {
         buttonGroup2 = new javax.swing.ButtonGroup();
         buttonGroup3 = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
-        btn_siguiente = new javax.swing.JButton();
+        s1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         C1 = new javax.swing.JRadioButton();
         C2 = new javax.swing.JRadioButton();
@@ -46,8 +46,10 @@ public class T2_3EXAMEN_1 extends javax.swing.JFrame {
         C7 = new javax.swing.JRadioButton();
         C8 = new javax.swing.JRadioButton();
         C9 = new javax.swing.JRadioButton();
-        jButton2 = new javax.swing.JButton();
+        v1 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
+        v3 = new javax.swing.JButton();
+        v2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -55,14 +57,15 @@ public class T2_3EXAMEN_1 extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setFocusable(false);
 
-        btn_siguiente.setBackground(new java.awt.Color(0, 0, 153));
-        btn_siguiente.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        btn_siguiente.setForeground(new java.awt.Color(255, 255, 255));
-        btn_siguiente.setText("Siguiente");
-        btn_siguiente.setFocusable(false);
-        btn_siguiente.addActionListener(new java.awt.event.ActionListener() {
+        s1.setBackground(new java.awt.Color(0, 0, 153));
+        s1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        s1.setForeground(new java.awt.Color(255, 255, 255));
+        s1.setText("Siguiente");
+        s1.setEnabled(false);
+        s1.setFocusable(false);
+        s1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_siguienteActionPerformed(evt);
+                s1ActionPerformed(evt);
             }
         });
 
@@ -120,14 +123,14 @@ public class T2_3EXAMEN_1 extends javax.swing.JFrame {
         C9.setText("Matriz Antitranspuesta de A");
         C9.setFocusable(false);
 
-        jButton2.setBackground(new java.awt.Color(0, 0, 153));
-        jButton2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Verificar");
-        jButton2.setFocusable(false);
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        v1.setBackground(new java.awt.Color(0, 0, 153));
+        v1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        v1.setForeground(new java.awt.Color(255, 255, 255));
+        v1.setText("Verificar");
+        v1.setFocusable(false);
+        v1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                v1ActionPerformed(evt);
             }
         });
 
@@ -142,67 +145,99 @@ public class T2_3EXAMEN_1 extends javax.swing.JFrame {
             }
         });
 
+        v3.setBackground(new java.awt.Color(0, 0, 153));
+        v3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        v3.setForeground(new java.awt.Color(255, 255, 255));
+        v3.setText("Verificar");
+        v3.setEnabled(false);
+        v3.setFocusable(false);
+        v3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                v3ActionPerformed(evt);
+            }
+        });
+
+        v2.setBackground(new java.awt.Color(0, 0, 153));
+        v2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        v2.setForeground(new java.awt.Color(255, 255, 255));
+        v2.setText("Verificar");
+        v2.setEnabled(false);
+        v2.setFocusable(false);
+        v2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                v2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(155, 155, 155)
-                        .addComponent(jLabel1))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(175, 175, 175)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(C4)
-                            .addComponent(jLabel2)
-                            .addComponent(C5)
-                            .addComponent(C6)
-                            .addComponent(jLabel3)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(10, 10, 10)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(C9)
-                                        .addComponent(C8, javax.swing.GroupLayout.Alignment.LEADING))
-                                    .addComponent(C7)))))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(163, 163, 163)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(C2)
-                                    .addComponent(C3))
-                                .addGap(901, 901, 901)
-                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(C1)))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btn_siguiente, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(s1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(155, 155, 155)
+                                .addComponent(jLabel1))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(175, 175, 175)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(C4)
+                                    .addComponent(C5)
+                                    .addComponent(C6)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(10, 10, 10)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                .addComponent(C9)
+                                                .addComponent(C8, javax.swing.GroupLayout.Alignment.LEADING))
+                                            .addComponent(C7)))
+                                    .addComponent(jLabel2)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(jLabel3)
+                                        .addGap(278, 278, 278)
+                                        .addComponent(v3, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(163, 163, 163)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(C2)
+                                    .addComponent(C3)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(C1)
+                                        .addGap(711, 711, 711)
+                                        .addComponent(v1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addGap(179, 179, 179)))
                 .addContainerGap(1640, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGap(1071, 1071, 1071)
+                    .addComponent(v2, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(1818, Short.MAX_VALUE)))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btn_siguiente, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(s1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(7, 7, 7)
-                .addComponent(jLabel1)
-                .addGap(18, 18, 18)
-                .addComponent(C1)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(5, 5, 5)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(C2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(C3)))
+                        .addComponent(jLabel1)
+                        .addGap(18, 18, 18)
+                        .addComponent(C1))
+                    .addComponent(v1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(C2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(C3)
                 .addGap(63, 63, 63)
                 .addComponent(jLabel2)
                 .addGap(18, 18, 18)
@@ -211,8 +246,10 @@ public class T2_3EXAMEN_1 extends javax.swing.JFrame {
                 .addComponent(C5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(C6)
-                .addGap(35, 35, 35)
-                .addComponent(jLabel3)
+                .addGap(3, 3, 3)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel3)
+                    .addComponent(v3, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(C7)
                 .addGap(8, 8, 8)
@@ -220,6 +257,11 @@ public class T2_3EXAMEN_1 extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(C9)
                 .addContainerGap(565, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGap(282, 282, 282)
+                    .addComponent(v2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(877, Short.MAX_VALUE)))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -240,47 +282,102 @@ public class T2_3EXAMEN_1 extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btn_siguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_siguienteActionPerformed
+    private void s1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s1ActionPerformed
         T2_4EXAMEN c=new T2_4EXAMEN();
         c.setVisible(true);
         this.dispose();
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn_siguienteActionPerformed
+    }//GEN-LAST:event_s1ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void v1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_v1ActionPerformed
  if(C1.isSelected()){
             JOptionPane.showMessageDialog(null, "CORRECTO");
+            C1.setEnabled(false);
+            C2.setEnabled(false);
+            C3.setEnabled(false);
+            v1.setEnabled(false);
+            v2.setEnabled(true);
     }
   if(C2.isSelected()){
             JOptionPane.showMessageDialog(null, "INCORRECTO");
+            C1.setEnabled(false);
+            C2.setEnabled(false);
+            C3.setEnabled(false);
+            v1.setEnabled(false);
+            v2.setEnabled(true);
     }
    if(C3.isSelected()){
             JOptionPane.showMessageDialog(null, "INCORRECTO");
+            C1.setEnabled(false);
+            C2.setEnabled(false);
+            C3.setEnabled(false);
+            v1.setEnabled(false);
+            v2.setEnabled(true);
     }
-    if(C4.isSelected()){
-            JOptionPane.showMessageDialog(null, "CORRECTO");
-    }
-     if(C5.isSelected()){
-            JOptionPane.showMessageDialog(null, "INCORRECTO");
-    }
-      if(C6.isSelected()){
-            JOptionPane.showMessageDialog(null, "INCORRECTO");
-    }
-       if(C7.isSelected()){
-            JOptionPane.showMessageDialog(null, "CORRECTO");
-    }
-        if(C8.isSelected()){
-            JOptionPane.showMessageDialog(null, "INCORRECTO");
-    }
-         if(C9.isSelected()){
-            JOptionPane.showMessageDialog(null, "INCORRECTO");
-    }
+    
+       
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_v1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void v3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_v3ActionPerformed
+        // TODO add your handling code here:
+        if(C7.isSelected()){
+            JOptionPane.showMessageDialog(null, "CORRECTO");
+            C7.setEnabled(false);
+            C8.setEnabled(false);
+            C9.setEnabled(false);
+            v3.setEnabled(false);
+            s1.setEnabled(true);
+    }
+        if(C8.isSelected()){
+            JOptionPane.showMessageDialog(null, "INCORRECTO");
+            C7.setEnabled(false);
+            C8.setEnabled(false);
+            C9.setEnabled(false);
+            v3.setEnabled(false);
+            s1.setEnabled(true);
+    }
+         if(C9.isSelected()){
+            JOptionPane.showMessageDialog(null, "INCORRECTO");
+            C7.setEnabled(false);
+            C8.setEnabled(false);
+            C9.setEnabled(false);
+            v3.setEnabled(false);
+            s1.setEnabled(true);
+    }
+    }//GEN-LAST:event_v3ActionPerformed
+
+    private void v2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_v2ActionPerformed
+        // TODO add your handling code here:
+        if(C4.isSelected()){
+            JOptionPane.showMessageDialog(null, "CORRECTO");
+            C4.setEnabled(false);
+            C5.setEnabled(false);
+            C6.setEnabled(false);
+            v2.setEnabled(false);
+            v3.setEnabled(true);
+    }
+     if(C5.isSelected()){
+            JOptionPane.showMessageDialog(null, "INCORRECTO");
+            C4.setEnabled(false);
+            C5.setEnabled(false);
+            C6.setEnabled(false);
+            v2.setEnabled(false);
+            v3.setEnabled(true);
+    }
+      if(C6.isSelected()){
+            JOptionPane.showMessageDialog(null, "INCORRECTO");
+            C4.setEnabled(false);
+            C5.setEnabled(false);
+            C6.setEnabled(false);
+            v2.setEnabled(false);
+            v3.setEnabled(true);
+    }
+    }//GEN-LAST:event_v2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -327,15 +424,17 @@ public class T2_3EXAMEN_1 extends javax.swing.JFrame {
     private javax.swing.JRadioButton C7;
     private javax.swing.JRadioButton C8;
     private javax.swing.JRadioButton C9;
-    private javax.swing.JButton btn_siguiente;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.ButtonGroup buttonGroup3;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton s1;
+    private javax.swing.JButton v1;
+    private javax.swing.JButton v2;
+    private javax.swing.JButton v3;
     // End of variables declaration//GEN-END:variables
 }

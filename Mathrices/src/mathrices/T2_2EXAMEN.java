@@ -46,8 +46,10 @@ public class T2_2EXAMEN extends javax.swing.JFrame {
         A7 = new javax.swing.JRadioButton();
         A8 = new javax.swing.JRadioButton();
         A9 = new javax.swing.JRadioButton();
-        jButton2 = new javax.swing.JButton();
+        v3 = new javax.swing.JButton();
         s1 = new javax.swing.JButton();
+        v1 = new javax.swing.JButton();
+        v2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -55,9 +57,11 @@ public class T2_2EXAMEN extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setFocusable(false);
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel2.setText("¿Qué regla se debe seguir para sumar dos matrices?");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 102, 605, -1));
 
         jButton1.setBackground(new java.awt.Color(0, 0, 153));
         jButton1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -69,6 +73,7 @@ public class T2_2EXAMEN extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 24, 90, 60));
 
         buttonGroup1.add(A1);
         A1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
@@ -78,6 +83,7 @@ public class T2_2EXAMEN extends javax.swing.JFrame {
                 A1ActionPerformed(evt);
             }
         });
+        jPanel1.add(A1, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 168, -1, -1));
 
         buttonGroup1.add(A2);
         A2.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
@@ -87,6 +93,7 @@ public class T2_2EXAMEN extends javax.swing.JFrame {
                 A2ActionPerformed(evt);
             }
         });
+        jPanel1.add(A2, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 208, -1, -1));
 
         buttonGroup1.add(A3);
         A3.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
@@ -96,9 +103,11 @@ public class T2_2EXAMEN extends javax.swing.JFrame {
                 A3ActionPerformed(evt);
             }
         });
+        jPanel1.add(A3, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 263, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel1.setText("Al decir, la matriz C es el resultado de la diferencia de la matriz A y la matriz B ¿Qué operación es?");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 318, 1122, -1));
 
         buttonGroup2.add(A4);
         A4.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
@@ -108,10 +117,12 @@ public class T2_2EXAMEN extends javax.swing.JFrame {
                 A4ActionPerformed(evt);
             }
         });
+        jPanel1.add(A4, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 372, -1, -1));
 
         buttonGroup2.add(A5);
         A5.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         A5.setText("Resta");
+        jPanel1.add(A5, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 412, -1, -1));
 
         buttonGroup2.add(A6);
         A6.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
@@ -121,17 +132,21 @@ public class T2_2EXAMEN extends javax.swing.JFrame {
                 A6ActionPerformed(evt);
             }
         });
+        jPanel1.add(A6, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 452, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel3.setText("¿Qué sucede al multiplicar una matriz por un número real?");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 507, -1, -1));
 
         buttonGroup3.add(A7);
         A7.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         A7.setText("Cambia el orden");
+        jPanel1.add(A7, new org.netbeans.lib.awtextra.AbsoluteConstraints(87, 553, -1, -1));
 
         buttonGroup3.add(A8);
         A8.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         A8.setText("No sucede nada");
+        jPanel1.add(A8, new org.netbeans.lib.awtextra.AbsoluteConstraints(87, 593, -1, -1));
 
         buttonGroup3.add(A9);
         A9.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
@@ -141,134 +156,93 @@ public class T2_2EXAMEN extends javax.swing.JFrame {
                 A9ActionPerformed(evt);
             }
         });
+        jPanel1.add(A9, new org.netbeans.lib.awtextra.AbsoluteConstraints(87, 633, -1, -1));
 
-        jButton2.setBackground(new java.awt.Color(0, 0, 153));
-        jButton2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Verificar");
-        jButton2.setFocusable(false);
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        v3.setBackground(new java.awt.Color(0, 0, 153));
+        v3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        v3.setForeground(new java.awt.Color(255, 255, 255));
+        v3.setText("Verificar");
+        v3.setEnabled(false);
+        v3.setFocusable(false);
+        v3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                v3ActionPerformed(evt);
             }
         });
+        jPanel1.add(v3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 500, 90, 60));
 
         s1.setBackground(new java.awt.Color(0, 0, 153));
         s1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         s1.setForeground(new java.awt.Color(255, 255, 255));
         s1.setText("Siguiente");
+        s1.setEnabled(false);
         s1.setFocusable(false);
         s1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 s1ActionPerformed(evt);
             }
         });
+        jPanel1.add(s1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1210, 24, 90, 60));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(78, 78, 78)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(A1)
-                            .addComponent(A2)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 605, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(A3)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1122, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(A4)
-                            .addComponent(A5)
-                            .addComponent(A6)
-                            .addComponent(jLabel3))
-                        .addGap(10, 10, 10)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(87, 87, 87)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(A8)
-                            .addComponent(A7)
-                            .addComponent(A9))))
-                .addGap(119, 160, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(s1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(160, 160, 160))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(s1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(jLabel2)
-                .addGap(29, 29, 29)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(A1)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(A2, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(A3)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel1)
-                .addGap(26, 26, 26)
-                .addComponent(A4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(A5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(A6)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel3)
-                .addGap(18, 18, 18)
-                .addComponent(A7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(A8)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(A9)
-                .addContainerGap(102, Short.MAX_VALUE))
-        );
+        v1.setBackground(new java.awt.Color(0, 0, 153));
+        v1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        v1.setForeground(new java.awt.Color(255, 255, 255));
+        v1.setText("Verificar");
+        v1.setFocusable(false);
+        v1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                v1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(v1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1156, 102, 90, 60));
+
+        v2.setBackground(new java.awt.Color(0, 0, 153));
+        v2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        v2.setForeground(new java.awt.Color(255, 255, 255));
+        v2.setText("Verificar");
+        v2.setEnabled(false);
+        v2.setFocusable(false);
+        v2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                v2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(v2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 300, 90, 60));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1460, 790));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-    if(A1.isSelected()){
-            JOptionPane.showMessageDialog(null, "INCORRECTO");
-        }
-    if(A2.isSelected()){
-            JOptionPane.showMessageDialog(null, "INCORRECTO");
-        }
-    if(A3.isSelected()){
-            JOptionPane.showMessageDialog(null, "CORRECTO");
-        }
-    if(A4.isSelected()){
-            JOptionPane.showMessageDialog(null, "INCORRECTO");
-        }
-    if(A5.isSelected()){
-            JOptionPane.showMessageDialog(null, "CORRECTO");
-        }
-    if(A6.isSelected()){
-            JOptionPane.showMessageDialog(null, "INCORRECTO");
-        }
+    private void v3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_v3ActionPerformed
+    
+   
     if(A7.isSelected()){
             JOptionPane.showMessageDialog(null, "INCORRECTO");
+            A7.setEnabled(false);
+            A8.setEnabled(false);
+            A9.setEnabled(false);
+            s1.setEnabled(true);
+            v3.setEnabled(false);
         }
     if(A8.isSelected()){
             JOptionPane.showMessageDialog(null, "INCORRECTO");
+            A7.setEnabled(false);
+            A8.setEnabled(false);
+            A9.setEnabled(false);
+            s1.setEnabled(true);
+            v3.setEnabled(false);
         }
     if(A9.isSelected()){
             JOptionPane.showMessageDialog(null, "CORRECTO");
+            A7.setEnabled(false);
+            A8.setEnabled(false);
+            A9.setEnabled(false);
+            s1.setEnabled(true);
+            v3.setEnabled(false);
         }
         
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_v3ActionPerformed
 
     private void A6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_A6ActionPerformed
         // TODO add your handling code here:
@@ -308,6 +282,62 @@ public class T2_2EXAMEN extends javax.swing.JFrame {
         c.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_s1ActionPerformed
+
+    private void v1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_v1ActionPerformed
+        // TODO add your handling code here:
+        if(A1.isSelected()){
+            JOptionPane.showMessageDialog(null, "INCORRECTO");
+            A1.setEnabled(false);
+            A2.setEnabled(false);
+            A3.setEnabled(false);
+            v1.setEnabled(false);
+            v2.setEnabled(true);
+        }
+        if(A2.isSelected()){
+                JOptionPane.showMessageDialog(null, "INCORRECTO");
+                A1.setEnabled(false);
+                A2.setEnabled(false);
+                A3.setEnabled(false);
+                v1.setEnabled(false);
+                v2.setEnabled(true);
+            }
+        if(A3.isSelected()){
+                JOptionPane.showMessageDialog(null, "CORRECTO");
+                A1.setEnabled(false);
+                A2.setEnabled(false);
+                A3.setEnabled(false);
+                v1.setEnabled(false);
+                v2.setEnabled(true);
+        }
+    }//GEN-LAST:event_v1ActionPerformed
+
+    private void v2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_v2ActionPerformed
+        // TODO add your handling code here:
+         if(A4.isSelected()){
+            JOptionPane.showMessageDialog(null, "INCORRECTO");
+            A4.setEnabled(false);
+            A5.setEnabled(false);
+            A6.setEnabled(false);
+            v3.setEnabled(true);
+            v2.setEnabled(false);
+        }
+        if(A5.isSelected()){
+                JOptionPane.showMessageDialog(null, "CORRECTO");
+                A4.setEnabled(false);
+                A5.setEnabled(false);
+                A6.setEnabled(false);
+                v3.setEnabled(true);
+                v2.setEnabled(false);
+            }
+        if(A6.isSelected()){
+                JOptionPane.showMessageDialog(null, "INCORRECTO");
+                A4.setEnabled(false);
+                A5.setEnabled(false);
+                A6.setEnabled(false);
+                v3.setEnabled(true);
+                v2.setEnabled(false);
+            }
+    }//GEN-LAST:event_v2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -358,11 +388,13 @@ public class T2_2EXAMEN extends javax.swing.JFrame {
     private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.ButtonGroup buttonGroup3;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton s1;
+    private javax.swing.JButton v1;
+    private javax.swing.JButton v2;
+    private javax.swing.JButton v3;
     // End of variables declaration//GEN-END:variables
 }
