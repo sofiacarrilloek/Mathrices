@@ -30,6 +30,7 @@ public class T2_8EXAMEN extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
         rb1 = new javax.swing.JRadioButton();
         rb2 = new javax.swing.JRadioButton();
         rb3 = new javax.swing.JRadioButton();
@@ -41,16 +42,19 @@ public class T2_8EXAMEN extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        buttonGroup1.add(rb1);
         rb1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         rb1.setText("   a) 2,1,4,3");
         rb1.setFocusable(false);
         getContentPane().add(rb1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 290, -1, -1));
 
+        buttonGroup1.add(rb2);
         rb2.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         rb2.setText("   b) 2,4,1,3");
         rb2.setFocusable(false);
@@ -61,6 +65,7 @@ public class T2_8EXAMEN extends javax.swing.JFrame {
         });
         getContentPane().add(rb2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 350, -1, -1));
 
+        buttonGroup1.add(rb3);
         rb3.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         rb3.setText("   c) 4,2,1,3");
         rb3.setFocusable(false);
@@ -79,6 +84,9 @@ public class T2_8EXAMEN extends javax.swing.JFrame {
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 410, 90, 60));
 
+        jButton3.setBackground(new java.awt.Color(0, 0, 204));
+        jButton3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("Regresar");
         jButton3.setFocusable(false);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -104,6 +112,9 @@ public class T2_8EXAMEN extends javax.swing.JFrame {
         jLabel8.setText("3.- Comprobación.");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 110, -1, 44));
 
+        jButton2.setBackground(new java.awt.Color(0, 0, 255));
+        jButton2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Siguiente");
         jButton2.setFocusable(false);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -112,6 +123,21 @@ public class T2_8EXAMEN extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 600, 90, 60));
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1410, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 800, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 1410, 800));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -185,6 +211,7 @@ public class T2_8EXAMEN extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
@@ -193,6 +220,7 @@ public class T2_8EXAMEN extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JRadioButton rb1;
     private javax.swing.JRadioButton rb2;
     private javax.swing.JRadioButton rb3;
