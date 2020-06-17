@@ -40,29 +40,34 @@ public class T2_1TEORIA_2 extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(102, 153, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jButton1.setBackground(new java.awt.Color(0, 0, 204));
+        jButton1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Regresar");
+        jButton1.setFocusable(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 90, 60));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_1/MatricesABC.png"))); // NOI18N
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 170, 750, 160));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 240, 750, 160));
 
         jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
-        jTextArea1.setText("\nDos matrices A y B son iguales si son del mismo tamaño (mismo orden) y sus entradas correspondientes son iguales.\n\nPor ejemplo, si tenemos las matrices:\n\n\n\n\n\n\n\n\n\n\n\n\n\nCon base a la notación podemos deducir lo siguiente:\n\n•\tEl orden de la matriz A es 2 x 3, el orden la matriz B es 3 x 3 y el orden de la matriz C es 3 x 2.\n•\tLas matrices A, B y C no son semejantes entre si, pues tienen distinto orden.\n•\tAlgunos elementos específicos son: a21= 4,b 1 3= 3\n");
+        jTextArea1.setText("\nDos matrices A y B son iguales si son del mismo tamaño (mismo orden) y sus entradas correspondientes son iguales.\n\nPor ejemplo, si tenemos las matrices:\n\n\n\n\n\n\n\nCon base a la notación podemos deducir lo siguiente:\n\n•\tEl orden de la matriz A es 2 x 3, el orden la matriz B es 3 x 3 y el orden de la matriz C                             es 3 x 2.\n•\tLas matrices A, B y C no son semejantes entre si, pues tienen distinto orden.\n•\tAlgunos elementos específicos son: a21= 4,b 1 3= 3\n");
         jTextArea1.setWrapStyleWord(true);
         jScrollPane1.setViewportView(jTextArea1);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 90, 1000, 530));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 90, 1000, 540));
 
-        jLabel5.setFont(new java.awt.Font("Yu Gothic Medium", 1, 24)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         jLabel5.setText("Definición de matriz, notación y orden II");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 10, 550, 44));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 10, 630, 44));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1400, 800));
 
