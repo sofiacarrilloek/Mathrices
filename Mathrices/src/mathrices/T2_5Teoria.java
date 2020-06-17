@@ -41,6 +41,7 @@ public class T2_5Teoria extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1410, 790));
+        setUndecorated(true);
         setSize(new java.awt.Dimension(1410, 790));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
