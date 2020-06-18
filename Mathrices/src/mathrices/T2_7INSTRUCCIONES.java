@@ -46,6 +46,7 @@ public class T2_7INSTRUCCIONES extends javax.swing.JFrame {
         jLabel1.setText("EL AHORCADO");
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 20, -1, -1));
 
+        jTextArea1.setEditable(false);
         jTextArea1.setColumns(20);
         jTextArea1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         jTextArea1.setRows(5);

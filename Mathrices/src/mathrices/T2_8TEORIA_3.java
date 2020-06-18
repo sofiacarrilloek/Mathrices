@@ -67,16 +67,16 @@ public class T2_8TEORIA_3 extends javax.swing.JFrame {
         jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 90, 60));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_8/Ejemplo_Paso2.png"))); // NOI18N
-        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 420, 390, 210));
+        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 420, 390, 210));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_8/Ejemplo_Paso4Opcional.png"))); // NOI18N
         jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 420, 310, 150));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_8/Ejemplo_Paso1.png"))); // NOI18N
-        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 220, 310, 140));
+        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 220, 310, 140));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_8/Ejemplo_Paso3.png"))); // NOI18N
-        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 220, 310, 150));
+        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 220, 310, 150));
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         jLabel5.setText("Pasos para calcular la inversa de una matriz por el método adjunto");
@@ -92,6 +92,7 @@ public class T2_8TEORIA_3 extends javax.swing.JFrame {
         jTextArea1.setRows(5);
         jTextArea1.setText("\nEjemplo: Calcula la inversa de la siguiente matriz\n\n\n\n\n  1.-Obtener el determinante de la matriz.                                        3.-Sustituir los adjuntos en la matriz. \n                                      \n\n\n\n \n\n  2.-Calcular cada uno de los adjuntos de la matriz.                         4.- Comprobación (opcional).\n\n\n\n\n\n\n\n\n\n  \n ");
         jTextArea1.setAutoscrolls(false);
+        jTextArea1.setEnabled(false);
         jTextArea1.setFocusable(false);
         jScrollPane1.setViewportView(jTextArea1);
 

@@ -98,18 +98,6 @@
             </Constraint>
           </Constraints>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel2">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Img_2_8/Matriz_Identidad.png"/>
-            </Property>
-          </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="560" y="80" width="290" height="180"/>
-            </Constraint>
-          </Constraints>
-        </Component>
         <Container class="javax.swing.JScrollPane" name="jScrollPane1">
           <Properties>
             <Property name="horizontalScrollBar" type="javax.swing.JScrollBar" editor="org.netbeans.modules.form.ComponentChooserEditor">
@@ -138,7 +126,7 @@
                   <Font name="Times New Roman" size="24" style="0"/>
                 </Property>
                 <Property name="rows" type="int" value="5"/>
-                <Property name="text" type="java.lang.String" value="&#xa;&#xa;La matriz cuadrada se llama matriz identidad si todos los componentes de su diagonal principal son iguales  a uno y &#xa;todos los componentes que no est&#xe1;n en la diagonal principal son iguales a cero la matriz identidad se representa con la&#xa;letra I (may&#xfa;scula).&#xa;                               &#xa;&#xa;&#xa;                      &#xa;&#xa;                                                                 &#xa;Si  A  es una  matriz cuadrada de n x n. Entonces B es una matriz inversa de A si  satisface  A &#xb7; B = I  y B &#xb7; A  = I, &#xa;donde I es la matriz  identidad de n x n.&#xa;&#x2022;&#x9;La inversa de A se representa por  A-1  as&#xed; que  A&#xb7; A-1= A-1&#xb7;A =I&#xa;&#x2022;&#x9;No toda   matriz cuadrada tiene inversa&#xa;&#x2022;&#x9;Si A tiene inversa, entonces decimos que A es invertible.&#xa;&#xa;Teoremas&#xa;&#x2022;&#x9;Sea A una matriz cuadrada n x n entonces AI=IA=A&#xa;&#x2022;&#x9;Si A es una matriz invertible, entonces A-1 es invertible y (A-1)-1= A&#xa;&#x2022;&#x9;Si una  matriz cuadrada de A es invertible, entonces la inversa es &#xfa;nica.&#xa;&#x2022;&#x9;Sean A y B matrices de n x n invertible, entonces AB es invertible y (AB)-1 = B-1A-1.&#xa;&#xa;Para hallar la inversa de una matriz cuadrada comenzamos con la matriz A/I donde I representa la matriz identidad del mismo orden que la matriz A. Efectuamos operaciones elementales con las filas de A/I hasta que la matriz A se transforme en la matriz identidad I, luego la matriz que contiene los componentes a la derecha de la l&#xed;nea vertical es la inversa de A esto es A-1.&#xa;&#xa;"/>
+                <Property name="text" type="java.lang.String" value="&#xa;La matriz cuadrada se llama matriz identidad si todos los componentes de su diagonal principal son iguales  a uno y &#xa;todos los componentes que no est&#xe1;n en la diagonal principal son iguales a cero la matriz identidad se representa con la&#xa;letra I (may&#xfa;scula).&#xa;                                                                                                          &#xa;Si  A  es una  matriz cuadrada de n x n. Entonces B es una matriz inversa de A si  satisface  A &#xb7; B = I  y B &#xb7; A  = I, &#xa;donde I es la matriz  identidad de n x n.&#xa;&#x2022;&#x9;La inversa de A se representa por  A-1  as&#xed; que  A&#xb7; A-1= A-1&#xb7;A =I&#xa;&#x2022;&#x9;No toda   matriz cuadrada tiene inversa&#xa;&#x2022;&#x9;Si A tiene inversa, entonces decimos que A es invertible.&#xa;&#xa;Teoremas&#xa;&#x2022;&#x9;Sea A una matriz cuadrada n x n entonces AI=IA=A&#xa;&#x2022;&#x9;Si A es una matriz invertible, entonces A-1 es invertible y (A-1)-1= A&#xa;&#x2022;&#x9;Si una  matriz cuadrada de A es invertible, entonces la inversa es &#xfa;nica.&#xa;&#x2022;&#x9;Sean A y B matrices de n x n invertible, entonces AB es invertible y (AB)-1 = B-1A-1.&#xa;&#xa;Para hallar la inversa de una matriz cuadrada comenzamos con la matriz A/I donde I representa la matriz identidad del mismo orden que la matriz A. Efectuamos operaciones elementales con las filas de A/I hasta que la matriz A se transforme en la matriz identidad I, luego la matriz que contiene los componentes a la derecha de la l&#xed;nea vertical es la inversa de A esto es A-1.&#xa;&#xa;"/>
                 <Property name="autoscrolls" type="boolean" value="false"/>
                 <Property name="focusable" type="boolean" value="false"/>
               </Properties>

@@ -102,7 +102,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="190" y="420" width="390" height="210"/>
+              <AbsoluteConstraints x="200" y="420" width="390" height="210"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -126,7 +126,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="190" y="220" width="310" height="140"/>
+              <AbsoluteConstraints x="210" y="220" width="310" height="140"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -138,7 +138,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="750" y="220" width="310" height="150"/>
+              <AbsoluteConstraints x="760" y="220" width="310" height="150"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -190,6 +190,7 @@
                 <Property name="rows" type="int" value="5"/>
                 <Property name="text" type="java.lang.String" value="&#xa;Ejemplo: Calcula la inversa de la siguiente matriz&#xa;&#xa;&#xa;&#xa;&#xa;  1.-Obtener el determinante de la matriz.                                        3.-Sustituir los adjuntos en la matriz. &#xa;                                      &#xa;&#xa;&#xa;&#xa; &#xa;&#xa;  2.-Calcular cada uno de los adjuntos de la matriz.                         4.- Comprobaci&#xf3;n (opcional).&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;  &#xa; "/>
                 <Property name="autoscrolls" type="boolean" value="false"/>
+                <Property name="enabled" type="boolean" value="false"/>
                 <Property name="focusable" type="boolean" value="false"/>
               </Properties>
             </Component>

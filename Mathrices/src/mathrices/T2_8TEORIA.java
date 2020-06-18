@@ -34,7 +34,6 @@ public class T2_8TEORIA extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
 
@@ -72,9 +71,6 @@ public class T2_8TEORIA extends javax.swing.JFrame {
         jLabel1.setText("Inversa de una matriz cuadrada a través de la adjunta  ");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 10, -1, 44));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_2_8/Matriz_Identidad.png"))); // NOI18N
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 80, 290, 180));
-
         jScrollPane1.setHorizontalScrollBar(null);
         jScrollPane1.setMaximumSize(new java.awt.Dimension(0, 0));
 
@@ -82,7 +78,7 @@ public class T2_8TEORIA extends javax.swing.JFrame {
         jTextArea1.setColumns(20);
         jTextArea1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         jTextArea1.setRows(5);
-        jTextArea1.setText("\n\nLa matriz cuadrada se llama matriz identidad si todos los componentes de su diagonal principal son iguales  a uno y \ntodos los componentes que no están en la diagonal principal son iguales a cero la matriz identidad se representa con la\nletra I (mayúscula).\n                               \n\n\n                      \n\n                                                                 \nSi  A  es una  matriz cuadrada de n x n. Entonces B es una matriz inversa de A si  satisface  A · B = I  y B · A  = I, \ndonde I es la matriz  identidad de n x n.\n•\tLa inversa de A se representa por  A-1  así que  A· A-1= A-1·A =I\n•\tNo toda   matriz cuadrada tiene inversa\n•\tSi A tiene inversa, entonces decimos que A es invertible.\n\nTeoremas\n•\tSea A una matriz cuadrada n x n entonces AI=IA=A\n•\tSi A es una matriz invertible, entonces A-1 es invertible y (A-1)-1= A\n•\tSi una  matriz cuadrada de A es invertible, entonces la inversa es única.\n•\tSean A y B matrices de n x n invertible, entonces AB es invertible y (AB)-1 = B-1A-1.\n\nPara hallar la inversa de una matriz cuadrada comenzamos con la matriz A/I donde I representa la matriz identidad del mismo orden que la matriz A. Efectuamos operaciones elementales con las filas de A/I hasta que la matriz A se transforme en la matriz identidad I, luego la matriz que contiene los componentes a la derecha de la línea vertical es la inversa de A esto es A-1.\n\n");
+        jTextArea1.setText("\nLa matriz cuadrada se llama matriz identidad si todos los componentes de su diagonal principal son iguales  a uno y \ntodos los componentes que no están en la diagonal principal son iguales a cero la matriz identidad se representa con la\nletra I (mayúscula).\n                                                                                                          \nSi  A  es una  matriz cuadrada de n x n. Entonces B es una matriz inversa de A si  satisface  A · B = I  y B · A  = I, \ndonde I es la matriz  identidad de n x n.\n•\tLa inversa de A se representa por  A-1  así que  A· A-1= A-1·A =I\n•\tNo toda   matriz cuadrada tiene inversa\n•\tSi A tiene inversa, entonces decimos que A es invertible.\n\nTeoremas\n•\tSea A una matriz cuadrada n x n entonces AI=IA=A\n•\tSi A es una matriz invertible, entonces A-1 es invertible y (A-1)-1= A\n•\tSi una  matriz cuadrada de A es invertible, entonces la inversa es única.\n•\tSean A y B matrices de n x n invertible, entonces AB es invertible y (AB)-1 = B-1A-1.\n\nPara hallar la inversa de una matriz cuadrada comenzamos con la matriz A/I donde I representa la matriz identidad del mismo orden que la matriz A. Efectuamos operaciones elementales con las filas de A/I hasta que la matriz A se transforme en la matriz identidad I, luego la matriz que contiene los componentes a la derecha de la línea vertical es la inversa de A esto es A-1.\n\n");
         jTextArea1.setAutoscrolls(false);
         jTextArea1.setFocusable(false);
         jScrollPane1.setViewportView(jTextArea1);
@@ -147,7 +143,6 @@ public class T2_8TEORIA extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
