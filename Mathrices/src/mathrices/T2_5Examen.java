@@ -48,9 +48,9 @@ public class T2_5Examen extends javax.swing.JFrame {
         C7 = new javax.swing.JRadioButton();
         C8 = new javax.swing.JRadioButton();
         C9 = new javax.swing.JRadioButton();
-        jButton2 = new javax.swing.JButton();
+        V = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        A = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -136,13 +136,18 @@ public class T2_5Examen extends javax.swing.JFrame {
         C7.setBackground(new java.awt.Color(255, 255, 255));
         Grupo3.add(C7);
         C7.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        C7.setText("Hallar la determinante");
+        C7.setText(" a) Hallar la determinante");
         C7.setFocusable(false);
+        C7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C7ActionPerformed(evt);
+            }
+        });
 
         C8.setBackground(new java.awt.Color(255, 255, 255));
         Grupo3.add(C8);
         C8.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        C8.setText("Cambiar de signo la matriz");
+        C8.setText(" b) Cambiar de signo la matriz");
         C8.setFocusable(false);
         C8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -153,7 +158,7 @@ public class T2_5Examen extends javax.swing.JFrame {
         C9.setBackground(new java.awt.Color(255, 255, 255));
         Grupo3.add(C9);
         C9.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        C9.setText("Calcular la matriz inversa");
+        C9.setText(" c) Calcular la matriz inversa");
         C9.setFocusable(false);
         C9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -161,15 +166,15 @@ public class T2_5Examen extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(0, 0, 153));
-        jButton2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Verificar");
-        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton2.setFocusable(false);
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        V.setBackground(new java.awt.Color(0, 0, 153));
+        V.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        V.setForeground(new java.awt.Color(255, 255, 255));
+        V.setText("Verificar");
+        V.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        V.setFocusable(false);
+        V.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                VActionPerformed(evt);
             }
         });
 
@@ -185,15 +190,16 @@ public class T2_5Examen extends javax.swing.JFrame {
             }
         });
 
-        jButton4.setBackground(new java.awt.Color(0, 0, 153));
-        jButton4.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("Siguiente");
-        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton4.setFocusable(false);
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        A.setBackground(new java.awt.Color(0, 0, 153));
+        A.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        A.setForeground(new java.awt.Color(255, 255, 255));
+        A.setText("Siguiente");
+        A.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        A.setEnabled(false);
+        A.setFocusable(false);
+        A.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                AActionPerformed(evt);
             }
         });
 
@@ -217,13 +223,13 @@ public class T2_5Examen extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createSequentialGroup()
                             .addComponent(jLabel1)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(A, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel1Layout.createSequentialGroup()
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(C2)
                                 .addComponent(C3))
                             .addGap(825, 825, 825)
-                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(V, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(1854, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
@@ -237,7 +243,7 @@ public class T2_5Examen extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(24, 24, 24)
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(A, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(78, 78, 78)
                         .addComponent(jLabel1)))
@@ -246,7 +252,7 @@ public class T2_5Examen extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(C2)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(V, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(C3)
                 .addGap(69, 69, 69)
@@ -291,30 +297,75 @@ public class T2_5Examen extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VActionPerformed
               
         
         if(C3.isSelected() && C5.isSelected() && C7.isSelected()){
             puntos = 100;
             JOptionPane.showMessageDialog(null,"FELICITACIONES!! usted respondio correctamente ");
+            C1.setEnabled(false);
+            C2.setEnabled(false);
+            C3.setEnabled(false);
+            C4.setEnabled(false);
+            C5.setEnabled(false);
+            C6.setEnabled(false);
+            C7.setEnabled(false);
+            C8.setEnabled(false);
+            C9.setEnabled(false);
+            A.setEnabled(true);
+            V.setEnabled(false); 
         }else{
         
             if((C3.isSelected() && C5.isSelected()) || (C5.isSelected() && C7.isSelected()) || (C3.isSelected() && C7.isSelected())){
                 JOptionPane.showMessageDialog(null,"2 de 3 preguntas correctas!! Felicidades");
                 puntos = 66;
+                C1.setEnabled(false);
+                C2.setEnabled(false);
+                C3.setEnabled(false);
+                C4.setEnabled(false);
+                C5.setEnabled(false);
+                C6.setEnabled(false);
+                C7.setEnabled(false);
+                C8.setEnabled(false);
+                C9.setEnabled(false);
+                A.setEnabled(true);
+                V.setEnabled(false);
             }else{
 
                 if(C3.isSelected() || C5.isSelected() || C7.isSelected()){
                     puntos = 33;
                     JOptionPane.showMessageDialog(null,"1 de 3 preguntas correctas! Intente de nuevo");
+                    C1.setEnabled(false);
+                    C2.setEnabled(false);
+                    C3.setEnabled(false);
+                    C4.setEnabled(false);
+                    C5.setEnabled(false);
+                    C6.setEnabled(false);
+                    C7.setEnabled(false);
+                    C8.setEnabled(false);
+                    C9.setEnabled(false);
+                    A.setEnabled(true);
+                    V.setEnabled(false);
                 }else{
                     puntos = 0;
-                    JOptionPane.showMessageDialog(null,"Incorrecto, intente de nuevo :(");
+                    JOptionPane.showMessageDialog(null,"Incorrecto, 0 de 3 Preguntas correctas");
+                    C1.setEnabled(false);
+                    C2.setEnabled(false);
+                    C3.setEnabled(false);
+                    C4.setEnabled(false);
+                    C5.setEnabled(false);
+                    C6.setEnabled(false);
+                    C7.setEnabled(false);
+                    C8.setEnabled(false);
+                    C9.setEnabled(false);
+                    A.setEnabled(true);
+                    V.setEnabled(false);
                 }}}
         
+    
         puntos5=puntos5+puntos;
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_VActionPerformed
 
     private void C1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C1ActionPerformed
         // TODO add your handling code here:
@@ -355,13 +406,17 @@ public class T2_5Examen extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AActionPerformed
         // TODO add your handling code here:
         T2_6EXAMEN c=new T2_6EXAMEN();
         c.setVisible(true);
         this.dispose();
         
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_AActionPerformed
+
+    private void C7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C7ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -399,6 +454,7 @@ public class T2_5Examen extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton A;
     private javax.swing.JRadioButton C1;
     private javax.swing.JRadioButton C2;
     private javax.swing.JRadioButton C3;
@@ -411,9 +467,8 @@ public class T2_5Examen extends javax.swing.JFrame {
     private javax.swing.ButtonGroup Grupo1;
     private javax.swing.ButtonGroup Grupo2;
     private javax.swing.ButtonGroup Grupo3;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton V;
     private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

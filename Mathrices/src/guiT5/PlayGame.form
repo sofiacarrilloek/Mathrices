@@ -7,9 +7,6 @@
       <Dimension value="[1400, 800]"/>
     </Property>
     <Property name="undecorated" type="boolean" value="true"/>
-    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-      <Dimension value="[1406, 811]"/>
-    </Property>
     <Property name="size" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
       <Dimension value="[1400, 800]"/>
     </Property>
@@ -65,7 +62,6 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                       <Component id="jButton1" min="-2" pref="40" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -511,9 +507,10 @@
       <SubComponents>
         <Component class="javax.swing.JTextArea" name="jTextArea1">
           <Properties>
+            <Property name="editable" type="boolean" value="false"/>
             <Property name="columns" type="int" value="20"/>
             <Property name="rows" type="int" value="5"/>
-            <Property name="text" type="java.lang.String" value="Instrucciones para jugar&#xa;&#xa;Si es entre varias personas cada qui&#xe9;n tiene un turno.&#xa;En tu turno puedes levantar dos cartas:&#xa;Si ves que las dos cartas son iguales entonces ya tienes un par, agarras el par y puedes hasta seguir tirando hasta que te equivoques.&#xa;Si dichas cartas no son iguales entonces deber&#xe1;s de volverlas a poner exactamente en su lugar y dejar que el otro tire.&#xa;El juego debe continuar hasta que se acaben todas las cartas que est&#xe1;n boca abajo.&#xa;Al final se cuentan todos los pares que cada uno tiene, aquel que tenga m&#xe1;s es el ganador."/>
+            <Property name="text" type="java.lang.String" value="Instrucciones para jugar&#xa;&#xa;1.- De clic en las tarjetas paar revelar su imagen&#xa;2.- Forme pares con las imagenes reveladas&#xa;3.- Gana cuando todos los pares sean formados correctamente &#xa;4.- Diviertete &#xa;&#xa;SUERTE!! &#xa;"/>
           </Properties>
         </Component>
       </SubComponents>

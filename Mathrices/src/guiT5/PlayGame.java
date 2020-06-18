@@ -147,7 +147,6 @@ public class PlayGame extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1400, 800));
         setUndecorated(true);
-        setPreferredSize(new java.awt.Dimension(1406, 811));
         setSize(new java.awt.Dimension(1400, 800));
 
         jPanel1.setBackground(new java.awt.Color(153, 0, 204));
@@ -496,9 +495,10 @@ public class PlayGame extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jTextArea1.setEditable(false);
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
-        jTextArea1.setText("Instrucciones para jugar\n\nSi es entre varias personas cada quién tiene un turno.\nEn tu turno puedes levantar dos cartas:\nSi ves que las dos cartas son iguales entonces ya tienes un par, agarras el par y puedes hasta seguir tirando hasta que te equivoques.\nSi dichas cartas no son iguales entonces deberás de volverlas a poner exactamente en su lugar y dejar que el otro tire.\nEl juego debe continuar hasta que se acaben todas las cartas que están boca abajo.\nAl final se cuentan todos los pares que cada uno tiene, aquel que tenga más es el ganador.");
+        jTextArea1.setText("Instrucciones para jugar\n\n1.- De clic en las tarjetas paar revelar su imagen\n2.- Forme pares con las imagenes reveladas\n3.- Gana cuando todos los pares sean formados correctamente \n4.- Diviertete \n\nSUERTE!! \n");
         jScrollPane1.setViewportView(jTextArea1);
 
         btnReiniciar.setBackground(new java.awt.Color(0, 0, 253));
@@ -550,8 +550,7 @@ public class PlayGame extends javax.swing.JFrame {
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 162, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(34, 34, 34)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(18, 18, 18)
