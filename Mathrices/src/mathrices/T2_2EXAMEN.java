@@ -38,7 +38,6 @@ public class T2_2EXAMEN extends javax.swing.JFrame {
         buttonGroup3 = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
         A1 = new javax.swing.JRadioButton();
         A2 = new javax.swing.JRadioButton();
         A3 = new javax.swing.JRadioButton();
@@ -66,18 +65,6 @@ public class T2_2EXAMEN extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel2.setText("¿Qué regla se debe seguir para sumar dos matrices?");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 102, 605, -1));
-
-        jButton1.setBackground(new java.awt.Color(0, 0, 153));
-        jButton1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Regresar");
-        jButton1.setFocusable(false);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 24, 90, 60));
 
         buttonGroup1.add(A1);
         A1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
@@ -286,13 +273,6 @@ public class T2_2EXAMEN extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_A1ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        T2_2MENU_1 c=new T2_2MENU_1();
-        c.setVisible(true);
-        this.dispose();
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
-
     private void A9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_A9ActionPerformed
     
         // TODO add your handling code here:
@@ -417,7 +397,6 @@ public class T2_2EXAMEN extends javax.swing.JFrame {
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.ButtonGroup buttonGroup3;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

@@ -35,6 +35,9 @@ public class T2_2INSTRUCCIONES extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setFocusable(false);
+        setMinimumSize(new java.awt.Dimension(1240, 500));
+        setUndecorated(true);
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setFocusable(false);

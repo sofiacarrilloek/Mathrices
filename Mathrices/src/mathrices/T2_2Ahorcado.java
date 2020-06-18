@@ -226,6 +226,7 @@ public class T2_2Ahorcado extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("MexicanHangedPerson By Pear Soft&Games");
+        setFocusable(false);
         setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
