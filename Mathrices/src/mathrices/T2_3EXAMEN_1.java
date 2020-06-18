@@ -77,17 +77,17 @@ public class T2_3EXAMEN_1 extends javax.swing.JFrame {
 
         buttonGroup1.add(C1);
         C1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        C1.setText("Matriz Cuadrada");
+        C1.setText(" a) Matriz Cuadrada");
         C1.setFocusable(false);
 
         buttonGroup1.add(C2);
         C2.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        C2.setText("Matriz Simétrica");
+        C2.setText(" b) Matriz Simétrica");
         C2.setFocusable(false);
 
         buttonGroup1.add(C3);
         C3.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        C3.setText("Matriz Nula");
+        C3.setText(" c) Matriz Nula");
         C3.setFocusable(false);
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -95,17 +95,22 @@ public class T2_3EXAMEN_1 extends javax.swing.JFrame {
 
         buttonGroup2.add(C4);
         C4.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        C4.setText("Matriz Escalar");
+        C4.setText(" a) Matriz Escalar");
         C4.setFocusable(false);
 
         buttonGroup2.add(C5);
         C5.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        C5.setText("Matriz Diagonal");
+        C5.setText(" b) Matriz Diagonal");
         C5.setFocusable(false);
+        C5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C5ActionPerformed(evt);
+            }
+        });
 
         buttonGroup2.add(C6);
         C6.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        C6.setText("Ninguna de las anteriores");
+        C6.setText(" c) Ninguna de las anteriores");
         C6.setFocusable(false);
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -113,17 +118,22 @@ public class T2_3EXAMEN_1 extends javax.swing.JFrame {
 
         buttonGroup3.add(C7);
         C7.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        C7.setText("Matriz Antisimétrica");
+        C7.setText(" a) Matriz Antisimétrica");
         C7.setFocusable(false);
 
         buttonGroup3.add(C8);
         C8.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        C8.setText("Matriz Transpuesta de A");
+        C8.setText(" b) Matriz Transpuesta de A");
         C8.setFocusable(false);
+        C8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C8ActionPerformed(evt);
+            }
+        });
 
         buttonGroup3.add(C9);
         C9.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        C9.setText("Matriz Antitranspuesta de A");
+        C9.setText(" c) Matriz Antitranspuesta de A");
         C9.setFocusable(false);
 
         v1.setBackground(new java.awt.Color(0, 0, 153));
@@ -273,7 +283,7 @@ public class T2_3EXAMEN_1 extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 20, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -391,6 +401,14 @@ public class T2_3EXAMEN_1 extends javax.swing.JFrame {
             puntos3_2=puntos3_2+0;
     }
     }//GEN-LAST:event_v2ActionPerformed
+
+    private void C5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C5ActionPerformed
+
+    private void C8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C8ActionPerformed
 
     /**
      * @param args the command line arguments

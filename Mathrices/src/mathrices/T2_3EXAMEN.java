@@ -77,7 +77,7 @@ public class T2_3EXAMEN extends javax.swing.JFrame {
 
         buttonGroup1.add(B1);
         B1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        B1.setText("Matriz Escalar");
+        B1.setText(" a) Matriz Escalar");
         B1.setFocusable(false);
         B1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -87,12 +87,12 @@ public class T2_3EXAMEN extends javax.swing.JFrame {
 
         buttonGroup1.add(B2);
         B2.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        B2.setText("Matriz Triangular");
+        B2.setText(" b) Matriz Triangular");
         B2.setFocusable(false);
 
         buttonGroup1.add(B3);
         B3.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        B3.setText("Matriz Cuadrada");
+        B3.setText(" c) Matriz Cuadrada");
         B3.setFocusable(false);
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -100,17 +100,17 @@ public class T2_3EXAMEN extends javax.swing.JFrame {
 
         buttonGroup2.add(B4);
         B4.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        B4.setText("Matriz Nula");
+        B4.setText(" a) Matriz Nula");
         B4.setFocusable(false);
 
         buttonGroup2.add(B5);
         B5.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        B5.setText("Matriz Cero");
+        B5.setText(" b) Matriz Cero");
         B5.setFocusable(false);
 
         buttonGroup2.add(B6);
         B6.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        B6.setText("Matriz Diagonal");
+        B6.setText(" c) Matriz Diagonal");
         B6.setFocusable(false);
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -118,17 +118,17 @@ public class T2_3EXAMEN extends javax.swing.JFrame {
 
         buttonGroup3.add(B7);
         B7.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        B7.setText("Matriz Diagonal");
+        B7.setText(" a) Matriz Diagonal");
         B7.setFocusable(false);
 
         buttonGroup3.add(B8);
         B8.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        B8.setText("Matriz Idéntica");
+        B8.setText(" b) Matriz Idéntica");
         B8.setFocusable(false);
 
         buttonGroup3.add(B9);
         B9.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        B9.setText("Matriz Escalar");
+        B9.setText(" c) Matriz Escalar");
         B9.setFocusable(false);
 
         v1.setBackground(new java.awt.Color(0, 0, 153));

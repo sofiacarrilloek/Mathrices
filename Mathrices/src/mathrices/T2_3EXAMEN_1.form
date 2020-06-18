@@ -34,7 +34,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="0" pref="20" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -212,7 +212,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="24" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Matriz Cuadrada"/>
+            <Property name="text" type="java.lang.String" value=" a) Matriz Cuadrada"/>
             <Property name="focusable" type="boolean" value="false"/>
           </Properties>
         </Component>
@@ -224,7 +224,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="24" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Matriz Sim&#xe9;trica"/>
+            <Property name="text" type="java.lang.String" value=" b) Matriz Sim&#xe9;trica"/>
             <Property name="focusable" type="boolean" value="false"/>
           </Properties>
         </Component>
@@ -236,7 +236,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="24" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Matriz Nula"/>
+            <Property name="text" type="java.lang.String" value=" c) Matriz Nula"/>
             <Property name="focusable" type="boolean" value="false"/>
           </Properties>
         </Component>
@@ -256,7 +256,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="24" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Matriz Escalar"/>
+            <Property name="text" type="java.lang.String" value=" a) Matriz Escalar"/>
             <Property name="focusable" type="boolean" value="false"/>
           </Properties>
         </Component>
@@ -268,9 +268,12 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="24" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Matriz Diagonal"/>
+            <Property name="text" type="java.lang.String" value=" b) Matriz Diagonal"/>
             <Property name="focusable" type="boolean" value="false"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C5ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="C6">
           <Properties>
@@ -280,7 +283,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="24" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Ninguna de las anteriores"/>
+            <Property name="text" type="java.lang.String" value=" c) Ninguna de las anteriores"/>
             <Property name="focusable" type="boolean" value="false"/>
           </Properties>
         </Component>
@@ -300,7 +303,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="24" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Matriz Antisim&#xe9;trica"/>
+            <Property name="text" type="java.lang.String" value=" a) Matriz Antisim&#xe9;trica"/>
             <Property name="focusable" type="boolean" value="false"/>
           </Properties>
         </Component>
@@ -312,9 +315,12 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="24" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Matriz Transpuesta de A"/>
+            <Property name="text" type="java.lang.String" value=" b) Matriz Transpuesta de A"/>
             <Property name="focusable" type="boolean" value="false"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C8ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="C9">
           <Properties>
@@ -324,7 +330,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="24" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Matriz Antitranspuesta de A"/>
+            <Property name="text" type="java.lang.String" value=" c) Matriz Antitranspuesta de A"/>
             <Property name="focusable" type="boolean" value="false"/>
           </Properties>
         </Component>
