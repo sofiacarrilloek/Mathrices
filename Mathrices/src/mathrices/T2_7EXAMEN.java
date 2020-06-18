@@ -12,9 +12,12 @@ public class T2_7EXAMEN extends javax.swing.JFrame {
     /**
      * Creates new form T2_1EXAMEN
      */
+    public static double puntos7=0;
     public T2_7EXAMEN() {
+       
         initComponents();
         this.setExtendedState(MAXIMIZED_BOTH);
+        System.out.println("Calificación 6: "+T2_6EXAMEN.puntos6);
     }
 
     /**
@@ -190,6 +193,7 @@ public class T2_7EXAMEN extends javax.swing.JFrame {
            
             v1.setEnabled(false);
             v2.setEnabled(true);
+            puntos7=puntos7+0;
         }
         if(rb2.isSelected()){
             JOptionPane.showMessageDialog(null, "CORRECTO");
@@ -198,6 +202,7 @@ public class T2_7EXAMEN extends javax.swing.JFrame {
           
             v1.setEnabled(false);
             v2.setEnabled(true);
+            puntos7=puntos7+50;
         }
      
         
@@ -229,6 +234,7 @@ public class T2_7EXAMEN extends javax.swing.JFrame {
             v6.setEnabled(false);
             v2.setEnabled(false);
             btn_siguiente.setEnabled(true);
+            puntos7=puntos7+0;
         }
         if(v5.isSelected()){
             JOptionPane.showMessageDialog(null, "INCORRECTO");
@@ -237,6 +243,7 @@ public class T2_7EXAMEN extends javax.swing.JFrame {
             v6.setEnabled(false);
             v2.setEnabled(false);
             btn_siguiente.setEnabled(true);
+            puntos7=puntos7+0;
         }
         if(v6.isSelected()){
             JOptionPane.showMessageDialog(null, "CORRECTO");
@@ -245,6 +252,7 @@ public class T2_7EXAMEN extends javax.swing.JFrame {
             v6.setEnabled(false);
             v2.setEnabled(false);
             btn_siguiente.setEnabled(true);
+            puntos7=puntos7+50;
         }
         
     }//GEN-LAST:event_v2ActionPerformed

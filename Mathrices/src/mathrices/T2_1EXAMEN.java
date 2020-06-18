@@ -23,6 +23,8 @@ public class T2_1EXAMEN extends javax.swing.JFrame {
     int puntos;
     int puntos2;
     int calificacionT1=puntos+puntos2;
+    public static double puntos1=0;
+
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -200,7 +202,8 @@ public class T2_1EXAMEN extends javax.swing.JFrame {
             rb3.setEnabled(false);
             v1.setEnabled(false);
             v2.setEnabled(true);
-            puntos=0;
+            calificacionT1=0;
+            puntos1=puntos1+calificacionT1;
         }
         if(rb2.isSelected()){
             JOptionPane.showMessageDialog(null, "CORRECTO");
@@ -209,7 +212,8 @@ public class T2_1EXAMEN extends javax.swing.JFrame {
             rb3.setEnabled(false);
             v1.setEnabled(false);
             v2.setEnabled(true);
-            puntos=50;
+            calificacionT1=50;
+            puntos1=puntos1+calificacionT1;
         }
         if(rb3.isSelected()){
             JOptionPane.showMessageDialog(null, "INCORRECTO");
@@ -218,9 +222,10 @@ public class T2_1EXAMEN extends javax.swing.JFrame {
             rb3.setEnabled(false);
             v1.setEnabled(false);
             v2.setEnabled(true);
-            puntos=0;
+            calificacionT1=0;
+            puntos1=puntos1+calificacionT1;
+
         }
-        
         
        
         
@@ -229,8 +234,8 @@ public class T2_1EXAMEN extends javax.swing.JFrame {
 
     private void s1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s1ActionPerformed
         // TODO add your handling code here:
-        String puntosT1=""+calificacionT1;
-        T2_2EXAMEN c=new T2_2EXAMEN(puntosT1);
+        
+        T2_2EXAMEN c=new T2_2EXAMEN();
         c.setVisible(true);
         this.dispose();
         
@@ -246,7 +251,8 @@ public class T2_1EXAMEN extends javax.swing.JFrame {
             rb6.setEnabled(false);
             v2.setEnabled(false);
             s1.setEnabled(true);
-            puntos2=0;
+            calificacionT1=0;
+            puntos1=puntos1+calificacionT1;
 
         }
         if(rb5.isSelected()){
@@ -256,7 +262,8 @@ public class T2_1EXAMEN extends javax.swing.JFrame {
             rb6.setEnabled(false);
             v2.setEnabled(false);
             s1.setEnabled(true);
-            puntos2=0;
+            calificacionT1=0;
+            puntos1=puntos1+calificacionT1;
 
         }
         if(rb6.isSelected()){
@@ -266,8 +273,10 @@ public class T2_1EXAMEN extends javax.swing.JFrame {
             rb6.setEnabled(false);
             v2.setEnabled(false);
             s1.setEnabled(true);
-            puntos2=50;
+            calificacionT1=50;
+            puntos1=puntos1+calificacionT1;
         }
+
         
     }//GEN-LAST:event_v2ActionPerformed
 

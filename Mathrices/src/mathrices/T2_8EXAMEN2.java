@@ -16,14 +16,17 @@ public class T2_8EXAMEN2 extends javax.swing.JFrame {
     /**
      * Creates new form T2_8EXAMEN2
      */
+    public static double puntos8_2=0;
+    public static double puntos8=0;
+    public static double FINAL=0;
+
     public T2_8EXAMEN2() {
         initComponents();
         this.setExtendedState(MAXIMIZED_BOTH);
+        System.out.println("Calificación 8 parte 1: "+T2_8EXAMEN.puntos8_1);
     }
 
-    T2_8EXAMEN2(String puntosT8) {
-        JOptionPane.showMessageDialog(null, puntosT8);
-    }
+    
     int puntos2;
     //int calificacionT8=puntosT8+puntos2;
 
@@ -142,6 +145,7 @@ public class T2_8EXAMEN2 extends javax.swing.JFrame {
             rb3.setEnabled(false);
             v1.setEnabled(false);
             puntos2=60;
+            puntos8_2=puntos8_2+puntos2;
         }
         if(rb2.isSelected()){
             JOptionPane.showMessageDialog(null, "INCORRECTO");
@@ -150,6 +154,7 @@ public class T2_8EXAMEN2 extends javax.swing.JFrame {
             rb3.setEnabled(false);
             v1.setEnabled(false);
             puntos2=0;
+            puntos8_2=puntos8_2+puntos2;
         }
         if(rb3.isSelected()){
             JOptionPane.showMessageDialog(null, "INCORRECTO");
@@ -158,8 +163,14 @@ public class T2_8EXAMEN2 extends javax.swing.JFrame {
             rb3.setEnabled(false);
             v1.setEnabled(false);
             puntos2=0;
+            puntos8_2=puntos8_2+puntos2;
         }
-        
+        FINAL=(T2_1EXAMEN.puntos1+T2_2EXAMEN.puntos2+T2_3EXAMEN_1.puntos3+T2_4EXAMEN.puntos4+T2_5Examen.puntos5+T2_6EXAMEN.puntos6+T2_7EXAMEN.puntos7+puntos8)/8;
+        System.out.println("Calificación 8 parte 2: "+puntos8_2);
+        puntos8=(T2_8EXAMEN.puntos8_1+puntos8_2)/2;
+        System.out.println("Calificación 8: "+puntos8);
+        System.out.println("Calificación FINAL: "+FINAL);
+
 
     }//GEN-LAST:event_v1ActionPerformed
 

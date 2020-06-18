@@ -15,10 +15,13 @@ public class T2_6EXAMEN extends javax.swing.JFrame {
     /**
      * Creates new form T2_4TEORIA
      */
+    public static double puntos6=0;
+
     public T2_6EXAMEN() {
         initComponents();
+       
         this.setExtendedState(MAXIMIZED_BOTH);
-        
+        System.out.println("Calificación 5: "+T2_5Examen.puntos5);
     }
 
     /**
@@ -52,6 +55,7 @@ public class T2_6EXAMEN extends javax.swing.JFrame {
         jButton1.setBackground(new java.awt.Color(0, 0, 153));
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Siguiente");
+        jButton1.setEnabled(false);
         jButton1.setFocusPainted(false);
         jButton1.setFocusable(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -103,6 +107,7 @@ public class T2_6EXAMEN extends javax.swing.JFrame {
         btn_p2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         btn_p2.setForeground(new java.awt.Color(255, 255, 255));
         btn_p2.setText("Verificar");
+        btn_p2.setEnabled(false);
         btn_p2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_p2ActionPerformed(evt);
@@ -172,11 +177,14 @@ public class T2_6EXAMEN extends javax.swing.JFrame {
         if(respuesta.equals("13"))
         {
             JOptionPane.showMessageDialog(null, "RESPUESTA CORRECTA");
+            puntos6=puntos6+50;
         }else
         {
             JOptionPane.showMessageDialog(null, "RESPUESTA INCORRECTA");
+            puntos6=puntos6+0;
         }
         btn_p1.setEnabled(false);
+        btn_p2.setEnabled(true);
         
     }//GEN-LAST:event_btn_p1ActionPerformed
 
@@ -187,11 +195,14 @@ public class T2_6EXAMEN extends javax.swing.JFrame {
         if(respuesta.equals("-146"))
         {
             JOptionPane.showMessageDialog(null, "RESPUESTA CORRECTA");
+            puntos6=puntos6+50;
         }else
         {
             JOptionPane.showMessageDialog(null, "RESPUESTA INCORRECTA");
+            puntos6=puntos6+0;
         }
         btn_p2.setEnabled(false);
+        jButton1.setEnabled(true);
 
     }//GEN-LAST:event_btn_p2ActionPerformed
 

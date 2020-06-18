@@ -11,14 +11,16 @@ import javax.swing.JOptionPane;
  * @author PERSONAL
  */
 public class T2_5Examen extends javax.swing.JFrame {
-       String puntos;
+       double puntos=0;
     
+       public static double puntos5;
 
     /**
      * Creates new form T2_5Examen
      */
     public T2_5Examen() {
         initComponents();
+        System.out.println("Calificación 4: "+T2_4EXAMEN.puntos4);
     }
 
     /**
@@ -317,22 +319,24 @@ public class T2_5Examen extends javax.swing.JFrame {
               
         
         if(C3.isSelected() && C5.isSelected() && C7.isSelected()){
-            puntos = "100";
+            puntos = 100;
             JOptionPane.showMessageDialog(null,"FELICITACIONES!! usted respondio correctamente ");
         }else{
         
             if((C3.isSelected() && C5.isSelected()) || (C5.isSelected() && C7.isSelected()) || (C3.isSelected() && C7.isSelected())){
                 JOptionPane.showMessageDialog(null,"2 de 3 preguntas correctas!! Felicidades");
-                puntos = "66";
+                puntos = 66;
             }else{
 
                 if(C3.isSelected() || C5.isSelected() || C7.isSelected()){
-                    puntos = "33";
+                    puntos = 33;
                     JOptionPane.showMessageDialog(null,"1 de 3 preguntas correctas! Intente de nuevo");
                 }else{
-                    puntos = "0";
+                    puntos = 0;
                     JOptionPane.showMessageDialog(null,"Incorrecto, intente de nuevo :(");
                 }}}
+        
+        puntos5=puntos5+puntos;
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 

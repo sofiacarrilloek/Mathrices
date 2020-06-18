@@ -15,10 +15,13 @@ public class T2_8EXAMEN extends javax.swing.JFrame {
 
     /**
      * Creates new form T2_8EXAMEN
+     * 
      */
+    public static double puntos8_1=0;
     public T2_8EXAMEN() {
         initComponents();
         this.setExtendedState(MAXIMIZED_BOTH);
+        System.out.println("Calificación 7: "+T2_7EXAMEN.puntos7);
     }
     int puntos;
     
@@ -152,6 +155,7 @@ public class T2_8EXAMEN extends javax.swing.JFrame {
             s1.setEnabled(true);
             v1.setEnabled(false);
             puntos=0;
+            puntos8_1=puntos8_1+puntos;
         }
         if(rb2.isSelected()){
             JOptionPane.showMessageDialog(null, "CORRECTO");
@@ -161,6 +165,7 @@ public class T2_8EXAMEN extends javax.swing.JFrame {
             s1.setEnabled(true);
             v1.setEnabled(false);
             puntos=40;
+            puntos8_1=puntos8_1+puntos;
         }
         if(rb3.isSelected()){
             JOptionPane.showMessageDialog(null, "INCORRECTO");
@@ -170,6 +175,7 @@ public class T2_8EXAMEN extends javax.swing.JFrame {
             s1.setEnabled(true);
             v1.setEnabled(false);
             puntos=0;
+            puntos8_1=puntos8_1+puntos;
         }
         
         
@@ -187,8 +193,7 @@ public class T2_8EXAMEN extends javax.swing.JFrame {
 
     private void s1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s1ActionPerformed
         // TODO add your handling code here:
-        String puntosT8=""+puntos;
-        T2_8EXAMEN2 c=new T2_8EXAMEN2(puntosT8);
+        T2_8EXAMEN2 c=new T2_8EXAMEN2();
         c.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_s1ActionPerformed

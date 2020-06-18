@@ -6,6 +6,7 @@
 package mathrices;
 
 import javax.swing.JOptionPane;
+import static mathrices.T2_2EXAMEN.puntos2;
 
 /**
  *
@@ -16,7 +17,12 @@ public class T2_4EXAMEN extends javax.swing.JFrame {
     /**
      * Creates new form T2_4TEORIA
      */
+    int puntos;
+    public static double puntos4=0;
     public T2_4EXAMEN() {
+        T2_3EXAMEN_1.puntos3=(T2_3EXAMEN_1.puntos3_2+T2_3EXAMEN.puntos3_1)/2;
+        System.out.println("Calificación 3  Parte 2:"+T2_3EXAMEN_1.puntos3_2+" Calificación 3: "+T2_3EXAMEN_1.puntos3);
+
         initComponents();
         this.setExtendedState(MAXIMIZED_BOTH);
     }
@@ -40,7 +46,7 @@ public class T2_4EXAMEN extends javax.swing.JFrame {
         btn_3 = new javax.swing.JButton();
         btn_4 = new javax.swing.JButton();
         btn_5 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        btn_siguiente = new javax.swing.JButton();
         labelFondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -159,18 +165,19 @@ public class T2_4EXAMEN extends javax.swing.JFrame {
         });
         getContentPane().add(btn_5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 430, 140, 60));
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 153));
-        jButton1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Siguiente");
-        jButton1.setFocusPainted(false);
-        jButton1.setFocusable(false);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btn_siguiente.setBackground(new java.awt.Color(0, 0, 153));
+        btn_siguiente.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        btn_siguiente.setForeground(new java.awt.Color(255, 255, 255));
+        btn_siguiente.setText("Siguiente");
+        btn_siguiente.setEnabled(false);
+        btn_siguiente.setFocusPainted(false);
+        btn_siguiente.setFocusable(false);
+        btn_siguiente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btn_siguienteActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 10, 90, 60));
+        getContentPane().add(btn_siguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 10, 90, 60));
 
         labelFondo.setBackground(new java.awt.Color(255, 255, 255));
         labelFondo.setForeground(new java.awt.Color(255, 255, 255));
@@ -209,6 +216,9 @@ public class T2_4EXAMEN extends javax.swing.JFrame {
         btn_4.setEnabled(false);
         btn_5.setEnabled(false);
         btn_6.setEnabled(false);
+        btn_siguiente.setEnabled(true);
+        puntos=0;
+        puntos4=puntos4+puntos;
 
     }//GEN-LAST:event_btn_1ActionPerformed
 
@@ -221,6 +231,9 @@ public class T2_4EXAMEN extends javax.swing.JFrame {
         btn_4.setEnabled(false);
         btn_5.setEnabled(false);
         btn_6.setEnabled(false);
+        btn_siguiente.setEnabled(true);
+        puntos=0;
+        puntos4=puntos4+puntos;
     }//GEN-LAST:event_btn_2ActionPerformed
 
     private void btn_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_3ActionPerformed
@@ -232,6 +245,10 @@ public class T2_4EXAMEN extends javax.swing.JFrame {
         btn_4.setEnabled(false);
         btn_5.setEnabled(false);
         btn_6.setEnabled(false);
+        btn_siguiente.setEnabled(true);
+        puntos=0;
+        puntos4=puntos4+puntos;
+
     }//GEN-LAST:event_btn_3ActionPerformed
 
     private void btn_4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_4ActionPerformed
@@ -243,6 +260,11 @@ public class T2_4EXAMEN extends javax.swing.JFrame {
         btn_4.setEnabled(false);
         btn_5.setEnabled(false);
         btn_6.setEnabled(false);
+        btn_siguiente.setEnabled(true);
+        puntos=100;
+        puntos4=puntos4+puntos;
+                
+
     }//GEN-LAST:event_btn_4ActionPerformed
 
     private void btn_5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_5ActionPerformed
@@ -254,15 +276,24 @@ public class T2_4EXAMEN extends javax.swing.JFrame {
         btn_4.setEnabled(false);
         btn_5.setEnabled(false);
         btn_6.setEnabled(false);
+        btn_siguiente.setEnabled(true);
+        puntos=0;
+        puntos4=puntos4+puntos;
+
     }//GEN-LAST:event_btn_5ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btn_siguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_siguienteActionPerformed
         // TODO add your handling code here:
+       // pasar_puntajes(puntos+"");
         T2_5Examen c=new T2_5Examen();
         c.setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btn_siguienteActionPerformed
 
+    public static void  pasar_puntajes(String puntajes){
+        
+    }
+    
     /**
      * @param args the command line arguments
      */
@@ -308,7 +339,7 @@ public class T2_4EXAMEN extends javax.swing.JFrame {
     private javax.swing.JButton btn_4;
     private javax.swing.JButton btn_5;
     private javax.swing.JButton btn_6;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btn_siguiente;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jl1;
     private javax.swing.JLabel jl2;

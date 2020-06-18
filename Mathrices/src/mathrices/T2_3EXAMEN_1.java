@@ -16,7 +16,10 @@ public class T2_3EXAMEN_1 extends javax.swing.JFrame {
     /**
      * Creates new form T2_3EXAMEN_1
      */
+    public static double puntos3_2=0;
+    public static double puntos3=0;
     public T2_3EXAMEN_1() {
+        System.out.println("Calificación 3  Parte 1:"+T2_3EXAMEN.puntos3_1);
         initComponents();
     }
 
@@ -284,6 +287,7 @@ public class T2_3EXAMEN_1 extends javax.swing.JFrame {
 
     private void s1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s1ActionPerformed
         T2_4EXAMEN c=new T2_4EXAMEN();
+        
         c.setVisible(true);
         this.dispose();
         // TODO add your handling code here:
@@ -297,6 +301,7 @@ public class T2_3EXAMEN_1 extends javax.swing.JFrame {
             C3.setEnabled(false);
             v1.setEnabled(false);
             v2.setEnabled(true);
+            puntos3_2=puntos3_2+20;
     }
   if(C2.isSelected()){
             JOptionPane.showMessageDialog(null, "INCORRECTO");
@@ -305,6 +310,7 @@ public class T2_3EXAMEN_1 extends javax.swing.JFrame {
             C3.setEnabled(false);
             v1.setEnabled(false);
             v2.setEnabled(true);
+            puntos3_2=puntos3_2+0;
     }
    if(C3.isSelected()){
             JOptionPane.showMessageDialog(null, "INCORRECTO");
@@ -313,9 +319,10 @@ public class T2_3EXAMEN_1 extends javax.swing.JFrame {
             C3.setEnabled(false);
             v1.setEnabled(false);
             v2.setEnabled(true);
+            puntos3_2=puntos3_2+0;
     }
     
-       
+     
         // TODO add your handling code here:
     }//GEN-LAST:event_v1ActionPerformed
 
@@ -332,6 +339,7 @@ public class T2_3EXAMEN_1 extends javax.swing.JFrame {
             C9.setEnabled(false);
             v3.setEnabled(false);
             s1.setEnabled(true);
+            puntos3_2=puntos3_2+15;
     }
         if(C8.isSelected()){
             JOptionPane.showMessageDialog(null, "INCORRECTO");
@@ -340,6 +348,7 @@ public class T2_3EXAMEN_1 extends javax.swing.JFrame {
             C9.setEnabled(false);
             v3.setEnabled(false);
             s1.setEnabled(true);
+            puntos3_2=puntos3_2+0;
     }
          if(C9.isSelected()){
             JOptionPane.showMessageDialog(null, "INCORRECTO");
@@ -348,6 +357,7 @@ public class T2_3EXAMEN_1 extends javax.swing.JFrame {
             C9.setEnabled(false);
             v3.setEnabled(false);
             s1.setEnabled(true);
+            puntos3_2=puntos3_2+0;
     }
     }//GEN-LAST:event_v3ActionPerformed
 
@@ -360,6 +370,7 @@ public class T2_3EXAMEN_1 extends javax.swing.JFrame {
             C6.setEnabled(false);
             v2.setEnabled(false);
             v3.setEnabled(true);
+            puntos3_2=puntos3_2+15;
     }
      if(C5.isSelected()){
             JOptionPane.showMessageDialog(null, "INCORRECTO");
@@ -368,6 +379,7 @@ public class T2_3EXAMEN_1 extends javax.swing.JFrame {
             C6.setEnabled(false);
             v2.setEnabled(false);
             v3.setEnabled(true);
+            puntos3_2=puntos3_2+0;
     }
       if(C6.isSelected()){
             JOptionPane.showMessageDialog(null, "INCORRECTO");
@@ -376,6 +388,7 @@ public class T2_3EXAMEN_1 extends javax.swing.JFrame {
             C6.setEnabled(false);
             v2.setEnabled(false);
             v3.setEnabled(true);
+            puntos3_2=puntos3_2+0;
     }
     }//GEN-LAST:event_v2ActionPerformed
 

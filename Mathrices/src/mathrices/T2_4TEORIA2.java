@@ -5,6 +5,8 @@
  */
 package mathrices;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Sofia Carrillo
@@ -14,12 +16,14 @@ public class T2_4TEORIA2 extends javax.swing.JFrame {
     /**
      * Creates new form T2_4TEORIA
      */
+  
     public T2_4TEORIA2() {
         initComponents();
         this.setExtendedState(MAXIMIZED_BOTH);
         
     }
 
+   
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always

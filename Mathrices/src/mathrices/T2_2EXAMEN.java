@@ -16,14 +16,14 @@ public class T2_2EXAMEN extends javax.swing.JFrame {
     /**
      * Creates new form T2_2EXAMEN
      */
+    
+
+    public static double puntos2=0;
+
     public T2_2EXAMEN() {
+        System.out.println("Calificación 1:"+T2_1EXAMEN.puntos1);
         initComponents();
     }
-
-    T2_2EXAMEN(String puntosT1) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -237,6 +237,8 @@ public class T2_2EXAMEN extends javax.swing.JFrame {
             A9.setEnabled(false);
             s1.setEnabled(true);
             v3.setEnabled(false);
+            puntos2=puntos2+0;
+
         }
     if(A8.isSelected()){
             JOptionPane.showMessageDialog(null, "INCORRECTO");
@@ -245,6 +247,7 @@ public class T2_2EXAMEN extends javax.swing.JFrame {
             A9.setEnabled(false);
             s1.setEnabled(true);
             v3.setEnabled(false);
+            puntos2=puntos2+0;
             
         }
     if(A9.isSelected()){
@@ -254,9 +257,9 @@ public class T2_2EXAMEN extends javax.swing.JFrame {
             A9.setEnabled(false);
             s1.setEnabled(true);
             v3.setEnabled(false);
+            puntos2=puntos2+40;
         }
 
-           
    
         
     
@@ -311,6 +314,7 @@ public class T2_2EXAMEN extends javax.swing.JFrame {
             A3.setEnabled(false);
             v1.setEnabled(false);
             v2.setEnabled(true);
+            puntos2=puntos2+0;
         }
         if(A2.isSelected()){
                 JOptionPane.showMessageDialog(null, "INCORRECTO");
@@ -319,6 +323,7 @@ public class T2_2EXAMEN extends javax.swing.JFrame {
                 A3.setEnabled(false);
                 v1.setEnabled(false);
                 v2.setEnabled(true);
+                 puntos2=puntos2+0;
             }
         if(A3.isSelected()){
                 JOptionPane.showMessageDialog(null, "CORRECTO");
@@ -327,7 +332,9 @@ public class T2_2EXAMEN extends javax.swing.JFrame {
                 A3.setEnabled(false);
                 v1.setEnabled(false);
                 v2.setEnabled(true);
+                 puntos2=puntos2+30;
         }
+
     }//GEN-LAST:event_v1ActionPerformed
 
     private void v2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_v2ActionPerformed
@@ -339,6 +346,7 @@ public class T2_2EXAMEN extends javax.swing.JFrame {
             A6.setEnabled(false);
             v3.setEnabled(true);
             v2.setEnabled(false);
+             puntos2=puntos2+0;
         }
         if(A5.isSelected()){
                 JOptionPane.showMessageDialog(null, "CORRECTO");
@@ -347,6 +355,7 @@ public class T2_2EXAMEN extends javax.swing.JFrame {
                 A6.setEnabled(false);
                 v3.setEnabled(true);
                 v2.setEnabled(false);
+                 puntos2=puntos2+0;
             }
         if(A6.isSelected()){
                 JOptionPane.showMessageDialog(null, "INCORRECTO");
@@ -355,7 +364,9 @@ public class T2_2EXAMEN extends javax.swing.JFrame {
                 A6.setEnabled(false);
                 v3.setEnabled(true);
                 v2.setEnabled(false);
+                 puntos2=puntos2+30;
             }
+
     }//GEN-LAST:event_v2ActionPerformed
 
     /**
