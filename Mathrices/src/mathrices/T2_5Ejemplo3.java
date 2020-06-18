@@ -78,6 +78,7 @@ public class T2_5Ejemplo3 extends javax.swing.JFrame {
             }
         });
 
+        jTextArea1.setEditable(false);
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
         jTextArea1.setText("Presione el simbolo de YouTube para reproducir un\nvideo en donde reforzará lo visto en este tema.");

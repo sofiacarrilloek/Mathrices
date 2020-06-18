@@ -50,6 +50,7 @@ public class T2_5Teoria extends javax.swing.JFrame {
         jPanel1.setPreferredSize(new java.awt.Dimension(1410, 790));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jTextArea1.setEditable(false);
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
         jTextArea1.setText("Dada una matriz cuadrada  A,  si existe otra matriz  B  del mismo orden que verifique: \n A . B = B . A = I  (  I = matriz identidad ).\n se dice que  B  es la matriz inversa de  A  y  se representa por  A^-1.\n\nSi existe la matriz inversa  de  A, se dice que la matriz  A  es inversible o regular. En caso contrario, se dice que la matriz  A  es singular.");
