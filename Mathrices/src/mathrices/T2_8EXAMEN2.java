@@ -26,7 +26,6 @@ public class T2_8EXAMEN2 extends javax.swing.JFrame {
         System.out.println("Calificación 8 parte 1: "+T2_8EXAMEN.puntos8_1);
     }
 
-    
     int puntos2;
         //int puntos1 = Integer.parseInt(puntosT8);
        // int calificacionT8=puntos1+puntos2;
