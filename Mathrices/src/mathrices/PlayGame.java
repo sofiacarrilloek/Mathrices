@@ -2,8 +2,9 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package guiT5;
+package mathrices;
 
+import guiT5.*;
 import auxiliarT5.LogicaJuego;
 import mathrices.T2_5Menu;
 import java.awt.BorderLayout;
@@ -743,6 +744,8 @@ public class PlayGame extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(PlayGame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
