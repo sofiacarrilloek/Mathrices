@@ -50,9 +50,12 @@ public class T2_8EXAMEN2 extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         v1 = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        PromedioFinal = new javax.swing.JTextField();
+        menu = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -101,18 +104,6 @@ public class T2_8EXAMEN2 extends javax.swing.JFrame {
         jLabel6.setText("¿Cuál es la determinante de la siguiente matriz?");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 180, -1, 44));
 
-        jButton3.setBackground(new java.awt.Color(0, 0, 153));
-        jButton3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("Regresar");
-        jButton3.setFocusable(false);
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 90, 60));
-
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -127,6 +118,35 @@ public class T2_8EXAMEN2 extends javax.swing.JFrame {
             }
         });
         jPanel1.add(v1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 200, 90, 60));
+
+        jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(0, 0, 153));
+        jLabel7.setText("Felicidades , has concluido con este curso");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 390, 470, 70));
+
+        jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(0, 0, 153));
+        jLabel8.setText("tu calificación final es:");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 450, -1, 44));
+
+        PromedioFinal.setEditable(false);
+        PromedioFinal.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
+        PromedioFinal.setBorder(new javax.swing.border.MatteBorder(null));
+        PromedioFinal.setFocusable(false);
+        jPanel1.add(PromedioFinal, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 510, 180, 160));
+
+        menu.setBackground(new java.awt.Color(0, 0, 153));
+        menu.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        menu.setForeground(new java.awt.Color(255, 255, 255));
+        menu.setText("MENÚ");
+        menu.setEnabled(false);
+        menu.setFocusable(false);
+        menu.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuActionPerformed(evt);
+            }
+        });
+        jPanel1.add(menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 30, 90, 60));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 1410, 800));
 
@@ -147,6 +167,7 @@ public class T2_8EXAMEN2 extends javax.swing.JFrame {
             v1.setEnabled(false);
             puntos2=60;
             puntos8_2=puntos8_2+puntos2;
+            menu.setEnabled(true);
         }
         if(rb2.isSelected()){
             JOptionPane.showMessageDialog(null, "INCORRECTO");
@@ -156,6 +177,7 @@ public class T2_8EXAMEN2 extends javax.swing.JFrame {
             v1.setEnabled(false);
             puntos2=0;
             puntos8_2=puntos8_2+puntos2;
+            menu.setEnabled(true);
         }
         if(rb3.isSelected()){
             JOptionPane.showMessageDialog(null, "INCORRECTO");
@@ -165,22 +187,25 @@ public class T2_8EXAMEN2 extends javax.swing.JFrame {
             v1.setEnabled(false);
             puntos2=0;
             puntos8_2=puntos8_2+puntos2;
+            menu.setEnabled(true);
         }
         FINAL=(T2_1EXAMEN.puntos1+T2_2EXAMEN.puntos2+T2_3EXAMEN_1.puntos3+T2_4EXAMEN.puntos4+T2_5Examen.puntos5+T2_6EXAMEN.puntos6+T2_7EXAMEN.puntos7+puntos8)/8;
         System.out.println("Calificación 8 parte 2: "+puntos8_2);
         puntos8=(T2_8EXAMEN.puntos8_1+puntos8_2)/2;
         System.out.println("Calificación 8: "+puntos8);
         System.out.println("Calificación FINAL: "+FINAL);
+        String cadena = String.valueOf(FINAL);
+        PromedioFinal.setText(cadena);
 
 
     }//GEN-LAST:event_v1ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void menuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuActionPerformed
         // TODO add your handling code here:
-        T2_8EXAMEN c=new T2_8EXAMEN();
+        Menu c=new Menu();
         c.setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_menuActionPerformed
 
     /**
      * @param args the command line arguments
@@ -218,15 +243,18 @@ public class T2_8EXAMEN2 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField PromedioFinal;
     private javax.swing.ButtonGroup buttonGroup1;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton menu;
     private javax.swing.JRadioButton rb1;
     private javax.swing.JRadioButton rb2;
     private javax.swing.JRadioButton rb3;

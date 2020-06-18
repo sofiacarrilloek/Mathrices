@@ -32,7 +32,6 @@ public class T2_7EXAMEN extends javax.swing.JFrame {
         buttonGroup1 = new javax.swing.ButtonGroup();
         buttonGroup2 = new javax.swing.ButtonGroup();
         btn_siguiente = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         v1 = new javax.swing.JButton();
         v2 = new javax.swing.JButton();
@@ -62,18 +61,6 @@ public class T2_7EXAMEN extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btn_siguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 590, 90, 60));
-
-        jButton3.setBackground(new java.awt.Color(0, 0, 153));
-        jButton3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("Regresar");
-        jButton3.setFocusable(false);
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 90, 60));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -218,13 +205,6 @@ public class T2_7EXAMEN extends javax.swing.JFrame {
         this.dispose(); 
     }//GEN-LAST:event_btn_siguienteActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-   T2_6EXAMEN c=new T2_6EXAMEN ();
-        c.setVisible(true);
-        this.dispose();        // TODO add your handling code here:
- 
-    }//GEN-LAST:event_jButton3ActionPerformed
-
     private void v2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_v2ActionPerformed
         // TODO add your handling code here:
         if(v4.isSelected()){
@@ -302,7 +282,6 @@ public class T2_7EXAMEN extends javax.swing.JFrame {
     private javax.swing.JButton btn_siguiente;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
